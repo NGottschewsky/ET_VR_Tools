@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1f9089b0-a487-43ef-906c-39d78e0ec973" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ToolOnTable.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ToolOnTable.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" beforeDir="false" afterPath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/abcd9b-1221ab26c05af0e41b.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/abcd9b-1221ab26c05af0e41b.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/1edcef-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/1edcef-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/17/17da6d53ec93a0444bd0f751b1d02477.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/17/17da6d53ec93a0444bd0f751b1d02477.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/23/23740055e2b119e40a939138ab8070f8.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/23/23740055e2b119e40a939138ab8070f8.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/59/599a5fd92bab81a4ab02e52d0b1b1c60" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/59/599a5fd92bab81a4ab02e52d0b1b1c60" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/bd/bd153aa929dfa3448a6a3d9bc46da5db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/bd/bd153aa929dfa3448a6a3d9bc46da5db" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ExperimentManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+              <folding>
+                <marker date="1573224162184" expanded="true" signature="6:140" ph="..." />
+                <marker date="1573224162184" expanded="true" signature="188:961" ph="{...}" />
+                <marker date="1573224162184" expanded="true" signature="363:559" ph="{...}" />
+                <marker date="1573224162184" expanded="true" signature="625:959" ph="{...}" />
+                <marker date="1573224162184" expanded="true" signature="790:901" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CueController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <marker date="1573134981757" expanded="false" signature="6:148" ph="..." />
+                <marker date="1573134981757" expanded="true" signature="192:363" ph="{...}" />
+                <marker date="1573134981757" expanded="true" signature="294:361" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <marker date="1573226037396" expanded="true" signature="6:97" ph="..." />
+                <marker date="1573226037396" expanded="true" signature="141:377" ph="{...}" />
+                <marker date="1573226037396" expanded="true" signature="188:209" ph="{...}" />
+                <marker date="1573226037396" expanded="true" signature="267:375" ph="{...}" />
+                <marker date="1573226037396" expanded="true" signature="318:369" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Stroop Task/Assets/Scripts/Stroop/StroopGenerator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+              <folding>
+                <marker date="1563441179109" expanded="true" signature="137:2609" ph="{...}" />
+                <marker date="1563441179109" expanded="true" signature="501:1058" ph="{...}" />
+                <marker date="1563441179109" expanded="true" signature="516:591" ph="/* stroopLable.color = stroopColor; ... */" />
+                <marker date="1563441179109" expanded="true" signature="638:692" ph="/* GetNextStroopColor(); ... */" />
+                <marker date="1563441179109" expanded="true" signature="701:1052" ph="/* Debug.Log(string.Format(&quot;current stroop color is: {0}&quot;,GetCurrectStroopColor())); ... */" />
+                <marker date="1563441179109" expanded="true" signature="1096:1275" ph="{...}" />
+                <marker date="1563441179109" expanded="true" signature="1312:1767" ph="{...}" />
+                <marker date="1563441179109" expanded="true" signature="1376:1460" ph="{...}" />
+                <marker date="1563441179109" expanded="true" signature="1473:1697" ph="{...}" />
+                <marker date="1563441179109" expanded="true" signature="1772:1904" ph="/// get current shown stroop label color ... " />
+                <marker date="1563441179109" expanded="true" signature="1947:2014" ph="{...}" />
+                <marker date="1563441179109" expanded="true" signature="2061:2126" ph="{...}" />
+                <marker date="1563441179109" expanded="true" signature="2167:2231" ph="{...}" />
+                <marker date="1563441179109" expanded="true" signature="2264:2607" ph="{...}" />
+                <marker date="1563441179109" expanded="true" signature="2279:2443" ph="/* if (_currentStroopTextIndex == _currentStroopColorIndex) ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Stroop Task/Assets/Scripts/Experiment/ExperimentManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+              <folding>
+                <marker date="1563448135829" expanded="true" signature="145:4871" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="695:1268" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="1330:2619" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="1938:2590" ph="/* Debug.Log(string.Format(&quot;current stroop color is: {0}&quot;,stroopGenerator.GetCurrectStroopColor())); ... */" />
+                <marker date="1563448135829" expanded="true" signature="2684:3380" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="2758:3144" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="2875:2946" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="3062:3134" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="3157:3374" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="3302:3364" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="3412:3976" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="3474:3686" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="3699:3970" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="3861:3923" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="4011:4638" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="4075:4237" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="4250:4632" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="4469:4530" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="4695:4790" ph="{...}" />
+                <marker date="1563448135829" expanded="true" signature="4825:4869" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Stroop Task/Assets/Scripts/Experiment/LableController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#91#0" expanded="true" />
+                <marker date="1563358222628" expanded="true" signature="136:315" ph="{...}" />
+                <marker date="1563358222628" expanded="true" signature="241:313" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>lable</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Imported/Table and chair/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Stroop Task/Assets/Scripts/Stroop/StroopGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CueController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ExperimentManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Stroop Task/Assets/Scripts/Experiment/ExperimentManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Stroop Task/Assets/Scripts/Experiment/LableController.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/ExperimentManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="141" />
+    <option name="y" value="111" />
+    <option name="width" value="1547" />
+    <option name="height" value="829" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Packages" type="4e2708dd:PackagesRoot" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f9089b0-a487-43ef-906c-39d78e0ec973" name="Default Changelist" comment="" />
+      <created>1573218427463</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573218427463</updated>
+      <workItem from="1573218431664" duration="3930000" />
+      <workItem from="1573223161233" duration="563000" />
+      <workItem from="1573223750780" duration="2615000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7108000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Inspection Results" visible="true" weight="0.32981783" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Unity" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Unit Tests" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs</url>
+          <line>10</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" initialLine="10">
+            <startOffsets>
+              <option value="203" />
+            </startOffsets>
+            <endOffsets>
+              <option value="203" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Imported/Table and chair/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <marker date="1487869544000" expanded="false" signature="6:32" ph="..." />
+            <marker date="1487869544000" expanded="true" signature="76:6910" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="191:6908" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="422:1176" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="446:590" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="724:927" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="944:1166" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="1250:1821" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="1274:1386" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="1524:1572" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="1589:1811" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="1847:1893" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="1933:1988" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="2036:2180" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="2214:2259" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="2313:3052" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="2642:2724" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="2823:2905" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="3121:3364" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="3246:3328" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="3401:3447" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="3493:3642" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="3749:4207" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="4049:4131" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="4148:4197" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="4248:4344" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="4420:6902" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="4774:6863" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="4893:4973" ph="{...}" />
+            <marker date="1487869544000" expanded="true" signature="4994:5074" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Stroop Task/Assets/Scripts/Stroop/StroopGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <marker date="1563441179109" expanded="true" signature="137:2609" ph="{...}" />
+            <marker date="1563441179109" expanded="true" signature="501:1058" ph="{...}" />
+            <marker date="1563441179109" expanded="true" signature="516:591" ph="/* stroopLable.color = stroopColor; ... */" />
+            <marker date="1563441179109" expanded="true" signature="638:692" ph="/* GetNextStroopColor(); ... */" />
+            <marker date="1563441179109" expanded="true" signature="701:1052" ph="/* Debug.Log(string.Format(&quot;current stroop color is: {0}&quot;,GetCurrectStroopColor())); ... */" />
+            <marker date="1563441179109" expanded="true" signature="1096:1275" ph="{...}" />
+            <marker date="1563441179109" expanded="true" signature="1312:1767" ph="{...}" />
+            <marker date="1563441179109" expanded="true" signature="1376:1460" ph="{...}" />
+            <marker date="1563441179109" expanded="true" signature="1473:1697" ph="{...}" />
+            <marker date="1563441179109" expanded="true" signature="1772:1904" ph="/// get current shown stroop label color ... " />
+            <marker date="1563441179109" expanded="true" signature="1947:2014" ph="{...}" />
+            <marker date="1563441179109" expanded="true" signature="2061:2126" ph="{...}" />
+            <marker date="1563441179109" expanded="true" signature="2167:2231" ph="{...}" />
+            <marker date="1563441179109" expanded="true" signature="2264:2607" ph="{...}" />
+            <marker date="1563441179109" expanded="true" signature="2279:2443" ph="/* if (_currentStroopTextIndex == _currentStroopColorIndex) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Stroop Task/Assets/Scripts/Experiment/LableController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#91#0" expanded="true" />
+            <marker date="1563358222628" expanded="true" signature="136:315" ph="{...}" />
+            <marker date="1563358222628" expanded="true" signature="241:313" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CueController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <marker date="1573134981757" expanded="false" signature="6:148" ph="..." />
+            <marker date="1573134981757" expanded="true" signature="192:363" ph="{...}" />
+            <marker date="1573134981757" expanded="true" signature="294:361" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Stroop Task/Assets/Scripts/Experiment/ExperimentManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+          <folding>
+            <marker date="1563448135829" expanded="true" signature="145:4871" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="695:1268" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="1330:2619" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="1938:2590" ph="/* Debug.Log(string.Format(&quot;current stroop color is: {0}&quot;,stroopGenerator.GetCurrectStroopColor())); ... */" />
+            <marker date="1563448135829" expanded="true" signature="2684:3380" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="2758:3144" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="2875:2946" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="3062:3134" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="3157:3374" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="3302:3364" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="3412:3976" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="3474:3686" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="3699:3970" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="3861:3923" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="4011:4638" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="4075:4237" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="4250:4632" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="4469:4530" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="4695:4790" ph="{...}" />
+            <marker date="1563448135829" expanded="true" signature="4825:4869" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ExperimentManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <marker date="1573224162184" expanded="true" signature="6:140" ph="..." />
+            <marker date="1573224162184" expanded="true" signature="188:961" ph="{...}" />
+            <marker date="1573224162184" expanded="true" signature="363:559" ph="{...}" />
+            <marker date="1573224162184" expanded="true" signature="625:959" ph="{...}" />
+            <marker date="1573224162184" expanded="true" signature="790:901" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <marker date="1573226037396" expanded="true" signature="6:97" ph="..." />
+            <marker date="1573226037396" expanded="true" signature="141:377" ph="{...}" />
+            <marker date="1573226037396" expanded="true" signature="188:209" ph="{...}" />
+            <marker date="1573226037396" expanded="true" signature="267:375" ph="{...}" />
+            <marker date="1573226037396" expanded="true" signature="318:369" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

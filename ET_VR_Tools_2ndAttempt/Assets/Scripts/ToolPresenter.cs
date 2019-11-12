@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class ToolPresenter: MonoBehaviour
 {
-    public Rigidbody[] toolPrefabs;
+    public GameObject[] toolPrefabs;
     private Vector3 position;
     private Quaternion rotation;
 
     private void Start()
     {
-        position = new Vector3(0.5f, 1.549906f,0f);
+        position = new Vector3(0.5f, 1.549906f,0.0f);
         rotation = new Quaternion(0,0,0,0);
     }
 
-    void presentTool(Rigidbody tool)
+    void presentTool(GameObject tool)
     {
         // add position and rotation to Instantiated tool
-        var toolInstance = Instantiate(tool).GetComponent<Rigidbody>();
+        GameObject toolInstance = Instantiate(tool, position, rotation).GetComponent<GameObject>();
     }
 
     // Update is called once per frame
@@ -26,6 +26,9 @@ public class ToolPresenter: MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             presentTool(toolPrefabs[0]);
+        } else if (Input.GetKeyDown(KeyCode.A))
+        {
+            presentTool((toolPrefabs[1]));
         }
     }
 }

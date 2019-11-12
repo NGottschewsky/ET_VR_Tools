@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa4d0d8f-5c77-48d0-a6cd-2a13c98ab2e6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools_2ndAttempt/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools_2ndAttempt/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools_2ndAttempt/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools_2ndAttempt/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ExperimentScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ExperimentScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" beforeDir="false" afterPath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptMapper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/abcd9b-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/abcd9b-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/1edcef-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/1edcef-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/03/03d0538de6e24c0f819bfc9ce084dfa9" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/03/03d0538de6e24c0f819bfc9ce084dfa9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/04/04cc958f40f350044a432c012f320305" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/04/04cc958f40f350044a432c012f320305" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/06/066619c9c9c84f89acb1b48c11a7efe2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/06/066619c9c9c84f89acb1b48c11a7efe2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/06/06ae1baf5524b314fa65b173b9eca869" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/06/06ae1baf5524b314fa65b173b9eca869" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/09/09e68d8a529a36340b752b99a1b70f83" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/09/09e68d8a529a36340b752b99a1b70f83" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/0c/0c04c8cb23b78e04492e0f310cdee93e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/0c/0c04c8cb23b78e04492e0f310cdee93e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/0d/0d9a36012a224080966c7b55896aa0f9" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/0d/0d9a36012a224080966c7b55896aa0f9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/0f/0f71aeefaa877ae4787e8356f25ad1e5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/0f/0f71aeefaa877ae4787e8356f25ad1e5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/10/10bf81265ad87424d946598c575f45a0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/10/10bf81265ad87424d946598c575f45a0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/10/10c49fcd9c64421db7c0133e61e55f97" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/10/10c49fcd9c64421db7c0133e61e55f97" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/10/10c49fcd9c64421db7c0133e61e55f97.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/10/10c49fcd9c64421db7c0133e61e55f97.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/11/1167c0a28d11119930004d8a4241aa39" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/11/1167c0a28d11119930004d8a4241aa39" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/11/1167c0a28d11119930004d8a4241aa39.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/11/1167c0a28d11119930004d8a4241aa39.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/12/12736c98af174f91827a26b66d2b01b9" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/12/12736c98af174f91827a26b66d2b01b9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/16/16388ae022a89264b84107f0c1b44680" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/16/16388ae022a89264b84107f0c1b44680" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/17/17c350171f7a3ca479f830547c66d187" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/17/17c350171f7a3ca479f830547c66d187" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/17/17c350171f7a3ca479f830547c66d187.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/17/17c350171f7a3ca479f830547c66d187.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/17/17da6d53ec93a0444bd0f751b1d02477" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/17/17da6d53ec93a0444bd0f751b1d02477" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/17/17da6d53ec93a0444bd0f751b1d02477.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/17/17da6d53ec93a0444bd0f751b1d02477.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/18/18775b51e3bd42299fd30bd036ea982f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/18/18775b51e3bd42299fd30bd036ea982f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/19/19555d7d9d114c7f1100f5ab44295342" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/19/19555d7d9d114c7f1100f5ab44295342" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/19/19555d7d9d114c7f1100f5ab44295342.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/19/19555d7d9d114c7f1100f5ab44295342.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/1b/1b32bcce201b4494ea8848326290c5d5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/1b/1b32bcce201b4494ea8848326290c5d5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/1c/1cdc5b506b1a4a33a53c30669ced1f51" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/1c/1cdc5b506b1a4a33a53c30669ced1f51" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/22/22899211c24eeb248b22704499dd108f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/22/22899211c24eeb248b22704499dd108f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/23/23740055e2b119e40a939138ab8070f8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/23/23740055e2b119e40a939138ab8070f8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/23/23740055e2b119e40a939138ab8070f8.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/23/23740055e2b119e40a939138ab8070f8.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/23/23a02ac18d11c9ffa0009c58a8ad6659" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/23/23a02ac18d11c9ffa0009c58a8ad6659" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/23/23a02ac18d11c9ffa0009c58a8ad6659.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/23/23a02ac18d11c9ffa0009c58a8ad6659.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/28/283f897e4925411ebbaa758b4cb13fc2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/28/283f897e4925411ebbaa758b4cb13fc2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/28/28a0fb06640fd9f43a0199063234bdc6" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/28/28a0fb06640fd9f43a0199063234bdc6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/28/28a0fb06640fd9f43a0199063234bdc6.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/28/28a0fb06640fd9f43a0199063234bdc6.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/28/28e8b16370ff78c4faca58757271619f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/28/28e8b16370ff78c4faca58757271619f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/29/29bf1d4ec1012bc45967ce95b729b8b3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/29/29bf1d4ec1012bc45967ce95b729b8b3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/2b/2b5e9ae96c5644d8bae932f8b4ca68a2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/2b/2b5e9ae96c5644d8bae932f8b4ca68a2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/2b/2b5e9ae96c5644d8bae932f8b4ca68a2.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/2b/2b5e9ae96c5644d8bae932f8b4ca68a2.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/2c/2c29c08dd1c0b6749b7cd0fcff7a29fd" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/2c/2c29c08dd1c0b6749b7cd0fcff7a29fd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/2c/2c29c08dd1c0b6749b7cd0fcff7a29fd.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/2c/2c29c08dd1c0b6749b7cd0fcff7a29fd.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/2c/2ce5c55e85304b819a1826ecbc839aa5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/2c/2ce5c55e85304b819a1826ecbc839aa5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/2d/2d8485e4e3a2bcb429fc32900ca26d9e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/2d/2d8485e4e3a2bcb429fc32900ca26d9e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/2f/2fd6421f253b4ef1a19526541f9ffc0c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/2f/2fd6421f253b4ef1a19526541f9ffc0c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/31/3174898fbcdf12448963cdb5f5b60a33" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/31/3174898fbcdf12448963cdb5f5b60a33" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/31/31f5a8611c4ed1245b18456206e798dc" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/31/31f5a8611c4ed1245b18456206e798dc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/31/31f5a8611c4ed1245b18456206e798dc.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/31/31f5a8611c4ed1245b18456206e798dc.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/34/342a0f8aca7f4f0691338912faec0494" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/34/342a0f8aca7f4f0691338912faec0494" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/35/35ff0937876540d3bd4b6a941df62a92" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/35/35ff0937876540d3bd4b6a941df62a92" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/37/37472f5179ca2004489ac901814cdbc3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/37/37472f5179ca2004489ac901814cdbc3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/38/387ed7c38eb63554db846987adb98e68" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/38/387ed7c38eb63554db846987adb98e68" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/38/387ed7c38eb63554db846987adb98e68.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/38/387ed7c38eb63554db846987adb98e68.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/3a/3a5038547af7c7f46bd90a015862e0b3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/3a/3a5038547af7c7f46bd90a015862e0b3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/3c/3c01b61b3a6887c49a15276fd38be918" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/3c/3c01b61b3a6887c49a15276fd38be918" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/3e/3e99141cd5dbef844a4338bb87930b89" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/3e/3e99141cd5dbef844a4338bb87930b89" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/3e/3ee40aa79cd242a5b53b0b0ca4f13f0f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/3e/3ee40aa79cd242a5b53b0b0ca4f13f0f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/3f/3f2d5283241d80b41aa901ea891e58ba" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/3f/3f2d5283241d80b41aa901ea891e58ba" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/3f/3f2d5283241d80b41aa901ea891e58ba.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/3f/3f2d5283241d80b41aa901ea891e58ba.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/40/405b9b51bb344a128608d968297df79c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/40/405b9b51bb344a128608d968297df79c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/41/4113173d5e95493ab8765d7b08371de4" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/41/4113173d5e95493ab8765d7b08371de4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/41/41b96614b2e6494ba995ddcd252d11ae" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/41/41b96614b2e6494ba995ddcd252d11ae" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/45/4584db2acba045742a16942983e7fb96" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/45/4584db2acba045742a16942983e7fb96" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/46/468e1bfc887161e4196f33e942fc3199" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/46/468e1bfc887161e4196f33e942fc3199" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/48/48967a2d5427ac2489cc0ea61da5f1a0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/48/48967a2d5427ac2489cc0ea61da5f1a0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/48/48d034c499ee4697af9dd6e327110249" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/48/48d034c499ee4697af9dd6e327110249" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/49/49679f302ac6408697f6b9314a38985c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/49/49679f302ac6408697f6b9314a38985c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4a/4a056241e2722dc46a7262a8e7073fd9" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4a/4a056241e2722dc46a7262a8e7073fd9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4a/4a056241e2722dc46a7262a8e7073fd9.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4a/4a056241e2722dc46a7262a8e7073fd9.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4a/4a0757ee0236f39489520769ae710288" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4a/4a0757ee0236f39489520769ae710288" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4a/4ad09461bf994e54da846f726a23118e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4a/4ad09461bf994e54da846f726a23118e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4b/4b3fa4bde7f1451a8218c03ee6a8ded8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4b/4b3fa4bde7f1451a8218c03ee6a8ded8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4b/4b8d081e9d114c7f1100f5ab44295342" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4b/4b8d081e9d114c7f1100f5ab44295342" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4b/4b8d081e9d114c7f1100f5ab44295342.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4b/4b8d081e9d114c7f1100f5ab44295342.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4b/4ba2329b63d54f0187bcaa12486b1b0f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4b/4ba2329b63d54f0187bcaa12486b1b0f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4c/4c1821c1816c6fa44967b8ecb79ea7e4" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4c/4c1821c1816c6fa44967b8ecb79ea7e4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4c/4c6f60d349ea37048af03504fc872f33" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4c/4c6f60d349ea37048af03504fc872f33" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4c/4ccf43d26c4748c792174516f4a8fcef" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4c/4ccf43d26c4748c792174516f4a8fcef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4c/4ccf43d26c4748c792174516f4a8fcef.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4c/4ccf43d26c4748c792174516f4a8fcef.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/51/51dc82ef9d11c594d000e7c9e39e7c39" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/51/51dc82ef9d11c594d000e7c9e39e7c39" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/51/51dc82ef9d11c594d000e7c9e39e7c39.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/51/51dc82ef9d11c594d000e7c9e39e7c39.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/52/529239097d02f9f42b0ddd436c6fcbb0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/52/529239097d02f9f42b0ddd436c6fcbb0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/52/529239097d02f9f42b0ddd436c6fcbb0.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/52/529239097d02f9f42b0ddd436c6fcbb0.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/53/53ebcfaa2e1e4e2dbc85882cd5a73fa1" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/53/53ebcfaa2e1e4e2dbc85882cd5a73fa1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/56/5673d7b11cb9ad04eb2368068b720c17" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/56/5673d7b11cb9ad04eb2368068b720c17" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/57/57ff740bce4ab0c498ada374a8ca1dc0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/57/57ff740bce4ab0c498ada374a8ca1dc0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/58/585b70cb75dd43efbfead809c30a1731" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/58/585b70cb75dd43efbfead809c30a1731" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/59/5954f0b71fc7e0040afc92d0c49cc027" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/59/5954f0b71fc7e0040afc92d0c49cc027" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/59/5954f0b71fc7e0040afc92d0c49cc027.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/59/5954f0b71fc7e0040afc92d0c49cc027.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/59/599a5fd92bab81a4ab02e52d0b1b1c60" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/59/599a5fd92bab81a4ab02e52d0b1b1c60" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/5a/5a7f0d89a47f18c41b6ddf60dfae1bde" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5a/5a7f0d89a47f18c41b6ddf60dfae1bde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/5b/5b00473355622524394628f7ec51808d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5b/5b00473355622524394628f7ec51808d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/5b/5ba130fc1db953547a50bcf5c162a3e8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5b/5ba130fc1db953547a50bcf5c162a3e8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/5e/5e7c9ab97e5884e4eaa5967e9024f39d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5e/5e7c9ab97e5884e4eaa5967e9024f39d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/60/602cb87b6a29443b8636370ea0751574" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/60/602cb87b6a29443b8636370ea0751574" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/60/602cb87b6a29443b8636370ea0751574.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/60/602cb87b6a29443b8636370ea0751574.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/62/6205c27cc031f4e66b8ea90d1bfaa158" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/62/6205c27cc031f4e66b8ea90d1bfaa158" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/62/6205c27cc031f4e66b8ea90d1bfaa158.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/62/6205c27cc031f4e66b8ea90d1bfaa158.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/64/641bb2dce818a8a499b537a1963889ac" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/64/641bb2dce818a8a499b537a1963889ac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/64/641bb2dce818a8a499b537a1963889ac.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/64/641bb2dce818a8a499b537a1963889ac.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/64/64b9fad609434c489c32b1cdf2004a1c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/64/64b9fad609434c489c32b1cdf2004a1c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/67/67e9c6cf60c57a54f9f4db1bc33fd2e3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/67/67e9c6cf60c57a54f9f4db1bc33fd2e3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/68/68386fc9897223346a683105b4dc1662" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/68/68386fc9897223346a683105b4dc1662" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/68/68386fc9897223346a683105b4dc1662.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/68/68386fc9897223346a683105b4dc1662.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/69/691475c57a824010be0c6f474caeb7e1" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/69/691475c57a824010be0c6f474caeb7e1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/69/69680b688d11eb9d30009b3b4241aa39" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/69/69680b688d11eb9d30009b3b4241aa39" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/69/69680b688d11eb9d30009b3b4241aa39.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/69/69680b688d11eb9d30009b3b4241aa39.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/6a/6ace62d30f494c948b71d5594afce11d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/6a/6ace62d30f494c948b71d5594afce11d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/6c/6c61ba0c209bcc74f83e3650039ebdf9" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/6c/6c61ba0c209bcc74f83e3650039ebdf9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/6d/6d768b1bb52e2c64ba818933dbdd8452" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/6d/6d768b1bb52e2c64ba818933dbdd8452" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/6e/6eb184de103d4b3f812b38561065192f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/6e/6eb184de103d4b3f812b38561065192f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/70/70b265ed18dc14041bedc0263d4578ef" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/70/70b265ed18dc14041bedc0263d4578ef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/76/7631f4eff8f74ed38eb3eb9db17134e1" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/76/7631f4eff8f74ed38eb3eb9db17134e1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/7a/7a632f967e8ad42f5bd275898151ab6a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/7a/7a632f967e8ad42f5bd275898151ab6a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/7a/7a632f967e8ad42f5bd275898151ab6a.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/7a/7a632f967e8ad42f5bd275898151ab6a.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/80/80a3616ca19596e4da0f10f14d241e9f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/80/80a3616ca19596e4da0f10f14d241e9f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/81/81ed8c76d2bc4a4c95d092c98af4e58f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/81/81ed8c76d2bc4a4c95d092c98af4e58f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/85/85ac55597b97403c82fc6601a93cf241" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/85/85ac55597b97403c82fc6601a93cf241" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/85/85ac55597b97403c82fc6601a93cf241.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/85/85ac55597b97403c82fc6601a93cf241.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/86/8620e97e7e9859049934889a52248435" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/86/8620e97e7e9859049934889a52248435" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/88/8878a782f4334ecbbcf683b3ac780966" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/88/8878a782f4334ecbbcf683b3ac780966" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/88/8878a782f4334ecbbcf683b3ac780966.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/88/8878a782f4334ecbbcf683b3ac780966.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/8b/8b7d06780fca6fc4384580d3ebed9219" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/8b/8b7d06780fca6fc4384580d3ebed9219" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/8b/8bc445bb79654bf496c92d0407840a92" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/8b/8bc445bb79654bf496c92d0407840a92" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/8c/8caa437b19957a045866b84c6218a0db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/8c/8caa437b19957a045866b84c6218a0db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/8c/8caa437b19957a045866b84c6218a0db.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/8c/8caa437b19957a045866b84c6218a0db.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/91/919d97c1a707113409177d498d31cf51" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/91/919d97c1a707113409177d498d31cf51" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/92/92027f7f8cfc4feaa477da0dc38d3d46" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/92/92027f7f8cfc4feaa477da0dc38d3d46" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/92/9288066c33474b94b6ee5465f4df1cc0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/92/9288066c33474b94b6ee5465f4df1cc0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/95/95ef4804fe0be4c999ddaa383536cde8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/95/95ef4804fe0be4c999ddaa383536cde8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/95/95ef4804fe0be4c999ddaa383536cde8.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/95/95ef4804fe0be4c999ddaa383536cde8.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/97/970e7735a0864fd40842a36d053d08fe" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/97/970e7735a0864fd40842a36d053d08fe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/98/985eed4bc2fbee941b761b8816d9055d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/98/985eed4bc2fbee941b761b8816d9055d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/9a/9a6069768ff3d8043a79348813f86cba" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/9a/9a6069768ff3d8043a79348813f86cba" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/9b/9b4f21acd14fdd445b37b76f6587539e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/9b/9b4f21acd14fdd445b37b76f6587539e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/9b/9bc2b69915879416f8df18971dc98e2e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/9b/9bc2b69915879416f8df18971dc98e2e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/9b/9bf0d6a55b9ac474b83735882859ecad" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/9b/9bf0d6a55b9ac474b83735882859ecad" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/9b/9bf0d6a55b9ac474b83735882859ecad.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/9b/9bf0d6a55b9ac474b83735882859ecad.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/9d/9d816a6ab06c6834480f5f45f440e287" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/9d/9d816a6ab06c6834480f5f45f440e287" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a0/a0fc465d6cf04254a2938578735e2383" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a0/a0fc465d6cf04254a2938578735e2383" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a1/a181ca8e3c62f3e4b8f183f6c586b032" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a1/a181ca8e3c62f3e4b8f183f6c586b032" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a1/a181ca8e3c62f3e4b8f183f6c586b032.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a1/a181ca8e3c62f3e4b8f183f6c586b032.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a4/a4b474cd484494a4aaa4bbf928219d09" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a4/a4b474cd484494a4aaa4bbf928219d09" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a4/a4b474cd484494a4aaa4bbf928219d09.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a4/a4b474cd484494a4aaa4bbf928219d09.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a4/a4cdca73d61814d33ac1587f6c163bca" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a4/a4cdca73d61814d33ac1587f6c163bca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a4/a4cdca73d61814d33ac1587f6c163bca.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a4/a4cdca73d61814d33ac1587f6c163bca.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a7/a73ebdb6c1006364f8c7b37dc53d8ab7" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a7/a73ebdb6c1006364f8c7b37dc53d8ab7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a7/a7ec9e7ad8b847b7ae4510af83c5d868" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a7/a7ec9e7ad8b847b7ae4510af83c5d868" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a9/a956e5803e95df349bd35832492d4014" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a9/a956e5803e95df349bd35832492d4014" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/af/afeb55855d7a63b45ba6f8bd97599202" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/af/afeb55855d7a63b45ba6f8bd97599202" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b1/b124f0b8ca43e6e46bdc0322fad15ea3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b1/b124f0b8ca43e6e46bdc0322fad15ea3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b1/b1d7fee26e54cc3498f6267f072a45b9" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b1/b1d7fee26e54cc3498f6267f072a45b9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b1/b1d7fee26e54cc3498f6267f072a45b9.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b1/b1d7fee26e54cc3498f6267f072a45b9.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b3/b33687803b08daf418e5315de17658b8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b3/b33687803b08daf418e5315de17658b8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b5/b57629d89799e004182564256307b0cc" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b5/b57629d89799e004182564256307b0cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b7/b7cabea05434bb9479aee1e121b0d103" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b7/b7cabea05434bb9479aee1e121b0d103" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b8/b8046f5b741868b458cdb9b358311fa1" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b8/b8046f5b741868b458cdb9b358311fa1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b8/b8c5993172f27e4419d7d4ed5ef77840" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b8/b8c5993172f27e4419d7d4ed5ef77840" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b9/b995d4bd9d11078d11005b9844295342" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b9/b995d4bd9d11078d11005b9844295342" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b9/b995d4bd9d11078d11005b9844295342.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b9/b995d4bd9d11078d11005b9844295342.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b9/b9d7bb79ed0c2854a8a5ed7decc3e44f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b9/b9d7bb79ed0c2854a8a5ed7decc3e44f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/bb/bb42b2d967d6427983c901a4ffc8ecd9" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/bb/bb42b2d967d6427983c901a4ffc8ecd9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/bb/bb8dfcd263ad4eb383a33d74a720be6f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/bb/bb8dfcd263ad4eb383a33d74a720be6f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/bc/bc1b58c76938d7b4eb21b3d3d6b61e2e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/bc/bc1b58c76938d7b4eb21b3d3d6b61e2e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/bd/bd3ffb9a97575a44a82f9ca086813154" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/bd/bd3ffb9a97575a44a82f9ca086813154" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/bd/bdb4f6935641b574b984da8dc27cab45" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/bd/bdb4f6935641b574b984da8dc27cab45" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/c2/c2f7f6a88b4c4f20a53deb72f3d9144c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c2/c2f7f6a88b4c4f20a53deb72f3d9144c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/c7/c76700ea0062413d9f69409b4e9e151b" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c7/c76700ea0062413d9f69409b4e9e151b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/c7/c76d18757a194d618355f05f815cb0a1" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c7/c76d18757a194d618355f05f815cb0a1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ca/ca51b19024094d1b87f3e07edb0a75fb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ca/ca51b19024094d1b87f3e07edb0a75fb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ca/cae60a41b37427b48a00027b3e0fc1e6" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ca/cae60a41b37427b48a00027b3e0fc1e6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/cc/cce613d1538e76a4785658931c7db093" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/cc/cce613d1538e76a4785658931c7db093" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d0/d029640460cf8ff47bbbfe69f49ddf29" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d0/d029640460cf8ff47bbbfe69f49ddf29" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d0/d0cd29fb1ad218b48b814bc3e6d8ac0e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d0/d0cd29fb1ad218b48b814bc3e6d8ac0e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d1/d19b75372f4e44d4fa4b2cffbb54124b" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d1/d19b75372f4e44d4fa4b2cffbb54124b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d4/d40a0edbdcdcf9747a420f3bbe0f18db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d4/d40a0edbdcdcf9747a420f3bbe0f18db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d4/d440902fad11e807d00044888d76c639" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d4/d440902fad11e807d00044888d76c639" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d4/d440902fad11e807d00044888d76c639.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d4/d440902fad11e807d00044888d76c639.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d7/d79cb9ecc0d4a6d428ab98a681a33897" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d7/d79cb9ecc0d4a6d428ab98a681a33897" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/db/db34f310723c62440a05d3e69f262a70" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/db/db34f310723c62440a05d3e69f262a70" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/de/de86b4ed8106fd84a8bc2f5d69798d53" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/de/de86b4ed8106fd84a8bc2f5d69798d53" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/de/de9eb5e2046ffc9448f07e495c436506" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/de/de9eb5e2046ffc9448f07e495c436506" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/de/dec586c160776104da4d9a4e472662bc" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/de/dec586c160776104da4d9a4e472662bc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/df/df8df80bb65e9ec4280229a9921c4f3c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/df/df8df80bb65e9ec4280229a9921c4f3c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/df/dffef66376be4fa480fb02b19edbe903" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/df/dffef66376be4fa480fb02b19edbe903" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/df/dffef66376be4fa480fb02b19edbe903.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/df/dffef66376be4fa480fb02b19edbe903.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e0/e01fae955989895469979d2252b465ef" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e0/e01fae955989895469979d2252b465ef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e0/e01fae955989895469979d2252b465ef.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e0/e01fae955989895469979d2252b465ef.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e0/e05ace3bd15740cda0bad60d89092a5b" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e0/e05ace3bd15740cda0bad60d89092a5b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e0/e08c295755c0885479ad19f518286ff2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e0/e08c295755c0885479ad19f518286ff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e0/e08c295755c0885479ad19f518286ff2.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e0/e08c295755c0885479ad19f518286ff2.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e0/e091bb444874ef244b1ba4a813fc1e34" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e0/e091bb444874ef244b1ba4a813fc1e34" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e1/e177382a693dea644acd34e3e7a3feb3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e1/e177382a693dea644acd34e3e7a3feb3.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e3/e3b0f810fdea84e40ab4ba20f256f7e8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e3/e3b0f810fdea84e40ab4ba20f256f7e8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e6/e62aa7035ea66c94b90b2d8774d02cca" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e6/e62aa7035ea66c94b90b2d8774d02cca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e6/e62aa7035ea66c94b90b2d8774d02cca.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e6/e62aa7035ea66c94b90b2d8774d02cca.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e7/e74ddf4132f3401409c824bed60280ee" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e7/e74ddf4132f3401409c824bed60280ee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e7/e763a90581e2d8143bc9a0e384ce6f0f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e7/e763a90581e2d8143bc9a0e384ce6f0f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e8/e80c3c84ea861404d8a427db8b7abf04" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e8/e80c3c84ea861404d8a427db8b7abf04" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e8/e80c3c84ea861404d8a427db8b7abf04.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e8/e80c3c84ea861404d8a427db8b7abf04.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e9/e9a9781cad112c75d0008dfa8d76c639" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e9/e9a9781cad112c75d0008dfa8d76c639" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e9/e9a9781cad112c75d0008dfa8d76c639.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e9/e9a9781cad112c75d0008dfa8d76c639.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ea/ea998292f45ea494d9e100f5f6362f91" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ea/ea998292f45ea494d9e100f5f6362f91" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ec/ec7c645d93308c04d8840982af12101e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ec/ec7c645d93308c04d8840982af12101e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ec/ec817e5e5781e0a4983a1dc8875d1974" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ec/ec817e5e5781e0a4983a1dc8875d1974" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ec/ecd9a2c463dcb476891e43d7c9f16ffa" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ec/ecd9a2c463dcb476891e43d7c9f16ffa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ec/ecd9a2c463dcb476891e43d7c9f16ffa.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ec/ecd9a2c463dcb476891e43d7c9f16ffa.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ed/ed041e68439749a69d0efa0e3d896c2e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ed/ed041e68439749a69d0efa0e3d896c2e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ed/ed5290d8df18488780e2996b9b882f01" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ed/ed5290d8df18488780e2996b9b882f01" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ee/ee148e281f3c41c5b4ff5f8a5afe5a6c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ee/ee148e281f3c41c5b4ff5f8a5afe5a6c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ef/efcf753a96a07b24dbe5f23a8ad5963d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ef/efcf753a96a07b24dbe5f23a8ad5963d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f4/f4f988528bbbb0846a4cb50efb4587a5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f4/f4f988528bbbb0846a4cb50efb4587a5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f5/f5f67c52d1564df4a8936ccd202a3bd8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f5/f5f67c52d1564df4a8936ccd202a3bd8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f6/f601c0d674119f74db9c15166b3a58c4" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f6/f601c0d674119f74db9c15166b3a58c4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f6/f68c7f7359094f045930a108c444e7a4" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f6/f68c7f7359094f045930a108c444e7a4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f6/f6bd368ab00d75c459e2582e017191e6" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f6/f6bd368ab00d75c459e2582e017191e6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f6/f6d64d8648793944dbadfd71f0f4b0a1" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f6/f6d64d8648793944dbadfd71f0f4b0a1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f7/f70555f144d8491a825f0804e09c671c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f7/f70555f144d8491a825f0804e09c671c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f8/f8730045d7da0f84cb11c0d868899577" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f8/f8730045d7da0f84cb11c0d868899577" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f8/f88677df267a41d6be1e7a6133e7d227" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f8/f88677df267a41d6be1e7a6133e7d227" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/fa/fa6bd40a216346b783a4cce741d277a5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fa/fa6bd40a216346b783a4cce741d277a5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/fb/fb5730e24283d0c489e5c7d0bee023d9" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fb/fb5730e24283d0c489e5c7d0bee023d9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/fc/fc00ec05a89da4ff695a4273715cd5ce" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fc/fc00ec05a89da4ff695a4273715cd5ce" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/fc/fc00ec05a89da4ff695a4273715cd5ce.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fc/fc00ec05a89da4ff695a4273715cd5ce.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/fd/fd09957580ac4326916010f1f260975b" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fd/fd09957580ac4326916010f1f260975b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/fd/fd09957580ac4326916010f1f260975b.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fd/fd09957580ac4326916010f1f260975b.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ff/ff97302ee78d6ad478b433ec557ee303" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ff/ff97302ee78d6ad478b433ec557ee303" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ff/ffa9c02760c2b4e8eb9814ec06c4b05b" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ff/ffa9c02760c2b4e8eb9814ec06c4b05b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ff/ffa9c02760c2b4e8eb9814ec06c4b05b.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ff/ffa9c02760c2b4e8eb9814ec06c4b05b.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ff/ffcbe86028d681144b703991885c535a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ff/ffcbe86028d681144b703991885c535a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <marker date="1573559295275" expanded="true" signature="6:78" ph="..." />
+                <marker date="1573559295275" expanded="true" signature="121:714" ph="{...}" />
+                <marker date="1573559295275" expanded="true" signature="248:356" ph="{...}" />
+                <marker date="1573559295275" expanded="true" signature="394:536" ph="{...}" />
+                <marker date="1573559295275" expanded="true" signature="594:712" ph="{...}" />
+                <marker date="1573559295275" expanded="true" signature="645:706" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Experiment/ToolPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="412" />
+    <option name="y" value="47" />
+    <option name="width" value="1093" />
+    <option name="height" value="1167" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa4d0d8f-5c77-48d0-a6cd-2a13c98ab2e6" name="Default Changelist" comment="" />
+      <created>1573554172353</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573554172353</updated>
+      <workItem from="1573554174718" duration="521000" />
+      <workItem from="1573554791800" duration="1401000" />
+      <workItem from="1573558155202" duration="1161000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3083000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="412" y="47" width="1093" height="1167" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2594385" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Unity" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Unit Tests" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Experiment/ToolPresenter.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <marker date="1573559295275" expanded="true" signature="6:78" ph="..." />
+            <marker date="1573559295275" expanded="true" signature="121:714" ph="{...}" />
+            <marker date="1573559295275" expanded="true" signature="248:356" ph="{...}" />
+            <marker date="1573559295275" expanded="true" signature="394:536" ph="{...}" />
+            <marker date="1573559295275" expanded="true" signature="594:712" ph="{...}" />
+            <marker date="1573559295275" expanded="true" signature="645:706" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

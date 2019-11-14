@@ -407,7 +407,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1905686898}
-  - component: {fileID: 1905686897}
   - component: {fileID: 1905686899}
   m_Layer: 0
   m_Name: Tool
@@ -416,21 +415,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1905686897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1905686896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2be03d35d90440247b0411a733a358cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toolPrefabs:
-  - {fileID: 2923763908425596930, guid: 97137fc3118441a40bf489246c0ca836, type: 3}
-  - {fileID: 1000010671269162, guid: 537ab85af9f24fe42aeca34f12e70e40, type: 3}
 --- !u!4 &1905686898
 Transform:
   m_ObjectHideFlags: 0
@@ -457,6 +441,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d85048efd9198743b9c04e00c67a6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toolOrder:
+  - 1
+  - 2
 --- !u!1001 &8181118484267709322
 PrefabInstance:
   m_ObjectHideFlags: 0

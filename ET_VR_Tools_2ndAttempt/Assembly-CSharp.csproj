@@ -105,7 +105,6 @@
     <Compile Include="Assets\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
     <Compile Include="Assets\Scripts\ToolController.cs" />
     <Compile Include="Assets\Scripts\ToolManager.cs" />
-    <Compile Include="Assets\Scripts\ToolPresenter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

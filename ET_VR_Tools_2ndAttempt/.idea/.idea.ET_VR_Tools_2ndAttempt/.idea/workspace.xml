@@ -4,25 +4,16 @@
     <list default="true" id="aa4d0d8f-5c77-48d0-a6cd-2a13c98ab2e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools_2ndAttempt/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools_2ndAttempt/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools_2ndAttempt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools_2ndAttempt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Imported/Screwdriver_Cross.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Imported/Screwdriver_Cross.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Own/Cube.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Own/Cube.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ExperimentScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ExperimentScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToolController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToolManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/abcd9b-97137fc3118441a40b.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/abcd9b-97137fc3118441a40b.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/abcd9b-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/abcd9b-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/1edcef-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/1edcef-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/2b/2be03d35d90440247b0411a733a358cf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/2b/2be03d35d90440247b0411a733a358cf.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/4d/4d85048efd9198743b9c04e00c67a6d8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4d/4d85048efd9198743b9c04e00c67a6d8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/53/537ab85af9f24fe42aeca34f12e70e40" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/53/537ab85af9f24fe42aeca34f12e70e40" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/97/97137fc3118441a40bf489246c0ca836" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/97/97137fc3118441a40bf489246c0ca836" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/f9/f94b6c870fa68a34b91ab4248d2c60af" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f9/f94b6c870fa68a34b91ab4248d2c60af" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExperimentLoopMatrixTest - Tabellenblatt1.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="90">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <marker date="1573742761552" expanded="false" signature="6:130" ph="..." />
                 <marker date="1573742761552" expanded="true" signature="175:201" ph="{...}" />
@@ -45,30 +36,81 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="63" column="74" lean-forward="true" selection-start-line="63" selection-start-column="74" selection-end-line="63" selection-end-column="74" />
+            <state relative-caret-position="810">
+              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
               <folding>
-                <marker date="1573744918075" expanded="true" signature="6:153" ph="..." />
-                <marker date="1573744918075" expanded="true" signature="195:3408" ph="{...}" />
-                <marker date="1573744918075" expanded="true" signature="202:444" ph="/* ToolController als Klasse, die die ID des jeweiligen Tools ... */" />
-                <marker date="1573744918075" expanded="true" signature="609:772" ph="/* Die Reihenfolge, in der die Tools präsentiert werden sollen. ... */" />
-                <marker date="1573744918075" expanded="true" signature="938:1082" ph="/* this should be an attribute of another class of which the tools are objects ... */" />
-                <marker date="1573744918075" expanded="true" signature="1154:1487" ph="{...}" />
-                <marker date="1573744918075" expanded="true" signature="1294:1381" ph="{...}" />
-                <marker date="1573744918075" expanded="true" signature="1538:2705" ph="{...}" />
-                <marker date="1573744918075" expanded="true" signature="1553:2052" ph="/* Wenn ich auf diese Art eine Variable initialisiere, werden mir davon hunderte ... */" />
-                <marker date="1573744918075" expanded="true" signature="2157:2633" ph="{...}" />
-                <marker date="1573744918075" expanded="true" signature="2203:2515" ph="{...}" />
-                <marker date="1573744918075" expanded="true" signature="2395:2470" ph="{...}" />
-                <marker date="1573744918075" expanded="true" signature="2532:2610" ph="{...}" />
-                <marker date="1573744918075" expanded="true" signature="2760:3029" ph="{...}" />
-                <marker date="1573744918075" expanded="true" signature="2874:3022" ph="{...}" />
-                <marker date="1573744918075" expanded="true" signature="3065:3406" ph="{...}" />
-                <marker date="1573744918075" expanded="true" signature="3106:3178" ph="{...}" />
-                <marker date="1573744918075" expanded="true" signature="3264:3400" ph="{...}" />
+                <marker date="1574175390130" expanded="false" signature="6:213" ph="..." />
+                <marker date="1574175390130" expanded="true" signature="255:4926" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="262:504" ph="/* ToolController als Klasse, die die ID des jeweiligen Tools ... */" />
+                <marker date="1574175390130" expanded="true" signature="679:842" ph="/* Die Reihenfolge, in der die Tools präsentiert werden sollen. ... */" />
+                <marker date="1574175390130" expanded="true" signature="1179:1323" ph="/* Sagt an, ob bereits ein Tool zu sehen ist oder nicht. ... */" />
+                <marker date="1574175390130" expanded="true" signature="1400:2035" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="1549:1636" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="1850:2029" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="1926:2019" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="2086:3272" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="2101:2600" ph="/* Wenn ich auf diese Art eine Variable initialisiere, werden mir davon hunderte ... */" />
+                <marker date="1574175390130" expanded="true" signature="2723:3200" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="2769:3082" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="2962:3037" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="3099:3177" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="3327:3596" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="3441:3589" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="3685:4538" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="3740:4434" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="3834:4424" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="3926:4410" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="3995:4392" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="4127:4370" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="4462:4532" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="4574:4924" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="4615:4687" ph="{...}" />
+                <marker date="1574175390130" expanded="true" signature="4773:4909" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+              <folding>
+                <marker date="1574176058914" expanded="false" signature="6:97" ph="..." />
+                <marker date="1574176058914" expanded="true" signature="140:1263" ph="{...}" />
+                <marker date="1574176058914" expanded="true" signature="278:486" ph="/* private ToolPresenter toolPresenter = gameObject.AddComponent&lt;ToolPresenter&gt;; ... */" />
+                <marker date="1574176058914" expanded="true" signature="503:768" ph="{...}" />
+                <marker date="1574176058914" expanded="true" signature="675:762" ph="{...}" />
+                <marker date="1574176058914" expanded="true" signature="835:1081" ph="{...}" />
+                <marker date="1574176058914" expanded="true" signature="878:1010" ph="{...}" />
+                <marker date="1574176058914" expanded="true" signature="939:1000" ph="{...}" />
+                <marker date="1574176058914" expanded="true" signature="1139:1261" ph="{...}" />
+                <marker date="1574176058914" expanded="true" signature="1181:1255" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <folding>
+                <marker date="1574174556171" expanded="true" signature="6:171" ph="..." />
+                <marker date="1574174556171" expanded="true" signature="214:1315" ph="{...}" />
+                <marker date="1574174556171" expanded="true" signature="458:470" ph="{...}" />
+                <marker date="1574174556171" expanded="true" signature="516:561" ph="{...}" />
+                <marker date="1574174556171" expanded="true" signature="588:726" ph="{...}" />
+                <marker date="1574174556171" expanded="true" signature="777:1000" ph="{...}" />
+                <marker date="1574174556171" expanded="true" signature="808:994" ph="{...}" />
+                <marker date="1574174556171" expanded="true" signature="1024:1305" ph="{...}" />
+                <marker date="1574174556171" expanded="true" signature="1075:1167" ph="{...}" />
+                <marker date="1574174556171" expanded="true" signature="1205:1299" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -76,20 +118,29 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ToolController</find>
+      <find>_isPresent</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ToolManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ToolController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Experiment/ToolPresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ToolController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ToolManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" />
       </list>
     </option>
   </component>
@@ -105,15 +156,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -167,11 +218,14 @@
       <workItem from="1573723068966" duration="5463000" />
       <workItem from="1573731107281" duration="60000" />
       <workItem from="1573739222437" duration="5881000" />
+      <workItem from="1574154975311" duration="6016000" />
+      <workItem from="1574169390479" duration="329000" />
+      <workItem from="1574170302849" duration="5677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17115000" />
+    <option name="totallyTimeSpent" value="29137000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -185,7 +239,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15405117" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15884861" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -196,15 +250,15 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32981783" />
       <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" weight="0.32981783" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Unity" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32981783" />
+      <window_info anchor="bottom" id="Unity" order="11" weight="0.32981783" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Unit Tests" order="13" />
-      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="bottom" id="Unit Tests" order="13" weight="0.32981783" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="14" visible="true" weight="0.10354746" />
       <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -220,6 +274,32 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -232,17 +312,10 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Experiment/ToolPresenter.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state relative-caret-position="90">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <marker date="1573742761552" expanded="false" signature="6:130" ph="..." />
             <marker date="1573742761552" expanded="true" signature="175:201" ph="{...}" />
@@ -252,27 +325,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="63" column="74" lean-forward="true" selection-start-line="63" selection-start-column="74" selection-end-line="63" selection-end-column="74" />
+        <state relative-caret-position="810">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
           <folding>
-            <marker date="1573744918075" expanded="true" signature="6:153" ph="..." />
-            <marker date="1573744918075" expanded="true" signature="195:3408" ph="{...}" />
-            <marker date="1573744918075" expanded="true" signature="202:444" ph="/* ToolController als Klasse, die die ID des jeweiligen Tools ... */" />
-            <marker date="1573744918075" expanded="true" signature="609:772" ph="/* Die Reihenfolge, in der die Tools präsentiert werden sollen. ... */" />
-            <marker date="1573744918075" expanded="true" signature="938:1082" ph="/* this should be an attribute of another class of which the tools are objects ... */" />
-            <marker date="1573744918075" expanded="true" signature="1154:1487" ph="{...}" />
-            <marker date="1573744918075" expanded="true" signature="1294:1381" ph="{...}" />
-            <marker date="1573744918075" expanded="true" signature="1538:2705" ph="{...}" />
-            <marker date="1573744918075" expanded="true" signature="1553:2052" ph="/* Wenn ich auf diese Art eine Variable initialisiere, werden mir davon hunderte ... */" />
-            <marker date="1573744918075" expanded="true" signature="2157:2633" ph="{...}" />
-            <marker date="1573744918075" expanded="true" signature="2203:2515" ph="{...}" />
-            <marker date="1573744918075" expanded="true" signature="2395:2470" ph="{...}" />
-            <marker date="1573744918075" expanded="true" signature="2532:2610" ph="{...}" />
-            <marker date="1573744918075" expanded="true" signature="2760:3029" ph="{...}" />
-            <marker date="1573744918075" expanded="true" signature="2874:3022" ph="{...}" />
-            <marker date="1573744918075" expanded="true" signature="3065:3406" ph="{...}" />
-            <marker date="1573744918075" expanded="true" signature="3106:3178" ph="{...}" />
-            <marker date="1573744918075" expanded="true" signature="3264:3400" ph="{...}" />
+            <marker date="1574175390130" expanded="false" signature="6:213" ph="..." />
+            <marker date="1574175390130" expanded="true" signature="255:4926" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="262:504" ph="/* ToolController als Klasse, die die ID des jeweiligen Tools ... */" />
+            <marker date="1574175390130" expanded="true" signature="679:842" ph="/* Die Reihenfolge, in der die Tools präsentiert werden sollen. ... */" />
+            <marker date="1574175390130" expanded="true" signature="1179:1323" ph="/* Sagt an, ob bereits ein Tool zu sehen ist oder nicht. ... */" />
+            <marker date="1574175390130" expanded="true" signature="1400:2035" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="1549:1636" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="1850:2029" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="1926:2019" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="2086:3272" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="2101:2600" ph="/* Wenn ich auf diese Art eine Variable initialisiere, werden mir davon hunderte ... */" />
+            <marker date="1574175390130" expanded="true" signature="2723:3200" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="2769:3082" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="2962:3037" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="3099:3177" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="3327:3596" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="3441:3589" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="3685:4538" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="3740:4434" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="3834:4424" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="3926:4410" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="3995:4392" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="4127:4370" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="4462:4532" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="4574:4924" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="4615:4687" ph="{...}" />
+            <marker date="1574175390130" expanded="true" signature="4773:4909" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <marker date="1574174556171" expanded="true" signature="6:171" ph="..." />
+            <marker date="1574174556171" expanded="true" signature="214:1315" ph="{...}" />
+            <marker date="1574174556171" expanded="true" signature="458:470" ph="{...}" />
+            <marker date="1574174556171" expanded="true" signature="516:561" ph="{...}" />
+            <marker date="1574174556171" expanded="true" signature="588:726" ph="{...}" />
+            <marker date="1574174556171" expanded="true" signature="777:1000" ph="{...}" />
+            <marker date="1574174556171" expanded="true" signature="808:994" ph="{...}" />
+            <marker date="1574174556171" expanded="true" signature="1024:1305" ph="{...}" />
+            <marker date="1574174556171" expanded="true" signature="1075:1167" ph="{...}" />
+            <marker date="1574174556171" expanded="true" signature="1205:1299" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <marker date="1574176058914" expanded="false" signature="6:97" ph="..." />
+            <marker date="1574176058914" expanded="true" signature="140:1263" ph="{...}" />
+            <marker date="1574176058914" expanded="true" signature="278:486" ph="/* private ToolPresenter toolPresenter = gameObject.AddComponent&lt;ToolPresenter&gt;; ... */" />
+            <marker date="1574176058914" expanded="true" signature="503:768" ph="{...}" />
+            <marker date="1574176058914" expanded="true" signature="675:762" ph="{...}" />
+            <marker date="1574176058914" expanded="true" signature="835:1081" ph="{...}" />
+            <marker date="1574176058914" expanded="true" signature="878:1010" ph="{...}" />
+            <marker date="1574176058914" expanded="true" signature="939:1000" ph="{...}" />
+            <marker date="1574176058914" expanded="true" signature="1139:1261" ph="{...}" />
+            <marker date="1574176058914" expanded="true" signature="1181:1255" ph="{...}" />
           </folding>
         </state>
       </provider>

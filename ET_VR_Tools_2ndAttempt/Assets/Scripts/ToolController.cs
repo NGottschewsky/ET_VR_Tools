@@ -6,5 +6,5 @@ using UnityEngine.Serialization;
 
 public class ToolController : MonoBehaviour
 {
-    public string id;
+    public int id;
 }

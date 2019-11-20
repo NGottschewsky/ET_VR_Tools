@@ -212,7 +212,6 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="ToolController.cs" t="Include" />
-          <e p="ToolManager.cs" t="Include" />
           <e p="ToolManager2.cs" t="Include" />
           <e p="ToolPresenter.cs" t="Include" />
         </e>

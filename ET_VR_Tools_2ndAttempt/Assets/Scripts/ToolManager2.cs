@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -6,9 +7,9 @@ using UnityEngine;
 public class ToolManager2 : MonoBehaviour
 {
     
-    private List<ToolController> _tools = new List<ToolController>();
+    private readonly List<ToolController> _tools = new List<ToolController>();
     private int _trial;
-    public GameObject[] tools;
+    private string[] _toolOrder;
 
     //private ToolPresenter toolPresenter = gameObject.AddComponent<ToolPresenter>;
     //private ToolPresenter _toolPresenter = new ToolPresenter(tools);
@@ -17,6 +18,7 @@ public class ToolManager2 : MonoBehaviour
     void Start()
     {
         _trial = 0;
+        _toolOrder = new string[] {"1", "2"};
         
         //Add all tools, which I've tagged as 'Tool'
         foreach(GameObject toolPrefab in GameObject.FindGameObjectsWithTag("Tool"))
@@ -26,25 +28,32 @@ public class ToolManager2 : MonoBehaviour
     }
     
     
-    public void GetNextTool(out ToolController nextTool)
+    public ToolController GetNextTool()
     {
+        ToolController temp = null;
         foreach (var tool in _tools)
         {
-            if (tool.id.Equals(toolOrder[_trial]))
+            if (tool.id.Equals(_toolOrder[_trial]))
             {
-                nextTool = tool;
+                temp = tool;
+                break; 
             }
         }
-// Das ist noch nicht so das wahre hier
-        nextTool = null;
+
+        if (temp == null)
+        {
+            Debug.LogError("Next toolID from _toolOrder does not match any ID in List _tools.");
+        }
+        return temp;
     }
 
     // Update is called once per frame
     void Update()
     {
-        foreach (var tool in tools)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            ToolPresenter.INSTANCE.presentTool(tool);
+            ToolPresenter.INSTANCE.PresentTool(GetNextTool().GetComponent<GameObject>());
         }
+        
     }
 }

@@ -8,7 +8,6 @@ using UnityEngine.Serialization;
 public class ToolPresenter: MonoBehaviour
 {
     
-    public GameObject[] toolPrefabs;
     private Vector3 position;
     private Quaternion rotation;
     private bool _isPresent;
@@ -33,30 +32,31 @@ public class ToolPresenter: MonoBehaviour
         _isPresent = false;
     }
 
-    
-    public void presentTool(GameObject tool)
+
+    public void PresentTool(GameObject tool)
     {
+        GameObject currentlyPresentTool = null;
+        GameObject toolInstance;
+        
         if (!_isPresent)
         {
             // add position and rotation to Instantiated tool
-            GameObject toolInstance = Instantiate(tool, position, rotation).GetComponent<GameObject>();
+            toolInstance = Instantiate(tool, position, rotation).GetComponent<GameObject>();
+            _isPresent = true;
+            //save GameObject that is currently on the table to be able to destroy it in the else statement and present 
+            //next one
+            currentlyPresentTool = tool;
         }
-    }
+        else
+        {
+            //destroy game object and spawn new one
+            Destroy(currentlyPresentTool);
+            toolInstance = Instantiate(tool, position, rotation).GetComponent<GameObject>();
+        }
+        currentlyPresentTool = tool;
+        _isPresent = true;
 
-    
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            presentTool(toolPrefabs[0]);
-            _isPresent = true;
-        } else if (Input.GetKeyDown(KeyCode.A))
-        {
-            presentTool((toolPrefabs[1]));
-            _isPresent = true;
-        }
     }
-    
-   }
+}
 
 

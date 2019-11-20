@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa4d0d8f-5c77-48d0-a6cd-2a13c98ab2e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools_2ndAttempt/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools_2ndAttempt/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools_2ndAttempt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ET_VR_Tools_2ndAttempt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToolManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/abcd9b-97137fc3118441a40b.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/abcd9b-97137fc3118441a40b.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/abcd9b-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/abcd9b-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/4d/4d85048efd9198743b9c04e00c67a6d8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4d/4d85048efd9198743b9c04e00c67a6d8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ExperimentLoopMatrixTest - Tabellenblatt1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/0a/0a8bdc087d578784cb8f36640145caf8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/0a/0a8bdc087d578784cb8f36640145caf8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/0c/0c3be4f7fcf12c345957aa423e48b1cb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/0c/0c3be4f7fcf12c345957aa423e48b1cb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <marker date="1573742761552" expanded="false" signature="6:130" ph="..." />
                 <marker date="1573742761552" expanded="true" signature="175:201" ph="{...}" />
@@ -39,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+            <state relative-caret-position="218">
+              <caret line="78" column="36" lean-forward="true" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
               <folding>
                 <marker date="1574175390130" expanded="false" signature="6:213" ph="..." />
                 <marker date="1574175390130" expanded="true" signature="255:4926" ph="{...}" />
@@ -77,19 +73,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+            <state relative-caret-position="689">
+              <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
               <folding>
-                <marker date="1574176058914" expanded="false" signature="6:97" ph="..." />
-                <marker date="1574176058914" expanded="true" signature="140:1263" ph="{...}" />
-                <marker date="1574176058914" expanded="true" signature="278:486" ph="/* private ToolPresenter toolPresenter = gameObject.AddComponent&lt;ToolPresenter&gt;; ... */" />
-                <marker date="1574176058914" expanded="true" signature="503:768" ph="{...}" />
-                <marker date="1574176058914" expanded="true" signature="675:762" ph="{...}" />
-                <marker date="1574176058914" expanded="true" signature="835:1081" ph="{...}" />
-                <marker date="1574176058914" expanded="true" signature="878:1010" ph="{...}" />
-                <marker date="1574176058914" expanded="true" signature="939:1000" ph="{...}" />
-                <marker date="1574176058914" expanded="true" signature="1139:1261" ph="{...}" />
-                <marker date="1574176058914" expanded="true" signature="1181:1255" ph="{...}" />
+                <marker date="1574246096041" expanded="true" signature="6:111" ph="..." />
+                <marker date="1574246096041" expanded="true" signature="154:1528" ph="{...}" />
+                <marker date="1574246096041" expanded="true" signature="303:511" ph="/* private ToolPresenter toolPresenter = gameObject.AddComponent&lt;ToolPresenter&gt;; ... */" />
+                <marker date="1574246096041" expanded="true" signature="528:839" ph="{...}" />
+                <marker date="1574246096041" expanded="true" signature="746:833" ph="{...}" />
+                <marker date="1574246096041" expanded="true" signature="889:1292" ph="{...}" />
+                <marker date="1574246096041" expanded="true" signature="968:1121" ph="{...}" />
+                <marker date="1574246096041" expanded="true" signature="1030:1111" ph="{...}" />
+                <marker date="1574246096041" expanded="true" signature="1148:1265" ph="{...}" />
+                <marker date="1574246096041" expanded="true" signature="1350:1526" ph="{...}" />
+                <marker date="1574246096041" expanded="true" signature="1401:1511" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -98,19 +95,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="750">
+              <caret line="55" column="36" lean-forward="true" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
               <folding>
-                <marker date="1574174556171" expanded="true" signature="6:171" ph="..." />
-                <marker date="1574174556171" expanded="true" signature="214:1315" ph="{...}" />
-                <marker date="1574174556171" expanded="true" signature="458:470" ph="{...}" />
-                <marker date="1574174556171" expanded="true" signature="516:561" ph="{...}" />
-                <marker date="1574174556171" expanded="true" signature="588:726" ph="{...}" />
-                <marker date="1574174556171" expanded="true" signature="777:1000" ph="{...}" />
-                <marker date="1574174556171" expanded="true" signature="808:994" ph="{...}" />
-                <marker date="1574174556171" expanded="true" signature="1024:1305" ph="{...}" />
-                <marker date="1574174556171" expanded="true" signature="1075:1167" ph="{...}" />
-                <marker date="1574174556171" expanded="true" signature="1205:1299" ph="{...}" />
+                <marker date="1574245444563" expanded="false" signature="6:171" ph="..." />
+                <marker date="1574245444563" expanded="true" signature="214:1542" ph="{...}" />
+                <marker date="1574245444563" expanded="true" signature="421:433" ph="{...}" />
+                <marker date="1574245444563" expanded="true" signature="479:524" ph="{...}" />
+                <marker date="1574245444563" expanded="true" signature="551:689" ph="{...}" />
+                <marker date="1574245444563" expanded="true" signature="736:1540" ph="{...}" />
+                <marker date="1574245444563" expanded="true" signature="857:1248" ph="{...}" />
+                <marker date="1574245444563" expanded="true" signature="1066:1197" ph="/* save GameObject that is currently on the table to be able to destroy it in the else statement and present ... */" />
+                <marker date="1574245444563" expanded="true" signature="1261:1469" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -122,6 +118,7 @@
     <findStrings>
       <find>ToolController</find>
       <find>_isPresent</find>
+      <find>toolOrder</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,8 +135,8 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Experiment/ToolPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ToolController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ToolManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" />
       </list>
     </option>
@@ -221,11 +218,12 @@
       <workItem from="1574154975311" duration="6016000" />
       <workItem from="1574169390479" duration="329000" />
       <workItem from="1574170302849" duration="5677000" />
+      <workItem from="1574241791165" duration="4361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29137000" />
+    <option name="totallyTimeSpent" value="33498000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -239,7 +237,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15884861" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16044776" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -299,6 +297,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -312,21 +324,10 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Experiment/ToolPresenter.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <marker date="1573742761552" expanded="false" signature="6:130" ph="..." />
-            <marker date="1573742761552" expanded="true" signature="175:201" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+        <state relative-caret-position="218">
+          <caret line="78" column="36" lean-forward="true" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
           <folding>
             <marker date="1574175390130" expanded="false" signature="6:213" ph="..." />
             <marker date="1574175390130" expanded="true" signature="255:4926" ph="{...}" />
@@ -359,40 +360,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <marker date="1573742761552" expanded="false" signature="6:130" ph="..." />
+            <marker date="1573742761552" expanded="true" signature="175:201" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="750">
+          <caret line="55" column="36" lean-forward="true" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
           <folding>
-            <marker date="1574174556171" expanded="true" signature="6:171" ph="..." />
-            <marker date="1574174556171" expanded="true" signature="214:1315" ph="{...}" />
-            <marker date="1574174556171" expanded="true" signature="458:470" ph="{...}" />
-            <marker date="1574174556171" expanded="true" signature="516:561" ph="{...}" />
-            <marker date="1574174556171" expanded="true" signature="588:726" ph="{...}" />
-            <marker date="1574174556171" expanded="true" signature="777:1000" ph="{...}" />
-            <marker date="1574174556171" expanded="true" signature="808:994" ph="{...}" />
-            <marker date="1574174556171" expanded="true" signature="1024:1305" ph="{...}" />
-            <marker date="1574174556171" expanded="true" signature="1075:1167" ph="{...}" />
-            <marker date="1574174556171" expanded="true" signature="1205:1299" ph="{...}" />
+            <marker date="1574245444563" expanded="false" signature="6:171" ph="..." />
+            <marker date="1574245444563" expanded="true" signature="214:1542" ph="{...}" />
+            <marker date="1574245444563" expanded="true" signature="421:433" ph="{...}" />
+            <marker date="1574245444563" expanded="true" signature="479:524" ph="{...}" />
+            <marker date="1574245444563" expanded="true" signature="551:689" ph="{...}" />
+            <marker date="1574245444563" expanded="true" signature="736:1540" ph="{...}" />
+            <marker date="1574245444563" expanded="true" signature="857:1248" ph="{...}" />
+            <marker date="1574245444563" expanded="true" signature="1066:1197" ph="/* save GameObject that is currently on the table to be able to destroy it in the else statement and present ... */" />
+            <marker date="1574245444563" expanded="true" signature="1261:1469" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        <state relative-caret-position="689">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding>
-            <marker date="1574176058914" expanded="false" signature="6:97" ph="..." />
-            <marker date="1574176058914" expanded="true" signature="140:1263" ph="{...}" />
-            <marker date="1574176058914" expanded="true" signature="278:486" ph="/* private ToolPresenter toolPresenter = gameObject.AddComponent&lt;ToolPresenter&gt;; ... */" />
-            <marker date="1574176058914" expanded="true" signature="503:768" ph="{...}" />
-            <marker date="1574176058914" expanded="true" signature="675:762" ph="{...}" />
-            <marker date="1574176058914" expanded="true" signature="835:1081" ph="{...}" />
-            <marker date="1574176058914" expanded="true" signature="878:1010" ph="{...}" />
-            <marker date="1574176058914" expanded="true" signature="939:1000" ph="{...}" />
-            <marker date="1574176058914" expanded="true" signature="1139:1261" ph="{...}" />
-            <marker date="1574176058914" expanded="true" signature="1181:1255" ph="{...}" />
+            <marker date="1574246096041" expanded="true" signature="6:111" ph="..." />
+            <marker date="1574246096041" expanded="true" signature="154:1528" ph="{...}" />
+            <marker date="1574246096041" expanded="true" signature="303:511" ph="/* private ToolPresenter toolPresenter = gameObject.AddComponent&lt;ToolPresenter&gt;; ... */" />
+            <marker date="1574246096041" expanded="true" signature="528:839" ph="{...}" />
+            <marker date="1574246096041" expanded="true" signature="746:833" ph="{...}" />
+            <marker date="1574246096041" expanded="true" signature="889:1292" ph="{...}" />
+            <marker date="1574246096041" expanded="true" signature="968:1121" ph="{...}" />
+            <marker date="1574246096041" expanded="true" signature="1030:1111" ph="{...}" />
+            <marker date="1574246096041" expanded="true" signature="1148:1265" ph="{...}" />
+            <marker date="1574246096041" expanded="true" signature="1350:1526" ph="{...}" />
+            <marker date="1574246096041" expanded="true" signature="1401:1511" ph="{...}" />
           </folding>
         </state>
       </provider>

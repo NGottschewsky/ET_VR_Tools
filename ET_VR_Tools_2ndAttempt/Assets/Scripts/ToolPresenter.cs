@@ -11,27 +11,32 @@ public class ToolPresenter: MonoBehaviour
     private Vector3 position;
     private Quaternion rotation;
     private bool _isPresent;
+    private float[] _yCoordinate;
 
-    
-    public static readonly ToolPresenter INSTANCE = new ToolPresenter();
-
-    private ToolPresenter()
+    private void Awake()
     {
+        
     }
     
-    public static ToolPresenter Instance
+    void Start()
     {
-        get { return INSTANCE; }
-    }
-
-
-    private void Start()
-    {
-        position = new Vector3(0.5f, 1.549906f,0.0f);
+        _yCoordinate = new[] {0.7994252f, 0.8497297f};
+        position = new Vector3(0.5f, _yCoordinate[0],0.0f);
         rotation = new Quaternion(0,0,0,0);
         _isPresent = false;
     }
 
+    
+    public static readonly ToolPresenter INSTANCE = new ToolPresenter();
+    
+    private ToolPresenter()
+    {
+    }
+        
+    public static ToolPresenter Instance
+    {
+        get { return INSTANCE; }
+    }
 
     public void PresentTool(GameObject tool)
     {
@@ -41,7 +46,7 @@ public class ToolPresenter: MonoBehaviour
         if (!_isPresent)
         {
             // add position and rotation to Instantiated tool
-            toolInstance = Instantiate(tool, position, rotation).GetComponent<GameObject>();
+            toolInstance = Instantiate(tool, position, rotation);
             _isPresent = true;
             //save GameObject that is currently on the table to be able to destroy it in the else statement and present 
             //next one

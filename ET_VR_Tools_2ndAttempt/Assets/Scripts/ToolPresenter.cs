@@ -5,9 +5,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class ToolPresenter: MonoBehaviour
+public class ToolPresenter : MonoBehaviour
 {
-    
     private Vector3 position;
     private Quaternion rotation;
     private bool _isPresent;
@@ -15,53 +14,35 @@ public class ToolPresenter: MonoBehaviour
 
     private void Awake()
     {
-        
     }
-    
+
     void Start()
     {
-        _yCoordinate = new[] {0.7994252f, 0.8497297f};
-        position = new Vector3(0.5f, _yCoordinate[0],0.0f);
-        rotation = new Quaternion(0,0,0,0);
+        //_yCoordinate = new[] {0.7994252f, 0.8497297f};
+        position = new Vector3(0.5f, 0.7994252f, 0.0f);
+        rotation = new Quaternion(0, 0, 0, 0);
         _isPresent = false;
     }
 
-    
+
     public static readonly ToolPresenter INSTANCE = new ToolPresenter();
-    
+
     private ToolPresenter()
     {
     }
-        
+
     public static ToolPresenter Instance
     {
         get { return INSTANCE; }
     }
 
-    public void PresentTool(GameObject tool)
+    public void PresentTool(ToolController tool)
     {
-        GameObject currentlyPresentTool = null;
-        GameObject toolInstance;
+        ToolManager2.instance.DeactivateLastTool();
         
-        if (!_isPresent)
-        {
-            // add position and rotation to Instantiated tool
-            toolInstance = Instantiate(tool, position, rotation);
-            _isPresent = true;
-            //save GameObject that is currently on the table to be able to destroy it in the else statement and present 
-            //next one
-            currentlyPresentTool = tool;
-        }
-        else
-        {
-            //destroy game object and spawn new one
-            Destroy(currentlyPresentTool);
-            toolInstance = Instantiate(tool, position, rotation).GetComponent<GameObject>();
-        }
-        currentlyPresentTool = tool;
-        _isPresent = true;
+        tool.ActivateThis(ToolManager2.instance.spawnerPosition.transform.position, rotation);
+        
 
     }
+
 }
-
-

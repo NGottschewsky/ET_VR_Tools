@@ -8,65 +8,85 @@ using TMPro;
 
 public class ToolManager2 : MonoBehaviour
 {
-    
-    private readonly List<ToolController> _tools = new List<ToolController>();
-    private int _trial;
-    private int[] _toolOrder;
-    private List<GameObject> _toolsList;
-    private string _tag = "Tool";
-    
-    //private ToolPresenter toolPresenter = gameObject.AddComponent<ToolPresenter>;
-    //private ToolPresenter _toolPresenter = new ToolPresenter(tools);
+    public static ToolManager2 instance;
 
+    [SerializeField] private List<ToolController> _tools;
+    [SerializeField] public GameObject spawnerPosition;
+    private int _trial;
+
+    private int[] _toolOrder;
+
+    private ToolController _lastUsedTool;
+
+    #region Singelton
+    //make ToolManager2 singleton to be able to create 1 instance on which to call its methods
     private void Awake()
     {
-        _toolsList = GameObject.FindGameObjectsWithTag(_tag).ToList();
-        foreach(var toolPrefab in _toolsList)
-        {
-            _tools.Add(toolPrefab.GetComponent<ToolController>());
-        }
+        if (instance == null)
+            instance = this;
     }
 
-    // Start is called before the first frame update
+    #endregion
+
+
     void Start()
     {
         _trial = 0;
-        _toolOrder = new int[] {1, 2};
+        _toolOrder = new int[] {1, 2}; // Tool Order should be read from CSV Experiment Matrix
 
-        //_toolsList = Resources.FindObjectsOfTypeAll(typeof(GameObject)).Cast<GameObject>().Where(g=>g.tag==_tag).ToList();
-        //Add all tools, which I've tagged as 'Tool'
-        
-
-        Debug.Log(_tools.Count+" tools found");
+        Debug.Log(_tools.Count + " tools found");
     }
 
 
-    private ToolController GetNextTool()
+    private void GetNextTool(out ToolController returnTool)
     {
-        int temp = new int();
-        for(var i = _tools.Count - 1; i >= 0; i--)
+        returnTool = new ToolController();
+        foreach (var toolController in _tools)
         {
-            Debug.Log("Hallo");
-            if (_tools[i].id.Equals(_toolOrder[_trial]))
+            if (toolController.id == _toolOrder[_trial])
             {
-                Debug.Log("Tool number "+ _toolOrder[_trial]+" fits");
-                temp = i;
-                break; 
+                returnTool = toolController;
             }
         }
-        return _tools[temp];
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(_toolOrder[_trial]);
-        Debug.Log(GetNextTool().ToString());
-        if (Input.GetKeyDown(KeyCode.Space))
+//        if (EndConditionReached()) //condition that ends the trial
+//        {
+            /*GetNextTool(out var internalTool);
+            ToolPresenter.INSTANCE.PresentTool(internalTool);
+            if (_trial < 1) _trial++;*/
+//        }
+        if (Input.GetKeyDown(KeyCode.Space)) //will be replaced with some controller movement
         {
-            ToolPresenter.INSTANCE.PresentTool(GetNextTool().gameObject);
-            if(_trial < 1) _trial++;
+            GetNextTool(out var internalTool);
+            ToolPresenter.INSTANCE.PresentTool(internalTool);
+            _trial++;
         }
-        
+
+        if (_trial == (_toolOrder.Length))
+        {
+            Debug.Log("End of Block.");
+            //Use textMeshPro to make text appear
+        }
+    }
+
+    private bool EndConditionReached()
+    {
+        throw new NotImplementedException();
+        //if vr controller held into collider for 5 secs or if it is placed in a snapzone or smth similar
+    }
+
+    public void DeactivateLastTool()
+    {
+        if (_lastUsedTool != null)
+            _lastUsedTool.DeactivateThis();
+    }
+
+    public void RegistrateCurrentUsedTool(ToolController tool)
+    {
+        _lastUsedTool = tool;
     }
 }

@@ -15,7 +15,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{19DA2DF6-4905-F706-F881-DB2C29F43485}</ProjectGuid>
+    <ProjectGuid>{E68E3AE3-9CF4-1809-28E0-B0CAF22F6E3F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -63,25 +63,25 @@
     <Compile Include="Assets\Imported\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\ScreenSpaceReflection\Editor\ScreenSpaceReflectionEditor.cs" />
     <Compile Include="Assets\Imported\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Editor\TonemappingColorGradingEditor.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/ET_VR_Tools_2ndAttempt/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/ET_VR_Tools_2ndAttempt/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/ET_VR_Tools_2ndAttempt/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/ET_VR_Tools_2ndAttempt/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/ET_VR_Tools_2ndAttempt/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/ET_VR_Tools_2ndAttempt/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/ET_VR_Tools_2ndAttempt/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -285,22 +285,22 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.4f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
-      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/ET_VR_Tools_2ndAttempt/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
+      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/Unity_ET_VR/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/ET_VR_Tools_2ndAttempt/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/Unity_ET_VR/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/ET_VR_Tools_2ndAttempt/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/Unity_ET_VR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/ET_VR_Tools_2ndAttempt/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/Unity_ET_VR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/ET_VR_Tools_2ndAttempt/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/Unity_ET_VR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/ET_VR_Tools_2ndAttempt/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>D:/Nina_ET_VR/Experiment/ET_VR_Tools/Unity_ET_VR/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.4f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -659,7 +659,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{D1C6B970-FF4F-C82F-4C91-F628BA449197}</Project>
+      <Project>{762DA813-0BD3-A13E-5FEF-4785CEC012CD}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>

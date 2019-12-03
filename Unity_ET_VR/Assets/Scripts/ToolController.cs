@@ -7,8 +7,10 @@ using UnityEngine.Serialization;
 public class ToolController : MonoBehaviour
 {
     //ID to find each tool by, corresponding to the numbers in the experiment matrix
-    public int id;
+    //public int id;
 
+    public string id;
+    
     //Deactivate the currently presented tool
     public void DeactivateThis()
     {

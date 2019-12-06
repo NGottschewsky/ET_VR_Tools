@@ -16,14 +16,18 @@ public class ToolManager2 : MonoBehaviour
 
     [SerializeField] private List<ToolController> _tools;
     
-    [SerializeField] public GameObject spawnerPosition;
+    [SerializeField] public GameObject spawnerPositionLeft;
+    [SerializeField] public GameObject spawnerPositionRight;
+
+    private string[] _leftTools = new string[] {"1", "3", "5", "7", "9", "11", "13", "15", "17", "19", "21", "23"};
+    private string[] _rightTools = new string[] {"2", "4", "6", "8", "10", "12", "14", "16", "18", "20", "22", "24"};
     
     private int _trial;
 
     //private int[] _toolOrder;
     private List<string[]> _toolOrder = new List<string[]>();
     
-    private string _filePath = "D:\\Nina_ET_VR\\Other\\Test_CSV.csv";
+    private string _filePath = "D:\\Nina_ET_VR\\Experiment\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrix.csv";
     
     private bool _endOfBlock = false;
 
@@ -114,9 +118,23 @@ public class ToolManager2 : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && !_endOfBlock) //will be replaced with some controller movement
         {
+            
             GetNextTool(out var internalTool);
-            ToolPresenter.INSTANCE.PresentTool(internalTool);
+            
+            if (Array.Exists(_leftTools, element => element == internalTool.id))
+            {
+                ToolPresenter.INSTANCE.PresentTool(internalTool, "left");
+            }
+            else if (Array.Exists(_rightTools, element => element == internalTool.id))
+            {
+                ToolPresenter.INSTANCE.PresentTool(internalTool, "right");
+            }
+            else
+            {
+                Debug.LogError("tool ID not contained in either list of tools");
+            }
             _trial++;
+            
         }
 
         if (_trial == (_toolOrder[ParticipantNr].Length))

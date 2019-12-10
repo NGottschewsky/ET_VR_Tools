@@ -688,7 +688,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: a3a66265c8a541844a3c3d8a4d80a6fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a3a66265c8a541844a3c3d8a4d80a6fc,
         type: 3}
@@ -787,6 +787,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 4
+--- !u!65 &624759514
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624759512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 120.6, y: 84.17748, z: 400}
+  m_Center: {x: 0, y: -14.88257, z: 204.4772}
+--- !u!65 &624759515
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624759512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 120.6, y: 84.17748, z: 400}
+  m_Center: {x: -4.7, y: -4.84386, z: -195.5228}
 --- !u!1001 &630892250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1008,6 +1034,10 @@ PrefabInstance:
     - target: {fileID: 1000010113653518, guid: 83aae98f19433bf44bb2613869ec2b6c, type: 3}
       propertyPath: m_Name
       value: Table
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010113653518, guid: 83aae98f19433bf44bb2613869ec2b6c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012531075890, guid: 83aae98f19433bf44bb2613869ec2b6c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2469,12 +2499,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: a3a66265c8a541844a3c3d8a4d80a6fc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.812
+      value: 0.832
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a3a66265c8a541844a3c3d8a4d80a6fc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.217
+      value: -0.249
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a3a66265c8a541844a3c3d8a4d80a6fc,
         type: 3}
@@ -2569,8 +2599,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 84.784744, y: 100.00001, z: 1000.00006}
-  m_Center: {x: -32.607674, y: 0, z: 0}
+  m_Size: {x: 120.6, y: 84.17748, z: 400}
+  m_Center: {x: -4.7, y: -4.84386, z: -195.5228}
+--- !u!65 &1427144410
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427144407}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 120.6, y: 84.17748, z: 400}
+  m_Center: {x: 0, y: -14.88257, z: 204.4772}
 --- !u!114 &1549581703 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -7797933067736911067, guid: 97137fc3118441a40bf489246c0ca836,
@@ -2936,7 +2979,6 @@ GameObject:
   - component: {fileID: 1905686898}
   - component: {fileID: 1905686897}
   - component: {fileID: 1905686899}
-  - component: {fileID: 1905686900}
   m_Layer: 0
   m_Name: Tool
   m_TagString: Untagged
@@ -3010,18 +3052,6 @@ MonoBehaviour:
   - {fileID: 828596870}
   spawnerPositionLeft: {fileID: 864879819}
   spawnerPositionRight: {fileID: 1159233610}
---- !u!114 &1905686900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1905686896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ba166eb8cd8f194cb48ffb18dcff9bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1906620778
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3360,6 +3390,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 2503960765836777020, guid: a3188554974f1334f9600c3e3f232339,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6396629665897356425, guid: a3188554974f1334f9600c3e3f232339,
         type: 3}

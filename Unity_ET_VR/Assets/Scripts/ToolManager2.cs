@@ -14,7 +14,7 @@ public class ToolManager2 : MonoBehaviour
     
     public static ToolManager2 instance;
 
-    [SerializeField] private List<ToolController> _tools;
+    [SerializeField] public List<ToolController> _tools;
     
     [SerializeField] public GameObject spawnerPositionLeft;
     [SerializeField] public GameObject spawnerPositionRight;
@@ -55,6 +55,11 @@ public class ToolManager2 : MonoBehaviour
         _toolOrder = ReadCsvFile(_filePath);
         
         Debug.Log(_tools.Count + " tools found");
+        
+        Debug.Log(instance._tools[7].ToString());
+        Debug.Log(instance._tools[7].GetComponent<GameObject>().ToString());
+        Debug.Log(instance._tools[7].gameObject.ToString());
+        
     }
 
 

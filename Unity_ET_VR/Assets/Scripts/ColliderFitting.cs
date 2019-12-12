@@ -12,7 +12,6 @@ public class ColliderFitting : MonoBehaviour
     */
 
     private GameObject _tool;
-    private ToolController _toolTest;
     private BoxCollider _bc;
     private Bounds _bound;
     
@@ -23,12 +22,15 @@ public class ColliderFitting : MonoBehaviour
             _toolObjects.Add(tool.GetComponent<GameObject>());
         }*/
         
-        Debug.Log(ToolManager2.instance._tools[7].gameObject.ToString());
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(ToolManager2.instance._tools[7].gameObject.ToString());
+
+        _tool = ToolManager2.instance._tools[7].gameObject;
+        
         /*for (int i = 0; i < _toolObjects.Count; i++)
         {
             _bounds.Add(_toolObjects[i].GetComponent<Renderer>().bounds);
@@ -38,6 +40,9 @@ public class ColliderFitting : MonoBehaviour
         _bc = _tool.AddComponent(typeof(BoxCollider)) as BoxCollider;
 
         _bound = _tool.GetComponent<Renderer>().bounds;
+        
+        Debug.Log("Bounds: " + _bound.center + "(center)" + _bound.extents + "(extents)" + _bound.size + "(size)");
+        
         AddBoxColliders(_bound);
 
     }
@@ -47,9 +52,6 @@ public class ColliderFitting : MonoBehaviour
         
         _bc.center = bound.center;
         _bc.size = bound.size;
-
         
-
-        //_boxColliders.Add(box);
     }
 }

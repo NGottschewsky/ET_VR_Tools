@@ -27,7 +27,7 @@ public class ToolManager2 : MonoBehaviour
     //private int[] _toolOrder;
     private List<string[]> _toolOrder = new List<string[]>();
     
-    private string _filePath = "D:\\Nina_ET_VR\\Experiment\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrix.csv";
+    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrix.csv";
     
     private bool _endOfBlock = false;
 
@@ -56,10 +56,6 @@ public class ToolManager2 : MonoBehaviour
         
         Debug.Log(_tools.Count + " tools found");
         
-        Debug.Log(instance._tools[7].ToString());
-        Debug.Log(instance._tools[7].GetComponent<GameObject>().ToString());
-        Debug.Log(instance._tools[7].gameObject.ToString());
-        
     }
 
 
@@ -74,6 +70,7 @@ public class ToolManager2 : MonoBehaviour
             if (toolController.id == _toolOrder[ParticipantNr][_trial])
             {
                 returnTool = toolController;
+                Debug.Log("Current tool: " + returnTool.ToString() + "ID: " + returnTool.id);
             }
             
         }

@@ -569,7 +569,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: d63cd52b660695c4d931842b77bc2f48,
         type: 3}
       propertyPath: m_Name
-      value: Wrench_OpenLEFT
+      value: WrenchLEFT
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: d63cd52b660695c4d931842b77bc2f48,
         type: 3}
@@ -688,7 +688,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: a3a66265c8a541844a3c3d8a4d80a6fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a3a66265c8a541844a3c3d8a4d80a6fc,
         type: 3}
@@ -1037,7 +1037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010113653518, guid: 83aae98f19433bf44bb2613869ec2b6c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000012531075890, guid: 83aae98f19433bf44bb2613869ec2b6c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1211,7 +1211,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 907f1afb809f27e459daa8ae76908933,
         type: 3}
       propertyPath: m_Name
-      value: Screwdriver_SingleRIGHT
+      value: ScrewdriverRIGHT
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 907f1afb809f27e459daa8ae76908933,
         type: 3}
@@ -1535,8 +1535,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.07844898, y: 0.7035726, z: -0.07864243, w: -0.701888}
-  m_LocalPosition: {x: 1.7672043, y: 1.7813634, z: 0.10134773}
+  m_LocalRotation: {x: 0.16953196, y: -0.68956035, z: 0.17117204, w: 0.68298286}
+  m_LocalPosition: {x: 2.7383401, y: 2.7657995, z: 0.039073054}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1552,7 +1552,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 907f1afb809f27e459daa8ae76908933,
         type: 3}
       propertyPath: m_Name
-      value: Screwdriver_SingleLEFT
+      value: ScrewdriverLEFT
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 907f1afb809f27e459daa8ae76908933,
         type: 3}
@@ -1666,7 +1666,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 8f6c932fb7b89644eb2edc3bc3868c23,
         type: 3}
       propertyPath: m_Name
-      value: paint_brush1RIGHT
+      value: PaintbrushRIGHT
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 8f6c932fb7b89644eb2edc3bc3868c23,
         type: 3}
@@ -2008,7 +2008,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: d63cd52b660695c4d931842b77bc2f48,
         type: 3}
       propertyPath: m_Name
-      value: Wrench_OpenRIGHT
+      value: WrenchRIGHT
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: d63cd52b660695c4d931842b77bc2f48,
         type: 3}
@@ -2236,12 +2236,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 8f6c932fb7b89644eb2edc3bc3868c23,
         type: 3}
       propertyPath: m_Name
-      value: paint_brush1LEFT
+      value: PaintbrushLEFT
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 8f6c932fb7b89644eb2edc3bc3868c23,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8f6c932fb7b89644eb2edc3bc3868c23,
         type: 3}
@@ -2353,6 +2353,43 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 100.00001, y: 100.00001, z: 253.67177}
   m_Center: {x: 0, y: 0, z: 2.2443533}
+--- !u!23 &1284511796
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284511793}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1381020249 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2923763908425596930, guid: 97137fc3118441a40bf489246c0ca836,
@@ -2750,7 +2787,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: d60305c0a2e9dd147b0cdba319d98473,
         type: 3}
       propertyPath: m_Name
-      value: shovelLEFT
+      value: ShovelLEFT
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: d60305c0a2e9dd147b0cdba319d98473,
         type: 3}
@@ -2979,6 +3016,7 @@ GameObject:
   - component: {fileID: 1905686898}
   - component: {fileID: 1905686897}
   - component: {fileID: 1905686899}
+  - component: {fileID: 1905686900}
   m_Layer: 0
   m_Name: Tool
   m_TagString: Untagged
@@ -3052,6 +3090,18 @@ MonoBehaviour:
   - {fileID: 828596870}
   spawnerPositionLeft: {fileID: 864879819}
   spawnerPositionRight: {fileID: 1159233610}
+--- !u!114 &1905686900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905686896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ba166eb8cd8f194cb48ffb18dcff9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1906620778
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3062,7 +3112,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: d60305c0a2e9dd147b0cdba319d98473,
         type: 3}
       propertyPath: m_Name
-      value: shovelRIGHT
+      value: ShovelRIGHT
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: d60305c0a2e9dd147b0cdba319d98473,
         type: 3}
@@ -3394,7 +3444,7 @@ PrefabInstance:
     - target: {fileID: 2503960765836777020, guid: a3188554974f1334f9600c3e3f232339,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6396629665897356425, guid: a3188554974f1334f9600c3e3f232339,
         type: 3}

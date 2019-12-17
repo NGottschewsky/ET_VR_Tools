@@ -9,22 +9,25 @@ using TMPro;
 
 public class ToolManager2 : MonoBehaviour
 {
-    
+    [Header("Experiment components")]
+    public CuePresenter cuePresenter;
+    public ToolPresenter toolPresenter;
+
+    [Header("Experiment parameters")] 
     public int ParticipantNr;
     
     public static ToolManager2 instance;
-
-    [SerializeField] public List<ToolController> _tools;
     
+    [Header("Tool Models")] 
+    [SerializeField] public List<ToolController> _tools;
     [SerializeField] public GameObject spawnerPositionLeft;
     [SerializeField] public GameObject spawnerPositionRight;
 
-    private string[] _leftTools = new string[] {"1", "3", "5", "7", "9", "11", "13", "15", "17", "19", "21", "23"};
+    private string[] _leftTools = new string[] {"1", "2", "5", "6", "9", "10", "13", "14", "17", "18", "21", "22", "25", "26", "27", "28", "29", "32", "33", "36", "37", "40", "41", "22"};
     private string[] _rightTools = new string[] {"2", "4", "6", "8", "10", "12", "14", "16", "18", "20", "22", "24"};
     
     private int _trial;
 
-    //private int[] _toolOrder;
     private List<string[]> _toolOrder = new List<string[]>();
     
     private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrix.csv";
@@ -51,14 +54,13 @@ public class ToolManager2 : MonoBehaviour
     {
         _trial = 0;
         
-        //_toolOrder = new int[] {1, 2}; 
         _toolOrder = ReadCsvFile(_filePath);
         
         Debug.Log(_tools.Count + " tools found");
         
-        Debug.Log(instance._tools[7].ToString());
+       /* Debug.Log(instance._tools[7].ToString());
         Debug.Log(instance._tools[7].GetComponent<GameObject>().ToString());
-        Debug.Log(instance._tools[7].gameObject.ToString());
+        Debug.Log(instance._tools[7].gameObject.ToString()); */
         
     }
 
@@ -114,17 +116,25 @@ public class ToolManager2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-//        if (EndConditionReached()) //condition that ends the trial
+//        if (TrialEndReached()) //condition that ends the trial
 //        {
             /*GetNextTool(out var internalTool);
             ToolPresenter.INSTANCE.PresentTool(internalTool);
             if (_trial < 1) _trial++;*/
 //        }
 
-        if (Input.GetKeyDown(KeyCode.Space) && !_endOfBlock) //will be replaced with some controller movement
+        if (Input.GetKeyDown(KeyCode.Space) && !_endOfBlock) //will be replaced with some controller event specified in TrialEndReached()
         {
             
             GetNextTool(out var internalTool);
+            if ((_trial % 2) == 0)
+            {
+                ShowMessege(Color.white,"Lift" );
+            }
+            else
+            {
+                ShowMessege(Color.white,"Use");
+            }
             
             if (Array.Exists(_leftTools, element => element == internalTool.id))
             {
@@ -145,6 +155,7 @@ public class ToolManager2 : MonoBehaviour
         if (_trial == (_toolOrder[ParticipantNr].Length))
         {
             _endOfBlock = true;
+            ShowMessege(Color.red,"End of Block");
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && _endOfBlock)
@@ -155,9 +166,13 @@ public class ToolManager2 : MonoBehaviour
         
     }
     
-    
+    private void ShowMessege(Color32 color, string msg)
+    {
+        cuePresenter.lableColor = color;
+        cuePresenter.ShowText(msg);
+    }
 
-    private bool EndConditionReached()
+    private bool TrialEndReached()
     {
         throw new NotImplementedException();
         //if vr controller held into collider for 5 secs or if it is placed in a snapzone or smth similar

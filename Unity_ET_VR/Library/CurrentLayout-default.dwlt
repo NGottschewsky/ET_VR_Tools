@@ -121,10 +121,10 @@ MonoBehaviour:
     y: 30
     width: 1904
     height: 1051
-  m_MinSize: {x: 683, y: 494}
-  m_MaxSize: {x: 18008, y: 14044}
+  m_MinSize: {x: 681, y: 494}
+  m_MaxSize: {x: 18006, y: 14044}
   vertical: 0
-  controlID: 54
+  controlID: 167
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,8 +144,8 @@ MonoBehaviour:
     y: 0
     width: 386
     height: 1051
-  m_MinSize: {x: 277, y: 72}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -315,13 +315,13 @@ MonoBehaviour:
     height: 762
   m_MinSize: {x: 204, y: 222}
   m_MaxSize: {x: 4004, y: 4022}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 2
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -387,20 +387,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/SteamVR_Resources/Resources
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/SteamVR_Resources/Resources
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Nina_ET_VR\ET_VR_Tools\Unity_ET_VR
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 386}
-    m_SelectedIDs: 6a320000
-    m_LastClickedID: 12906
-    m_ExpandedIDs: 00000000942f0000b03100006a320000b232000018330000c6330000aa340000f83400007a360000703700005c3b00005e3b000000ca9a3b
+    scrollPos: {x: 0, y: 962}
+    m_SelectedIDs: 16440000
+    m_LastClickedID: 17430
+    m_ExpandedIDs: 00000000942f0000b03100006a320000b232000018330000c6330000aa340000f83400007a360000703700005c3b00005e3b000042440000464400007a4400005a45000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -455,7 +455,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -551,9 +551,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 26390000
-      m_LastClickedID: 14630
-      m_ExpandedIDs: 70fbffff82390000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: c87ffffff67fffff7cf7ffff70fbfffff4ffffff6e3900008239000080920000869200009e920000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -613,9 +613,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.7832544, y: 1.6553795, z: -0.4686175}
+    m_Target: {x: 0.8333559, y: 1.5413635, z: 0.015594274}
     speed: 2
-    m_Value: {x: 0.7832544, y: 1.6553795, z: -0.4686175}
+    m_Value: {x: 0.8333559, y: 1.5413635, z: 0.015594274}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -644,13 +644,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.19281094, y: 0.7288961, z: -0.22811373, w: -0.6160552}
+    m_Target: {x: -0.24816301, y: 0.67119855, z: -0.25632778, w: -0.6497919}
     speed: 2
-    m_Value: {x: -0.19280848, y: 0.7288868, z: -0.22811082, w: -0.6160473}
+    m_Value: {x: -0.24815983, y: 0.6711899, z: -0.25632447, w: -0.64978355}
   m_Size:
-    m_Target: 0.72188234
+    m_Target: 3.4063978
     speed: 2
-    m_Value: 0.72188234
+    m_Value: 3.4063978
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -725,7 +725,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -751,7 +751,7 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
-  m_CurrentColorSpace: 0
+  m_CurrentColorSpace: 1
   m_LastWindowPixelSize: {x: 1140, y: 743}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1

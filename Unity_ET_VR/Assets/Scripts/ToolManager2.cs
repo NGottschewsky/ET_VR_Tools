@@ -22,16 +22,16 @@ public class ToolManager2 : MonoBehaviour
     [SerializeField] public List<ToolController> _tools;
     [SerializeField] public GameObject spawnerPositionLeft;
     [SerializeField] public GameObject spawnerPositionRight;
- 
-    private string[] _leftTools = new string[] {"1", "2", "5", "6", "9", "10", "13", "14", "17", "18", "21", "22", "25", "26", "29", "30", "33", "34", "37", "38", "41", "42", "45", "46"};
-    private string[] _rightTools = new string[] {"3", "4", "7", "8", "11", "12", "15", "16", "19", "20", "23", "24", "27", "28", "31", "32", "35", "36", "39", "40", "43", "44", "47", "48"};
+
+    private string[] _leftTools = new string[] {"1", "2", "5", "6", "9", "10", "13", "14", "17", "18", "21", "22"};//, "25", "26", "29", "30", "33", "34", "37", "38", "41", "42", "45", "46"};
+    private string[] _rightTools = new string[] {"3", "4", "7", "8", "11", "12", "15", "16", "19", "20", "23", "24"};//, "27", "28", "31", "32", "35", "36", "39", "40", "43", "44", "47", "48"};
     
     private int _trial;
 
     private List<string[]> _toolOrder = new List<string[]>();
     
-    //private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrix.csv";
-    private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrix.csv";
+    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrix.csv";
+    //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrix.csv";
     
     private bool _endOfBlock = false;
 

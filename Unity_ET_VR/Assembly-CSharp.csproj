@@ -56,7 +56,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Grabable.cs" />
      <Compile Include="Assets\Imported\Table and chair\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\AntiAliasing.cs" />
      <Compile Include="Assets\Imported\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\Common\ImageEffectHelper.cs" />
      <Compile Include="Assets\Imported\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\Common\RenderTexureUtility.cs" />
@@ -103,6 +102,7 @@
      <Compile Include="Assets\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
      <Compile Include="Assets\Scripts\ColliderFitting.cs" />
      <Compile Include="Assets\Scripts\CuePresenter.cs" />
+     <Compile Include="Assets\Scripts\Grabable.cs" />
      <Compile Include="Assets\Scripts\ToolController.cs" />
      <Compile Include="Assets\Scripts\ToolManager2.cs" />
      <Compile Include="Assets\Scripts\ToolPresenter.cs" />

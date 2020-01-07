@@ -27,15 +27,18 @@ public class ToolManager2 : MonoBehaviour
     [SerializeField] public GameObject spawnerPositionFORKRight;
     [SerializeField] public GameObject spawnerPositionFORKLeft;
 
-    private string[] _leftTools = new string[] {"1", "2", "5", "6", "9", "10", "13", "14", "17", "18", "21", "22"};//, "25", "26", "29", "30", "33", "34", "37", "38", "41", "42", "45", "46"};
-    private string[] _rightTools = new string[] {"3", "4", "7", "8", "11", "12", "19", "20"};//, "27", "28", "31", "32", "35", "36", "39", "40", "43", "44", "47", "48"};
+    private string[] _leftTools = new string[] {"1", "2", "5", "6", "9", "10", "13", "14", "17", "18", "21", "22", "25", "26", "33", "34", "37", "38", "41", "42"};
+    private string[] _rightTools = new string[] {"3", "4", "7", "8", "11", "12","15", "16", "19", "20", "23", "24", "27", "28", "35", "36", "39", "40", "43", "44"};
     
+    private string[] _liftCue = new string[] {"1", "3", "5", "7", "9", "11", "13", "15", "17", "19", "21", "23", "25", "27", "29", "31", "33", "35", "37", "39", "41", "43", "45", "47"};
+    private string[] _useCue = new string[] {"2", "4", "6", "8", "10", "12","14", "16", "18", "20", "22", "24", "26", "28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48"};
+
     private int _trial;
 
     private List<string[]> _toolOrder = new List<string[]>();
     
-    //private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrix.csv";
-    private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrix.csv";
+    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     
     private bool _endOfBlock = false;
 
@@ -132,13 +135,17 @@ public class ToolManager2 : MonoBehaviour
         {
             
             GetNextTool(out var internalTool);
-            if ((_trial % 2) == 0)
+            if (Array.Exists(_liftCue, element => element == internalTool.id))
             {
                 ShowMessege(Color.white,"Lift" );
             }
-            else
+            else if(Array.Exists(_useCue, element => element == internalTool.id))
             {
                 ShowMessege(Color.white,"Use");
+            }
+            else
+            {
+                Debug.Log("Tool Id in neither cue list");
             }
             
             if (Array.Exists(_leftTools, element => element == internalTool.id))
@@ -153,17 +160,21 @@ public class ToolManager2 : MonoBehaviour
             {
                 switch (internalTool.id)
                 {
-                    case "15" :
-                        ToolPresenter.INSTANCE.PresentTool(internalTool,"speichenschlüssel right");
+                    case "29" :
+                    case "30" :    
+                        ToolPresenter.INSTANCE.PresentTool(internalTool,"speichenschlüssel left");
                         break;
-                    case "16" :
-                        ToolPresenter.INSTANCE.PresentTool(internalTool,"speichenschlüssel left");    
+                    case "31" :
+                    case "32" :    
+                        ToolPresenter.INSTANCE.PresentTool(internalTool,"speichenschlüssel right");    
                         break;
-                    case "23" :
-                        ToolPresenter.INSTANCE.PresentTool(internalTool,"fork right"); 
-                        break;
-                    case "24" :
+                    case "45" :
+                    case "46" :    
                         ToolPresenter.INSTANCE.PresentTool(internalTool,"fork left"); 
+                        break;
+                    case "47" :
+                    case "48" :    
+                        ToolPresenter.INSTANCE.PresentTool(internalTool,"fork right"); 
                         break;
                     default :
                         Debug.LogError("tool ID not contained in either list of tools");

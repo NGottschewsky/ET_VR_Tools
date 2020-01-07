@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\ninag\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\ninag\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Unity_ET_VR.-1891795158.00" t="ExcludeRecursive" />
-    <e p="D:\Studium\Bachelorarbeit\ET_VR_Tools\Unity_ET_VR" t="IncludeRecursive">
+    <e p="C:\Users\experiment\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\experiment\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Unity_ET_VR.1346354029.00" t="ExcludeRecursive" />
+    <e p="D:\Nina_ET_VR\ET_VR_Tools\Unity_ET_VR" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">

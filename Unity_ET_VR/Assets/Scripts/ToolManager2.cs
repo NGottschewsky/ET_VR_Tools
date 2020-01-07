@@ -22,9 +22,13 @@ public class ToolManager2 : MonoBehaviour
     [SerializeField] public List<ToolController> _tools;
     [SerializeField] public GameObject spawnerPositionLeft;
     [SerializeField] public GameObject spawnerPositionRight;
+    [SerializeField] public GameObject spawnerPositionSPEICHRight;
+    [SerializeField] public GameObject spawnerPositionSPEICHLeft;
+    [SerializeField] public GameObject spawnerPositionFORKRight;
+    [SerializeField] public GameObject spawnerPositionFORKLeft;
 
     private string[] _leftTools = new string[] {"1", "2", "5", "6", "9", "10", "13", "14", "17", "18", "21", "22"};//, "25", "26", "29", "30", "33", "34", "37", "38", "41", "42", "45", "46"};
-    private string[] _rightTools = new string[] {"3", "4", "7", "8", "11", "12", "15", "16", "19", "20", "23", "24"};//, "27", "28", "31", "32", "35", "36", "39", "40", "43", "44", "47", "48"};
+    private string[] _rightTools = new string[] {"3", "4", "7", "8", "11", "12", "19", "20"};//, "27", "28", "31", "32", "35", "36", "39", "40", "43", "44", "47", "48"};
     
     private int _trial;
 
@@ -147,8 +151,27 @@ public class ToolManager2 : MonoBehaviour
             }
             else
             {
-                Debug.LogError("tool ID not contained in either list of tools");
+                switch (internalTool.id)
+                {
+                    case "15" :
+                        ToolPresenter.INSTANCE.PresentTool(internalTool,"speichenschlüssel right");
+                        break;
+                    case "16" :
+                        ToolPresenter.INSTANCE.PresentTool(internalTool,"speichenschlüssel left");    
+                        break;
+                    case "23" :
+                        ToolPresenter.INSTANCE.PresentTool(internalTool,"fork right"); 
+                        break;
+                    case "24" :
+                        ToolPresenter.INSTANCE.PresentTool(internalTool,"fork left"); 
+                        break;
+                    default :
+                        Debug.LogError("tool ID not contained in either list of tools");
+                        break;
+                }
+                
             }
+            
             _trial++;
             
         }

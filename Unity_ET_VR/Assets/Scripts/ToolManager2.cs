@@ -34,8 +34,8 @@ public class ToolManager2 : MonoBehaviour
 
     private List<string[]> _toolOrder = new List<string[]>();
     
-    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrix.csv";
-    //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrix.csv";
+    //private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrix.csv";
+    private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrix.csv";
     
     private bool _endOfBlock = false;
 

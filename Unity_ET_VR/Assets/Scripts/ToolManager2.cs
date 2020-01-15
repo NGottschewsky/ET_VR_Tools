@@ -6,18 +6,20 @@ using UnityEditor;
 using UnityEngine;
 using System.Linq;
 using TMPro;
+using UnityEngine.UIElements;
 
 public class ToolManager2 : MonoBehaviour
 {
     [Header("Experiment components")]
     public CuePresenter cuePresenter;
     public ToolPresenter toolPresenter;
-
+    public TrialManager trialManager;
+    
     [Header("Experiment parameters")] 
     public int ParticipantNr;
-    
+
     public static ToolManager2 instance;
-    
+
     [Header("Tool Models")] 
     [SerializeField] public List<ToolController> _tools;
     [SerializeField] public GameObject spawnerPositionLeft;
@@ -41,10 +43,11 @@ public class ToolManager2 : MonoBehaviour
     //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     
     private bool _endOfBlock = false;
+    private bool _endOfTrial = false;
 
     private ToolController _lastUsedTool;
 
-    
+   
     
     #region Singelton
     //make ToolManager2 singleton to be able to create 1 instance on which to call its methods
@@ -65,11 +68,6 @@ public class ToolManager2 : MonoBehaviour
         _toolOrder = ReadCsvFile(_filePath);
         
         Debug.Log(_tools.Count + " tools found");
-        
-       /* Debug.Log(instance._tools[7].ToString());
-        Debug.Log(instance._tools[7].GetComponent<GameObject>().ToString());
-        Debug.Log(instance._tools[7].gameObject.ToString()); */
-        
     }
 
 
@@ -131,17 +129,19 @@ public class ToolManager2 : MonoBehaviour
             if (_trial < 1) _trial++;*/
 //        }
 
-        if (Input.GetKeyDown(KeyCode.Space) && !_endOfBlock) //will be replaced with some controller event specified in TrialEndReached()
+        if (TrialEndReached() && !_endOfBlock)  //Input.GetKeyDown(KeyCode.Space) && !_endOfBlock) //will be replaced with some controller event specified in TrialEndReached() 
         {
             
             GetNextTool(out var internalTool);
+            TrialManager.colliderInstance.ResetTriggerValue();
+            
             if (Array.Exists(_liftCue, element => element == internalTool.id))
             {
-                ShowMessege(Color.white,"Lift" );
+                ShowMessage(Color.white,"Lift" );
             }
             else if(Array.Exists(_useCue, element => element == internalTool.id))
             {
-                ShowMessege(Color.white,"Use");
+                ShowMessage(Color.white,"Use");
             }
             else
             {
@@ -190,7 +190,7 @@ public class ToolManager2 : MonoBehaviour
         if (_trial == (_toolOrder[ParticipantNr].Length))
         {
             _endOfBlock = true;
-            ShowMessege(Color.red,"End of Block");
+            ShowMessage(Color.red,"End of Block");
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && _endOfBlock)
@@ -201,7 +201,7 @@ public class ToolManager2 : MonoBehaviour
         
     }
     
-    private void ShowMessege(Color32 color, string msg)
+    private void ShowMessage(Color32 color, string msg)
     {
         cuePresenter.lableColor = color;
         cuePresenter.ShowText(msg);
@@ -209,12 +209,11 @@ public class ToolManager2 : MonoBehaviour
 
     private bool TrialEndReached()
     {
-        throw new NotImplementedException();
+        return TrialManager.colliderInstance.GetTriggerValue();
+        //throw new NotImplementedException();
         //if vr controller held into collider for 5 secs or if it is placed in a snapzone or smth similar
     }
 
-    
-    
     public void DeactivateLastTool()
     {
         if (_lastUsedTool != null)

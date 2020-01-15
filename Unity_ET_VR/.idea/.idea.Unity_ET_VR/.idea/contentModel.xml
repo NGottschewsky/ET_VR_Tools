@@ -217,6 +217,7 @@
           <e p="ToolController.cs" t="Include" />
           <e p="ToolManager2.cs" t="Include" />
           <e p="ToolPresenter.cs" t="Include" />
+          <e p="TrialManager.cs" t="Include" />
         </e>
         <e p="SteamVR" t="Include">
           <e p="Editor" t="Include">

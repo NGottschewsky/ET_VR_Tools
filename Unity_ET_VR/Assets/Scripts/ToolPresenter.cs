@@ -22,7 +22,7 @@ public class ToolPresenter : MonoBehaviour
     public void PresentTool(ToolController tool, string orientation)
     {
         ToolManager2.instance.DeactivateLastTool();
-
+        
         switch (orientation)
         {
             case "left" :

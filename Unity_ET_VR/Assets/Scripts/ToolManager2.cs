@@ -122,31 +122,27 @@ public class ToolManager2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-//        if (TrialEndReached()) //condition that ends the trial
-//        {
-            /*GetNextTool(out var internalTool);
-            ToolPresenter.INSTANCE.PresentTool(internalTool);
-            if (_trial < 1) _trial++;*/
-//        }
 
-        if (TrialEndReached() && !_endOfBlock)  //Input.GetKeyDown(KeyCode.Space) && !_endOfBlock) //will be replaced with some controller event specified in TrialEndReached() 
+        if (TrialEndReached() && !_endOfBlock)  //Input.GetKeyDown(KeyCode.Space) && !_endOfBlock)
         {
             
             GetNextTool(out var internalTool);
             TrialManager.colliderInstance.ResetTriggerValue();
             
+            
             if (Array.Exists(_liftCue, element => element == internalTool.id))
             {
-                ShowMessage(Color.white,"Lift" );
+                StartCoroutine(ShowMessageCoroutine(Color.white, "Lift"));
             }
             else if(Array.Exists(_useCue, element => element == internalTool.id))
             {
-                ShowMessage(Color.white,"Use");
+                StartCoroutine(ShowMessageCoroutine(Color.white, "Use"));
             }
             else
             {
                 Debug.Log("Tool Id in neither cue list");
             }
+            
             
             if (Array.Exists(_leftTools, element => element == internalTool.id))
             {
@@ -180,28 +176,37 @@ public class ToolManager2 : MonoBehaviour
                         Debug.LogError("tool ID not contained in either list of tools");
                         break;
                 }
-                
             }
             
             _trial++;
             
         }
 
-        if (_trial == (_toolOrder[ParticipantNr].Length))
+        if (_trial == _toolOrder[ParticipantNr].Length)
         {
             _endOfBlock = true;
-            ShowMessage(Color.red,"End of Block");
+            StartCoroutine(ShowMessageCoroutine(Color.red, "End of Block"));
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && _endOfBlock)
+        if (TrialEndReached()  && _endOfBlock)
         {
             Debug.Log("End of Block.");
-            //Use textMeshPro to make text appear
+            TrialManager.colliderInstance.ResetTriggerValue();
+            // Start second block 
         }
         
     }
     
-    private void ShowMessage(Color32 color, string msg)
+    // shows text after a 3 second delay
+    IEnumerator ShowMessageCoroutine(Color32 color, string msg) 
+    {
+        yield return new WaitForSeconds(3.0f);
+        cuePresenter.lableColor = color;
+        cuePresenter.ShowText(msg);
+    }
+    
+    // shows text without a delay 
+    public void ShowMessage(Color32 color, string msg)
     {
         cuePresenter.lableColor = color;
         cuePresenter.ShowText(msg);
@@ -217,7 +222,10 @@ public class ToolManager2 : MonoBehaviour
     public void DeactivateLastTool()
     {
         if (_lastUsedTool != null)
+        {
             _lastUsedTool.DeactivateThis();
+            ShowMessage(Color.white, "  +");
+        }
     }
 
     

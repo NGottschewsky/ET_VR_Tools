@@ -51,7 +51,7 @@ public class TrialManager : MonoBehaviour
     {
         if (other.CompareTag("MyControllerTag") && _isTriggerEntered)
         {
-            Debug.Log("Countdown not yet done");
+            //Debug.Log("Countdown not yet done");
             if (_waitTime <= 0)
             {
                 Debug.Log("Lange genug im Trigger gewesen");

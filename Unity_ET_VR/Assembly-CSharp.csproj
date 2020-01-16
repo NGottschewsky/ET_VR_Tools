@@ -103,6 +103,7 @@
      <Compile Include="Assets\Scripts\ColliderFitting.cs" />
      <Compile Include="Assets\Scripts\CuePresenter.cs" />
      <Compile Include="Assets\Scripts\Grabable.cs" />
+     <Compile Include="Assets\Scripts\NinasNeuesLiblingsScript.cs" />
      <Compile Include="Assets\Scripts\ToolController.cs" />
      <Compile Include="Assets\Scripts\ToolManager2.cs" />
      <Compile Include="Assets\Scripts\ToolPresenter.cs" />

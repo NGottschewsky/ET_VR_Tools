@@ -214,6 +214,7 @@
           <e p="ColliderFitting.cs" t="Include" />
           <e p="CuePresenter.cs" t="Include" />
           <e p="Grabable.cs" t="Include" />
+          <e p="NinasNeuesLiblingsScript.cs" t="Include" />
           <e p="ToolController.cs" t="Include" />
           <e p="ToolManager2.cs" t="Include" />
           <e p="ToolPresenter.cs" t="Include" />

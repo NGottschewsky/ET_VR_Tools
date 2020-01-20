@@ -10,6 +10,13 @@ public class ToolController : MonoBehaviour
     //public int id;
 
     public string id;
+    public string name;
+    
+    [HideInInspector]
+    public string orientation;
+    [HideInInspector]
+    public string cue;
+
     
     //Deactivate the currently presented tool
     public void DeactivateThis()

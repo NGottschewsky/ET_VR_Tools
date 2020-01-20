@@ -16,10 +16,11 @@ public class ToolManager2 : MonoBehaviour
     public TrialManager trialManager;
     
     [Header("Experiment parameters")] 
-    public int ParticipantNr;
-    public int ParticipantID;
-    public string Gender;
-    public string Age;
+    public int participantNr;
+    public int participantID;
+    public string gender;
+    public string age;
+    public int block;
     
     public static ToolManager2 instance;
 
@@ -42,14 +43,15 @@ public class ToolManager2 : MonoBehaviour
 
     private List<string[]> _toolOrder = new List<string[]>();
     
-    //private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
-    private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     
     private bool _endOfBlock = false;
     private bool _endOfTrial = false;
 
     private ToolController _lastUsedTool;
 
+    private Database _database = Database.Instance;
    
     
     #region Singelton
@@ -61,16 +63,35 @@ public class ToolManager2 : MonoBehaviour
     }
 
     #endregion
-
-
     
+
     void Start()
     {
         _trial = 0;
         
         _toolOrder = ReadCsvFile(_filePath);
         
-        Debug.Log(_tools.Count + " tools found");
+        Block b = new Block();
+        b.ID = block;
+        b.Start = _database.getCurrentTimestamp();
+        _database.experiment.blocks.Add(b);
+
+        foreach (var tool in _leftTools)
+        {
+            _tools[Int16.Parse(tool)].orientation = "Left";
+        }
+        foreach (var tool in _rightTools)
+        {
+            _tools[Int16.Parse(tool)].orientation = "Right";
+        }
+        foreach (var tool in _liftCue)
+        {
+            _tools[Int16.Parse(tool)].cue = "Lift";
+        }
+        foreach (var tool in _useCue)
+        {
+            _tools[Int16.Parse(tool)].cue = "Use";
+        }
     }
 
 
@@ -82,7 +103,7 @@ public class ToolManager2 : MonoBehaviour
         foreach (var toolController in _tools)
         {
             
-            if (toolController.id == _toolOrder[ParticipantNr][_trial])
+            if (toolController.id == _toolOrder[participantNr][_trial])
             {
                 returnTool = toolController;
             }
@@ -185,7 +206,7 @@ public class ToolManager2 : MonoBehaviour
             
         }
 
-        if (_trial == _toolOrder[ParticipantNr].Length)
+        if (_trial == _toolOrder[participantNr].Length)
         {
             _endOfBlock = true; 
             ShowMessage(Color.red, "End of Block");

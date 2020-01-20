@@ -17,7 +17,10 @@ public class ToolManager2 : MonoBehaviour
     
     [Header("Experiment parameters")] 
     public int ParticipantNr;
-
+    public int ParticipantID;
+    public string Gender;
+    public string Age;
+    
     public static ToolManager2 instance;
 
     [Header("Tool Models")] 
@@ -39,8 +42,8 @@ public class ToolManager2 : MonoBehaviour
 
     private List<string[]> _toolOrder = new List<string[]>();
     
-    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
-    //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    //private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     
     private bool _endOfBlock = false;
     private bool _endOfTrial = false;
@@ -132,11 +135,11 @@ public class ToolManager2 : MonoBehaviour
             
             if (Array.Exists(_liftCue, element => element == internalTool.id))
             {
-                StartCoroutine(ShowMessageCoroutine(Color.white, "Lift"));
+                ShowMessage(Color.white, "Lift");
             }
             else if(Array.Exists(_useCue, element => element == internalTool.id))
             {
-                StartCoroutine(ShowMessageCoroutine(Color.white, "Use"));
+                ShowMessage(Color.white, "Use");
             }
             else
             {
@@ -146,11 +149,11 @@ public class ToolManager2 : MonoBehaviour
             
             if (Array.Exists(_leftTools, element => element == internalTool.id))
             {
-                ToolPresenter.INSTANCE.PresentTool(internalTool, "left");
+                StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "left"));
             }
             else if (Array.Exists(_rightTools, element => element == internalTool.id))
             {
-                ToolPresenter.INSTANCE.PresentTool(internalTool, "right");
+                StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "right"));
             }
             else
             {
@@ -158,19 +161,19 @@ public class ToolManager2 : MonoBehaviour
                 {
                     case "29" :
                     case "30" :    
-                        ToolPresenter.INSTANCE.PresentTool(internalTool,"speichenschlüssel left");
+                        StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool,"speichenschlüssel left"));
                         break;
                     case "31" :
                     case "32" :    
-                        ToolPresenter.INSTANCE.PresentTool(internalTool,"speichenschlüssel right");    
+                        StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool,"speichenschlüssel right"));    
                         break;
                     case "45" :
                     case "46" :    
-                        ToolPresenter.INSTANCE.PresentTool(internalTool,"fork left"); 
+                        StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool,"fork left")); 
                         break;
                     case "47" :
                     case "48" :    
-                        ToolPresenter.INSTANCE.PresentTool(internalTool,"fork right"); 
+                        StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool,"fork right")); 
                         break;
                     default :
                         Debug.LogError("tool ID not contained in either list of tools");
@@ -184,8 +187,8 @@ public class ToolManager2 : MonoBehaviour
 
         if (_trial == _toolOrder[ParticipantNr].Length)
         {
-            _endOfBlock = true;
-            StartCoroutine(ShowMessageCoroutine(Color.red, "End of Block"));
+            _endOfBlock = true; 
+            ShowMessage(Color.red, "End of Block");
         }
 
         if (TrialEndReached()  && _endOfBlock)
@@ -198,12 +201,12 @@ public class ToolManager2 : MonoBehaviour
     }
     
     // shows text after a 3 second delay
-    IEnumerator ShowMessageCoroutine(Color32 color, string msg) 
+    /*IEnumerator ShowMessageCoroutine(Color32 color, string msg) 
     {
         yield return new WaitForSeconds(3.0f);
         cuePresenter.lableColor = color;
         cuePresenter.ShowText(msg);
-    }
+    }*/
     
     // shows text without a delay 
     public void ShowMessage(Color32 color, string msg)
@@ -224,7 +227,6 @@ public class ToolManager2 : MonoBehaviour
         if (_lastUsedTool != null)
         {
             _lastUsedTool.DeactivateThis();
-            ShowMessage(Color.white, "  +");
         }
     }
 

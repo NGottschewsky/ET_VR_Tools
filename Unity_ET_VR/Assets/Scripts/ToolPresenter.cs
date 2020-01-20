@@ -19,9 +19,11 @@ public class ToolPresenter : MonoBehaviour
         get { return INSTANCE; }
     }
 
-    public void PresentTool(ToolController tool, string orientation)
+    public IEnumerator PresentTool(ToolController tool, string orientation)
     {
         ToolManager2.instance.DeactivateLastTool();
+        
+        yield return new WaitForSeconds(3.0f);
         
         switch (orientation)
         {

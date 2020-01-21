@@ -62,8 +62,6 @@ public class Exp_ParticipantInfo
     public int ID;
     public int age;
     public string gender;
-    //public string occupation;
-    //public string dominantHand;
     public List<Block> blocks;
 
     public Exp_ParticipantInfo()
@@ -76,8 +74,6 @@ public class Exp_ParticipantInfo
 public class Block
 {
     public int ID;
-    public double Start;
-    public double end;
     public List<Trial> trials;
 
     public Block()
@@ -94,22 +90,16 @@ public class Trial
     public string toolOrientation; // Left or Right
     public List<Coll> colls; // Handle collider and effector collider 
     public string cue; // Lift or Use
-    //public string modelName;
     public double start;
     public double end;
-    //public int cubeAmount;
-    //public List<Cube> cubes;
-    //public List<Alignment> alignments;
     
-    // Samples?
+    // Samples
     public List<FrameData> samples;
 
     public Trial()
     {
         colls = new List<Coll>();
         samples = new List<FrameData>();
-        //cubes = new List<Cube>();
-        //alignments = new List<Alignment>();
     }
 }
 
@@ -179,14 +169,9 @@ public class FrameData
     public List<RayHit> rightEyeHits;
     public List<RayHit> leftEyeHits;
     public List<RayHit> middlePointHits;
-
-    public Vector3 currentCubePos;
-    public float diffCurrentCubeToOriginal;
-
-
-    public bool endAlignment;
-    public bool startGrabbing;
-    public bool isMoving;
+    
+    // trigger pressed 
+    // public bool 
 
     public FrameData()
     {
@@ -200,5 +185,5 @@ public class FrameData
 public class RayHit
 {
     public Vector3 position;
-    public int colliderID;
+    public int colliderID; // effector or handle, in string
 }

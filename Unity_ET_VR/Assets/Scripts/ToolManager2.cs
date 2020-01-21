@@ -43,8 +43,8 @@ public class ToolManager2 : MonoBehaviour
 
     private List<string[]> _toolOrder = new List<string[]>();
     
-    //private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
-    private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     
     private bool _endOfBlock = false;
     private bool _endOfTrial = false;
@@ -73,7 +73,6 @@ public class ToolManager2 : MonoBehaviour
         
         Block b = new Block();
         b.ID = block;
-        b.Start = _database.getCurrentTimestamp();
         _database.experiment.blocks.Add(b);
 
         foreach (var tool in _tools)
@@ -109,36 +108,34 @@ public class ToolManager2 : MonoBehaviour
             if (toolController.id == _toolOrder[participantNr][_trial])
             {
                 returnTool = toolController;
-                /*_database.experiment.blocks.Last().trials.Last().toolModel = returnTool.name;
+                _database.experiment.blocks.Last().trials.Last().toolModel = returnTool.name;
                 _database.experiment.blocks.Last().trials.Last().toolOrientation = returnTool.orientation;
-                _database.experiment.blocks.Last().trials.Last().cue = returnTool.cue;*/
-                /*_database.experiment.blocks.Last().trials.Last().colls[0].position = returnTool.GetComponentInChildren<BoxCollider>().tag;
-                _database.experiment.blocks.Last().trials.Last().colls[0].centre = returnTool.GetComponentInChildren<BoxCollider>().size;
-                _database.experiment.blocks.Last().trials.Last().colls[0].centre = returnTool.GetComponentInChildren<BoxCollider>().center;
-                _database.experiment.blocks.Last().trials.Last().colls[1].position = returnTool.GetComponentInChildren<BoxCollider>().tag;
-                _database.experiment.blocks.Last().trials.Last().colls[1].centre = returnTool.GetComponentInChildren<BoxCollider>().size;
-                _database.experiment.blocks.Last().trials.Last().colls[1].centre = returnTool.GetComponentInChildren<BoxCollider>().center; */
-                
-                Debug.Log(returnTool.name);
-                Debug.Log(returnTool.orientation);
-                Debug.Log(returnTool.cue);
+                _database.experiment.blocks.Last().trials.Last().cue = returnTool.cue;
 
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().toolModel);
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().toolOrientation);
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().cue = returnTool.cue);
+                
                 foreach (Transform child in transform)
                 {
+                    Debug.Log(child.gameObject.tag);
                     if (child.GetComponent<BoxCollider>() != null)
                     {
                         Coll coll = new Coll
                         {
-                            position = child.GetComponent<BoxCollider>().tag,
+                            position = child.tag,
                             size = child.GetComponent<BoxCollider>().size,
                             center = child.GetComponent<BoxCollider>().center
                         };
                         _database.experiment.blocks.Last().trials.Last().colls.Add(coll);
                     }
                 }
-                Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[0]);
-                Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[1]);
-
+                /*Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[0].position);
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[1].position); 
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[0].size);
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[1].size); 
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[0].center);
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[1].center); */
             }
             
         }
@@ -182,6 +179,11 @@ public class ToolManager2 : MonoBehaviour
 
         if (TrialEndReached() && !_endOfBlock)  //Input.GetKeyDown(KeyCode.Space) && !_endOfBlock)
         {
+            Trial t = new Trial();
+            t.ID = _trial;
+            t.start = _database.getCurrentTimestamp();
+            _database.experiment.blocks.Last().trials.Add(t);
+            Debug.Log(_database.experiment.blocks.Last().trials.Last().ID);
             
             GetNextTool(out var internalTool);
             TrialManager.colliderInstance.ResetTriggerValue();
@@ -272,6 +274,7 @@ public class ToolManager2 : MonoBehaviour
     private bool TrialEndReached()
     {
         return TrialManager.colliderInstance.GetTriggerValue();
+        
         //throw new NotImplementedException();
         //if vr controller held into collider for 5 secs or if it is placed in a snapzone or smth similar
     }

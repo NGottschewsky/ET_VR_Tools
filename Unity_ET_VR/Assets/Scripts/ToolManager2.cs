@@ -43,8 +43,8 @@ public class ToolManager2 : MonoBehaviour
 
     private List<string[]> _toolOrder = new List<string[]>();
     
-    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
-    //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    //private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     
     private bool _endOfBlock = false;
     private bool _endOfTrial = false;
@@ -118,10 +118,27 @@ public class ToolManager2 : MonoBehaviour
                 _database.experiment.blocks.Last().trials.Last().colls[1].position = returnTool.GetComponentInChildren<BoxCollider>().tag;
                 _database.experiment.blocks.Last().trials.Last().colls[1].centre = returnTool.GetComponentInChildren<BoxCollider>().size;
                 _database.experiment.blocks.Last().trials.Last().colls[1].centre = returnTool.GetComponentInChildren<BoxCollider>().center; */
-                Debug.Log(returnTool.GetComponentInChildren<BoxCollider>().tag);
-                Debug.Log(returnTool.GetComponentInChildren<BoxCollider>().size);
-                Debug.Log(returnTool.GetComponentInChildren<BoxCollider>().center);
-                // How do I tell the script to return both box colliders? can I find collider or child by tag?
+                
+                Debug.Log(returnTool.name);
+                Debug.Log(returnTool.orientation);
+                Debug.Log(returnTool.cue);
+
+                foreach (Transform child in transform)
+                {
+                    if (child.GetComponent<BoxCollider>() != null)
+                    {
+                        Coll coll = new Coll
+                        {
+                            position = child.GetComponent<BoxCollider>().tag,
+                            size = child.GetComponent<BoxCollider>().size,
+                            center = child.GetComponent<BoxCollider>().center
+                        };
+                        _database.experiment.blocks.Last().trials.Last().colls.Add(coll);
+                    }
+                }
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[0]);
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[1]);
+
             }
             
         }

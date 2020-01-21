@@ -117,7 +117,7 @@ public class Trial
 public class Coll
 {
     public string position; // Handle or effector
-    public Vector3 centre;
+    public Vector3 center;
     public Vector3 size;
 }
 

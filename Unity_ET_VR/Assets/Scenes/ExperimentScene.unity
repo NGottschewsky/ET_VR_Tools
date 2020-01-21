@@ -399,7 +399,7 @@ GameObject:
   - component: {fileID: 27981487}
   m_Layer: 0
   m_Name: BlumenschneiderRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -495,7 +495,7 @@ GameObject:
   - component: {fileID: 31603866}
   m_Layer: 0
   m_Name: SpeichenschluesselLeftEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -618,7 +618,7 @@ GameObject:
   - component: {fileID: 82929486}
   m_Layer: 0
   m_Name: ShovelLeftHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -895,7 +895,7 @@ GameObject:
   - component: {fileID: 153738043}
   m_Layer: 0
   m_Name: WrenchRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1477,7 +1477,7 @@ GameObject:
   - component: {fileID: 193388065}
   m_Layer: 0
   m_Name: ZitronenschaberRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1574,7 +1574,7 @@ GameObject:
   - component: {fileID: 197073748}
   m_Layer: 0
   m_Name: ForkRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1671,7 +1671,7 @@ GameObject:
   - component: {fileID: 200778444}
   m_Layer: 0
   m_Name: UnkrautstecherRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1867,7 +1867,7 @@ GameObject:
   - component: {fileID: 216206345}
   m_Layer: 0
   m_Name: ScrewdriverRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1963,7 +1963,7 @@ GameObject:
   - component: {fileID: 248615814}
   m_Layer: 0
   m_Name: FischschupperLeftEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2533,7 +2533,7 @@ GameObject:
   - component: {fileID: 272255851}
   m_Layer: 0
   m_Name: WrenchRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2578,7 +2578,7 @@ GameObject:
   - component: {fileID: 273171165}
   m_Layer: 0
   m_Name: SpeichenschluesselRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3022,7 +3022,7 @@ GameObject:
   - component: {fileID: 309704796}
   m_Layer: 0
   m_Name: PaletteknifeLeftHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4335,7 +4335,7 @@ GameObject:
   - component: {fileID: 420576617}
   m_Layer: 0
   m_Name: ScrewdriverRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4488,7 +4488,7 @@ GameObject:
   - component: {fileID: 484579837}
   m_Layer: 0
   m_Name: ForkLeftEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4533,7 +4533,7 @@ GameObject:
   - component: {fileID: 559047754}
   m_Layer: 0
   m_Name: SpeichenschluesselLeftHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4630,7 +4630,7 @@ GameObject:
   - component: {fileID: 559507477}
   m_Layer: 0
   m_Name: ShovelRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5044,7 +5044,7 @@ GameObject:
   - component: {fileID: 586762838}
   m_Layer: 0
   m_Name: SpeichenschluesselLeftHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5348,7 +5348,7 @@ GameObject:
   - component: {fileID: 606297736}
   m_Layer: 0
   m_Name: ZitronenschaberRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5410,7 +5410,7 @@ GameObject:
   - component: {fileID: 625476210}
   m_Layer: 0
   m_Name: BlumenschneiderLeftEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6062,7 +6062,7 @@ GameObject:
   - component: {fileID: 728064562}
   m_Layer: 0
   m_Name: FischschupperRightHandle (1)
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6475,7 +6475,7 @@ GameObject:
   - component: {fileID: 798308762}
   m_Layer: 0
   m_Name: SpeichenschluesselLeftEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6519,7 +6519,7 @@ GameObject:
   - component: {fileID: 812834244}
   m_Layer: 0
   m_Name: ShovelLeftEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6564,7 +6564,7 @@ GameObject:
   - component: {fileID: 823685017}
   m_Layer: 0
   m_Name: UnkrautstecherLeftHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6660,7 +6660,7 @@ GameObject:
   - component: {fileID: 825970069}
   m_Layer: 0
   m_Name: PaintbrushRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6944,7 +6944,7 @@ GameObject:
   - component: {fileID: 829779104}
   m_Layer: 0
   m_Name: FischschupperLeftHandle (1)
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7309,7 +7309,7 @@ GameObject:
   - component: {fileID: 875963796}
   m_Layer: 0
   m_Name: UnkrautstecherRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7470,7 +7470,7 @@ GameObject:
   - component: {fileID: 883856806}
   m_Layer: 0
   m_Name: SpatulaRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7514,7 +7514,7 @@ GameObject:
   - component: {fileID: 906014955}
   m_Layer: 0
   m_Name: PaletteknifeRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7588,7 +7588,7 @@ GameObject:
   - component: {fileID: 909656967}
   m_Layer: 0
   m_Name: UnkrautstecherLeftEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7633,7 +7633,7 @@ GameObject:
   - component: {fileID: 923414847}
   m_Layer: 0
   m_Name: SpatulaRightHandle (1)
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7730,7 +7730,7 @@ GameObject:
   - component: {fileID: 935501896}
   m_Layer: 0
   m_Name: WrenchRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8066,7 +8066,7 @@ GameObject:
   - component: {fileID: 950088232}
   m_Layer: 0
   m_Name: SpatulaLeftHandle (1)
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8329,7 +8329,7 @@ GameObject:
   - component: {fileID: 1004765805}
   m_Layer: 0
   m_Name: UnkrautstecherRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8773,7 +8773,7 @@ GameObject:
   - component: {fileID: 1055755329}
   m_Layer: 0
   m_Name: WrenchRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8823,7 +8823,7 @@ GameObject:
   - component: {fileID: 1061302713}
   m_Layer: 0
   m_Name: ScrewdriverRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8936,7 +8936,7 @@ GameObject:
   - component: {fileID: 1146250992}
   m_Layer: 0
   m_Name: BlumenschneiderLeftHandle (1)
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9331,7 +9331,7 @@ GameObject:
   - component: {fileID: 1164586705}
   m_Layer: 0
   m_Name: FischschupperRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9755,7 +9755,7 @@ GameObject:
   - component: {fileID: 1244315805}
   m_Layer: 0
   m_Name: BlumenschneiderRightHandle (1)
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9852,7 +9852,7 @@ GameObject:
   - component: {fileID: 1272780175}
   m_Layer: 0
   m_Name: ShovelRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10206,7 +10206,7 @@ GameObject:
   - component: {fileID: 1286989793}
   m_Layer: 0
   m_Name: ZitronenschaberRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10302,7 +10302,7 @@ GameObject:
   - component: {fileID: 1289710248}
   m_Layer: 0
   m_Name: PaintbrushLeftEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10352,7 +10352,7 @@ GameObject:
   - component: {fileID: 1309657786}
   m_Layer: 0
   m_Name: ZitronenschaberRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10396,7 +10396,7 @@ GameObject:
   - component: {fileID: 1317837446}
   m_Layer: 0
   m_Name: WrenchLeftEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10518,7 +10518,7 @@ GameObject:
   - component: {fileID: 1337262035}
   m_Layer: 0
   m_Name: ZitronenschaberLeftEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10707,7 +10707,7 @@ GameObject:
   - component: {fileID: 1362131084}
   m_Layer: 0
   m_Name: ScrewdriverLeftHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11042,7 +11042,7 @@ GameObject:
   - component: {fileID: 1387809823}
   m_Layer: 0
   m_Name: ShovelRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11087,7 +11087,7 @@ GameObject:
   - component: {fileID: 1398342837}
   m_Layer: 0
   m_Name: PaletteknifeRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11219,7 +11219,7 @@ GameObject:
   - component: {fileID: 1403398854}
   m_Layer: 0
   m_Name: PaintbrushLeftHandle (1)
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11733,7 +11733,7 @@ GameObject:
   - component: {fileID: 1473309347}
   m_Layer: 0
   m_Name: SpeichenschluesselRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11993,7 +11993,7 @@ GameObject:
   - component: {fileID: 1509907811}
   m_Layer: 0
   m_Name: BlumenschneiderRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12038,7 +12038,7 @@ GameObject:
   - component: {fileID: 1548807835}
   m_Layer: 0
   m_Name: PaletteknifeRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12203,7 +12203,7 @@ GameObject:
   - component: {fileID: 1602746147}
   m_Layer: 0
   m_Name: PaintbrushRightHandle (1)
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12557,7 +12557,7 @@ GameObject:
   - component: {fileID: 1641700631}
   m_Layer: 0
   m_Name: ForkLeftHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12654,7 +12654,7 @@ GameObject:
   - component: {fileID: 1644604287}
   m_Layer: 0
   m_Name: WrenchLeftHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12750,7 +12750,7 @@ GameObject:
   - component: {fileID: 1656714256}
   m_Layer: 0
   m_Name: PaintbrushRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12878,7 +12878,7 @@ GameObject:
   - component: {fileID: 1681803607}
   m_Layer: 0
   m_Name: ForkRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13052,7 +13052,7 @@ GameObject:
   - component: {fileID: 1698004301}
   m_Layer: 0
   m_Name: SpatulaRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13425,7 +13425,7 @@ GameObject:
   - component: {fileID: 1747666271}
   m_Layer: 0
   m_Name: ForkRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13470,7 +13470,7 @@ GameObject:
   - component: {fileID: 1798911371}
   m_Layer: 0
   m_Name: PaintbrushRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13566,7 +13566,7 @@ GameObject:
   - component: {fileID: 1799282887}
   m_Layer: 0
   m_Name: ShovelRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13629,7 +13629,7 @@ GameObject:
   - component: {fileID: 1803773395}
   m_Layer: 0
   m_Name: FischschupperRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13726,7 +13726,7 @@ GameObject:
   - component: {fileID: 1815622550}
   m_Layer: 0
   m_Name: ScrewdriverRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14331,7 +14331,7 @@ GameObject:
   - component: {fileID: 1859173973}
   m_Layer: 0
   m_Name: UnkrautstecherRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14853,7 +14853,7 @@ GameObject:
   - component: {fileID: 1893409247}
   m_Layer: 0
   m_Name: SpatulaRightHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15316,7 +15316,7 @@ GameObject:
   - component: {fileID: 1917345135}
   m_Layer: 0
   m_Name: ZitronenschaberLeftHandle
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16195,7 +16195,7 @@ GameObject:
   - component: {fileID: 1964150135}
   m_Layer: 0
   m_Name: PaletteknifeRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16478,7 +16478,7 @@ GameObject:
   - component: {fileID: 1984759631}
   m_Layer: 0
   m_Name: ForkRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16522,7 +16522,7 @@ GameObject:
   - component: {fileID: 1991550385}
   m_Layer: 0
   m_Name: SpatulaLeftEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16566,7 +16566,7 @@ GameObject:
   - component: {fileID: 1993556417}
   m_Layer: 0
   m_Name: FischschupperRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16610,7 +16610,7 @@ GameObject:
   - component: {fileID: 1994153843}
   m_Layer: 0
   m_Name: PaletteknifeLeftEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16910,7 +16910,7 @@ GameObject:
   - component: {fileID: 2025614900}
   m_Layer: 0
   m_Name: ScrewdriverLeftEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17133,7 +17133,7 @@ GameObject:
   - component: {fileID: 2093948136}
   m_Layer: 0
   m_Name: BlumenschneiderRightEffector
-  m_TagString: Untagged
+  m_TagString: Effector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17512,10 +17512,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1412043274}
     m_Modifications:
+    - target: {fileID: 1173361257152090503, guid: 7374f4199b88ca2428cba474bbaf8e36,
+        type: 3}
+      propertyPath: m_TagString
+      value: Effector
+      objectReference: {fileID: 0}
     - target: {fileID: 1173361257546181303, guid: 7374f4199b88ca2428cba474bbaf8e36,
         type: 3}
       propertyPath: name
       value: spoke wrench
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173361257701995736, guid: 7374f4199b88ca2428cba474bbaf8e36,
+        type: 3}
+      propertyPath: m_TagString
+      value: Handle
       objectReference: {fileID: 0}
     - target: {fileID: 6139014417945674152, guid: 7374f4199b88ca2428cba474bbaf8e36,
         type: 3}
@@ -17719,10 +17729,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1412043274}
     m_Modifications:
+    - target: {fileID: 2708388037718706416, guid: 7210005bce26ee748b8370927fe6adc8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Handle
+      objectReference: {fileID: 0}
     - target: {fileID: 2708388039053458520, guid: 7210005bce26ee748b8370927fe6adc8,
         type: 3}
       propertyPath: name
       value: screwdriver
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708388039286511417, guid: 7210005bce26ee748b8370927fe6adc8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Effector
       objectReference: {fileID: 0}
     - target: {fileID: 6248688975016224086, guid: 7210005bce26ee748b8370927fe6adc8,
         type: 3}
@@ -17932,6 +17952,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1412043274}
     m_Modifications:
+    - target: {fileID: 3455633731973378995, guid: 1cef19473058ad34f8bdfab2fc0adfcc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Effector
+      objectReference: {fileID: 0}
     - target: {fileID: 3455633732244657832, guid: 1cef19473058ad34f8bdfab2fc0adfcc,
         type: 3}
       propertyPath: name
@@ -18001,6 +18026,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3455633732446436184, guid: 1cef19473058ad34f8bdfab2fc0adfcc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Handle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cef19473058ad34f8bdfab2fc0adfcc, type: 3}
@@ -18139,10 +18169,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1412043274}
     m_Modifications:
+    - target: {fileID: 3633987083195071595, guid: b3cc1c3dba7167049a62d6d943d033fb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Effector
+      objectReference: {fileID: 0}
     - target: {fileID: 3633987083469898570, guid: b3cc1c3dba7167049a62d6d943d033fb,
         type: 3}
       propertyPath: name
       value: shovel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633987083785657028, guid: b3cc1c3dba7167049a62d6d943d033fb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Handle
       objectReference: {fileID: 0}
     - target: {fileID: 4706102085896870470, guid: b3cc1c3dba7167049a62d6d943d033fb,
         type: 3}
@@ -18416,6 +18456,16 @@ PrefabInstance:
       propertyPath: name
       value: fork
       objectReference: {fileID: 0}
+    - target: {fileID: 4591822335525614168, guid: 7eb4998f28034df4a825a0241e3886bf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Handle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591822335834468998, guid: 7eb4998f28034df4a825a0241e3886bf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Effector
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7eb4998f28034df4a825a0241e3886bf, type: 3}
 --- !u!1 &4591822334508625318 stripped
@@ -18618,10 +18668,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6324286315620351444, guid: 975a68de66f93124d9e84a41a73877fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: Effector
+      objectReference: {fileID: 0}
     - target: {fileID: 6324286316507371505, guid: 975a68de66f93124d9e84a41a73877fa,
         type: 3}
       propertyPath: name
       value: paletteknife
+      objectReference: {fileID: 0}
+    - target: {fileID: 6324286317286330354, guid: 975a68de66f93124d9e84a41a73877fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: Handle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 975a68de66f93124d9e84a41a73877fa, type: 3}
@@ -18860,6 +18920,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6108558444702674888, guid: a73f73be00313ce47a9e8757e05e6a7d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Handle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108558444798601032, guid: a73f73be00313ce47a9e8757e05e6a7d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Effector
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a73f73be00313ce47a9e8757e05e6a7d, type: 3}
 --- !u!1 &6108558443159286734 stripped
@@ -19063,6 +19133,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6509988736051190592, guid: fbdd673cc5ab0c547a9c5e777139763f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Effector
+      objectReference: {fileID: 0}
+    - target: {fileID: 6509988736117319235, guid: fbdd673cc5ab0c547a9c5e777139763f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Handle
       objectReference: {fileID: 0}
     - target: {fileID: 6509988736161815915, guid: fbdd673cc5ab0c547a9c5e777139763f,
         type: 3}
@@ -19391,6 +19471,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8685149969681401798, guid: 91a9e07c27c1c59458fe90b2dac7b277,
+        type: 3}
+      propertyPath: m_TagString
+      value: Handle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685149970683079048, guid: 91a9e07c27c1c59458fe90b2dac7b277,
+        type: 3}
+      propertyPath: m_TagString
+      value: Effector
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91a9e07c27c1c59458fe90b2dac7b277, type: 3}
 --- !u!1 &8685149970553616659 stripped
@@ -19593,10 +19683,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8738999875981741835, guid: ef44fb86ca160e143855ef60f3354d5b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Handle
+      objectReference: {fileID: 0}
     - target: {fileID: 8738999877166803527, guid: ef44fb86ca160e143855ef60f3354d5b,
         type: 3}
       propertyPath: name
       value: daisy grubber
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738999877999751134, guid: ef44fb86ca160e143855ef60f3354d5b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Effector
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef44fb86ca160e143855ef60f3354d5b, type: 3}
@@ -19800,6 +19900,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8858768621131004721, guid: 87799452523d0cd40945c81050fec876,
+        type: 3}
+      propertyPath: m_TagString
+      value: Effector
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858768621465449985, guid: 87799452523d0cd40945c81050fec876,
+        type: 3}
+      propertyPath: m_TagString
+      value: Handle
+      objectReference: {fileID: 0}
     - target: {fileID: 8858768622478551382, guid: 87799452523d0cd40945c81050fec876,
         type: 3}
       propertyPath: name
@@ -19942,6 +20052,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1412043274}
     m_Modifications:
+    - target: {fileID: 8880964427085542496, guid: 16c3eae1986af924a9e59372dfd86cbc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Effector
+      objectReference: {fileID: 0}
+    - target: {fileID: 8880964427180927640, guid: 16c3eae1986af924a9e59372dfd86cbc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Handle
+      objectReference: {fileID: 0}
     - target: {fileID: 8880964427304984491, guid: 16c3eae1986af924a9e59372dfd86cbc,
         type: 3}
       propertyPath: name

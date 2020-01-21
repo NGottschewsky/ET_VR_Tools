@@ -102,7 +102,6 @@
      <Compile Include="Assets\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
      <Compile Include="Assets\Scripts\CuePresenter.cs" />
      <Compile Include="Assets\Scripts\Database.cs" />
-     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\ToolController.cs" />
      <Compile Include="Assets\Scripts\ToolManager2.cs" />
      <Compile Include="Assets\Scripts\ToolPresenter.cs" />

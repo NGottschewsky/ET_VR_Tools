@@ -213,7 +213,6 @@
         <e p="Scripts" t="Include">
           <e p="CuePresenter.cs" t="Include" />
           <e p="Database.cs" t="Include" />
-          <e p="NewBehaviourScript.cs" t="Include" />
           <e p="ToolController.cs" t="Include" />
           <e p="ToolManager2.cs" t="Include" />
           <e p="ToolPresenter.cs" t="Include" />

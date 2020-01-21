@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Tool
   - MyControllerTag
+  - Handle
+  - Effector
   layers:
   - Default
   - TransparentFX

@@ -76,21 +76,24 @@ public class ToolManager2 : MonoBehaviour
         b.Start = _database.getCurrentTimestamp();
         _database.experiment.blocks.Add(b);
 
-        foreach (var tool in _leftTools)
+        foreach (var tool in _tools)
         {
-            _tools[Int16.Parse(tool)].orientation = "Left";
-        }
-        foreach (var tool in _rightTools)
-        {
-            _tools[Int16.Parse(tool)].orientation = "Right";
-        }
-        foreach (var tool in _liftCue)
-        {
-            _tools[Int16.Parse(tool)].cue = "Lift";
-        }
-        foreach (var tool in _useCue)
-        {
-            _tools[Int16.Parse(tool)].cue = "Use";
+            if (Array.Exists(_liftCue, element => element == tool.id))
+            {
+                tool.cue = "lift";
+            }
+            else if(Array.Exists(_useCue, element => element == tool.id))
+            {
+                tool.cue = "use";
+            }
+            if (Array.Exists(_leftTools, element => element == tool.id))
+            {
+                tool.orientation = "left";
+            }
+            else if (Array.Exists(_rightTools, element => element == tool.id))
+            {
+                tool.orientation = "right";
+            }
         }
     }
 
@@ -106,6 +109,19 @@ public class ToolManager2 : MonoBehaviour
             if (toolController.id == _toolOrder[participantNr][_trial])
             {
                 returnTool = toolController;
+                /*_database.experiment.blocks.Last().trials.Last().toolModel = returnTool.name;
+                _database.experiment.blocks.Last().trials.Last().toolOrientation = returnTool.orientation;
+                _database.experiment.blocks.Last().trials.Last().cue = returnTool.cue;*/
+                /*_database.experiment.blocks.Last().trials.Last().colls[0].position = returnTool.GetComponentInChildren<BoxCollider>().tag;
+                _database.experiment.blocks.Last().trials.Last().colls[0].centre = returnTool.GetComponentInChildren<BoxCollider>().size;
+                _database.experiment.blocks.Last().trials.Last().colls[0].centre = returnTool.GetComponentInChildren<BoxCollider>().center;
+                _database.experiment.blocks.Last().trials.Last().colls[1].position = returnTool.GetComponentInChildren<BoxCollider>().tag;
+                _database.experiment.blocks.Last().trials.Last().colls[1].centre = returnTool.GetComponentInChildren<BoxCollider>().size;
+                _database.experiment.blocks.Last().trials.Last().colls[1].centre = returnTool.GetComponentInChildren<BoxCollider>().center; */
+                Debug.Log(returnTool.GetComponentInChildren<BoxCollider>().tag);
+                Debug.Log(returnTool.GetComponentInChildren<BoxCollider>().size);
+                Debug.Log(returnTool.GetComponentInChildren<BoxCollider>().center);
+                // How do I tell the script to return both box colliders? can I find collider or child by tag?
             }
             
         }

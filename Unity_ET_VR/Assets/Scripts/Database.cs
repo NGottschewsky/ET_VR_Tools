@@ -89,6 +89,7 @@ public class Trial
     public string toolModel; // Screwdriver etc. 
     public string toolOrientation; // Left or Right
     public List<Coll> colls; // Handle collider and effector collider 
+    public Transform toolPosition;
     public string cue; // Lift or Use
     public double start;
     public double end;

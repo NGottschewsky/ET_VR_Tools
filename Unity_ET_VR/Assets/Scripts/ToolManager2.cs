@@ -43,8 +43,8 @@ public class ToolManager2 : MonoBehaviour
 
     private List<string[]> _toolOrder = new List<string[]>();
     
-    //private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
-    private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     
     private bool _endOfBlock = false;
     private bool _endOfTrial = false;
@@ -111,15 +111,17 @@ public class ToolManager2 : MonoBehaviour
                 _database.experiment.blocks.Last().trials.Last().toolModel = returnTool.name;
                 _database.experiment.blocks.Last().trials.Last().toolOrientation = returnTool.orientation;
                 _database.experiment.blocks.Last().trials.Last().cue = returnTool.cue;
+                _database.experiment.blocks.Last().trials.Last().toolPosition = returnTool.transform;
 
                 Debug.Log(_database.experiment.blocks.Last().trials.Last().toolModel);
                 Debug.Log(_database.experiment.blocks.Last().trials.Last().toolOrientation);
                 Debug.Log(_database.experiment.blocks.Last().trials.Last().cue = returnTool.cue);
-                
-                foreach (Transform child in transform)
+
+                for (int i = 0; i < returnTool.transform.childCount; i++)
                 {
-                    Debug.Log(child.gameObject.tag);
-                    if (child.GetComponent<BoxCollider>() != null)
+                    Transform child = returnTool.transform.GetChild(i);
+                    
+                    if (child.CompareTag("Handle") || child.CompareTag("Effector"))
                     {
                         Coll coll = new Coll
                         {
@@ -130,12 +132,6 @@ public class ToolManager2 : MonoBehaviour
                         _database.experiment.blocks.Last().trials.Last().colls.Add(coll);
                     }
                 }
-                /*Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[0].position);
-                Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[1].position); 
-                Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[0].size);
-                Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[1].size); 
-                Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[0].center);
-                Debug.Log(_database.experiment.blocks.Last().trials.Last().colls[1].center); */
             }
             
         }
@@ -186,7 +182,6 @@ public class ToolManager2 : MonoBehaviour
             Trial t = new Trial();
             t.ID = _trial;
             t.start = _database.getCurrentTimestamp();
-            Debug.Log(t.start);
             _database.experiment.blocks.Last().trials.Add(t);
             Debug.Log(_database.experiment.blocks.Last().trials.Last().ID);
             
@@ -262,11 +257,6 @@ public class ToolManager2 : MonoBehaviour
             // Start second block 
         }
         
-        Debug.Log(_database.experiment.blocks.Last().trials[1].start);
-        Debug.Log(_database.experiment.blocks.Last().trials[1].end);
-        Debug.Log(_database.experiment.blocks.Last().trials[2].start);
-        Debug.Log(_database.experiment.blocks.Last().trials[2].end);
-
     }
     
     // shows text after a 1 second delay

@@ -32,7 +32,6 @@ public class TrialManager : MonoBehaviour
             if (_waitTime < 0)
             {
                 _waitTime = 0;
-                Debug.Log("Timer abgelaufen.");
             }
         }
     } 
@@ -43,7 +42,6 @@ public class TrialManager : MonoBehaviour
         {
             Debug.Log("Trigger Entered by a Controller");
             _isTriggerEntered = true;
-            Debug.Log(_isTriggerEntered);
         }
     }
 

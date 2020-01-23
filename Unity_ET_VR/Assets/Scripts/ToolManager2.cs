@@ -43,8 +43,8 @@ public class ToolManager2 : MonoBehaviour
 
     private List<string[]> _toolOrder = new List<string[]>();
     
-    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
-    //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    //private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     
     private bool _endOfBlock = false;
     private bool _endOfTrial = false;
@@ -179,9 +179,14 @@ public class ToolManager2 : MonoBehaviour
 
         if (TrialEndReached() && !_endOfBlock)  //Input.GetKeyDown(KeyCode.Space) && !_endOfBlock)
         {
+            if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
+            {
+                _database.experiment.blocks.Last().trials.Last().end = _database.getCurrentTimestamp();
+            }
             Trial t = new Trial();
             t.ID = _trial;
             t.start = _database.getCurrentTimestamp();
+            Debug.Log(t.start);
             _database.experiment.blocks.Last().trials.Add(t);
             Debug.Log(_database.experiment.blocks.Last().trials.Last().ID);
             
@@ -191,11 +196,14 @@ public class ToolManager2 : MonoBehaviour
             
             if (Array.Exists(_liftCue, element => element == internalTool.id))
             {
-                ShowMessage(Color.white, "Lift");
+                ShowMessage(Color.white, "   ");
+                StartCoroutine(ShowMessageCoroutine(Color.white, "Lift"));
             }
             else if(Array.Exists(_useCue, element => element == internalTool.id))
             {
-                ShowMessage(Color.white, "Use");
+                ShowMessage(Color.white, "   ");
+                StartCoroutine(ShowMessageCoroutine(Color.white, "Use"));
+
             }
             else
             {
@@ -236,7 +244,7 @@ public class ToolManager2 : MonoBehaviour
                         break;
                 }
             }
-            
+
             _trial++;
             
         }
@@ -254,15 +262,20 @@ public class ToolManager2 : MonoBehaviour
             // Start second block 
         }
         
+        Debug.Log(_database.experiment.blocks.Last().trials[1].start);
+        Debug.Log(_database.experiment.blocks.Last().trials[1].end);
+        Debug.Log(_database.experiment.blocks.Last().trials[2].start);
+        Debug.Log(_database.experiment.blocks.Last().trials[2].end);
+
     }
     
-    // shows text after a 3 second delay
-    /*IEnumerator ShowMessageCoroutine(Color32 color, string msg) 
+    // shows text after a 1 second delay
+    IEnumerator ShowMessageCoroutine(Color32 color, string msg) 
     {
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(1.0f);
         cuePresenter.lableColor = color;
         cuePresenter.ShowText(msg);
-    }*/
+    }
     
     // shows text without a delay 
     public void ShowMessage(Color32 color, string msg)

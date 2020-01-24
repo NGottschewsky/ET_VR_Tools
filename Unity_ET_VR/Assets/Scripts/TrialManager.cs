@@ -68,7 +68,6 @@ public class TrialManager : MonoBehaviour
             _nextTrial = false;
             _timerBlocked = false;
             _waitTime = 2.0f;
-            Debug.Log(_isTriggerEntered);
         }
     }
     

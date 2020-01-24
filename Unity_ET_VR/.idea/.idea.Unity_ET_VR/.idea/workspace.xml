@@ -2,19 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15408367-e7ce-4c21-a405-63d5ec361c67" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dependencies/SteamVR_Input/ActionSetClasses/SteamVR_Input_ActionSet_default.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dependencies/SteamVR_Input/ActionSetClasses/SteamVR_Input_ActionSet_default.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dependencies/SteamVR_Input/SteamVR_Input_Actions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dependencies/SteamVR_Input/SteamVR_Input_Actions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ExperimentScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ExperimentScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrialManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrialManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorOnlyScriptingUserSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorOnlyScriptingUserSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/SteamVR.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/SteamVR.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/SteamVR_Actions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/SteamVR_Actions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/SteamVR_Actions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/SteamVR_Actions.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/SteamVR_Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/SteamVR_Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/SteamVR_Input_Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/SteamVR_Input_Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/SteamVR_Windows_EditorHelper.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/SteamVR_Windows_EditorHelper.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VSCode.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VSCode.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.TestRunner.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.UI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptMapper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/8d7ebe-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/8d7ebe-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/b254ac-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/b254ac-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/2e/2e3586803fc14414d8459e628a446f13" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/2e/2e3586803fc14414d8459e628a446f13" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/0a/0a8bdc087d578784cb8f36640145caf8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/0a/0a8bdc087d578784cb8f36640145caf8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/3d/3d618cf47bb779c479913502d2e3cb06" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/3d/3d618cf47bb779c479913502d2e3cb06" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/3d/3d618cf47bb779c479913502d2e3cb06.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/3d/3d618cf47bb779c479913502d2e3cb06.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/45/45b78706c4894664496762f28ef14455" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/45/45b78706c4894664496762f28ef14455" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/45/45b78706c4894664496762f28ef14455.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/45/45b78706c4894664496762f28ef14455.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/74/7492fd8b1ea81ba408f0ea52239b7b6f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/74/7492fd8b1ea81ba408f0ea52239b7b6f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/74/7492fd8b1ea81ba408f0ea52239b7b6f.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/74/7492fd8b1ea81ba408f0ea52239b7b6f.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a4/a4bbbdf4c8e5d3c4fb4a11f20ae4f79a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a4/a4bbbdf4c8e5d3c4fb4a11f20ae4f79a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a4/a4bbbdf4c8e5d3c4fb4a11f20ae4f79a.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a4/a4bbbdf4c8e5d3c4fb4a11f20ae4f79a.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b5/b58812caa1cccf840aeb2a71f546064a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b5/b58812caa1cccf840aeb2a71f546064a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b5/b58812caa1cccf840aeb2a71f546064a.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b5/b58812caa1cccf840aeb2a71f546064a.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/cb/cb5f373a12ff9f4448d64f77273e9303" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/cb/cb5f373a12ff9f4448d64f77273e9303" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/cb/cb5f373a12ff9f4448d64f77273e9303.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/cb/cb5f373a12ff9f4448d64f77273e9303.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/fb/fb7c4fabbb344f545b44a72ac07ae046" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fb/fb7c4fabbb344f545b44a72ac07ae046" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/fb/fb7c4fabbb344f545b44a72ac07ae046.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fb/fb7c4fabbb344f545b44a72ac07ae046.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SteamVR.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SteamVR.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SteamVR_Actions.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SteamVR_Actions.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SteamVR_Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SteamVR_Editor.csproj" afterDir="false" />
@@ -29,6 +71,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -50,8 +106,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ToolController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Database.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TrialManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" />
       </list>
     </option>
   </component>
@@ -137,6 +193,7 @@
       <workItem from="1579688901879" duration="7949000" />
       <workItem from="1579785291337" duration="4606000" />
       <workItem from="1579859201025" duration="1454000" />
+      <workItem from="1579871604488" duration="2782000" />
     </task>
     <servers />
   </component>

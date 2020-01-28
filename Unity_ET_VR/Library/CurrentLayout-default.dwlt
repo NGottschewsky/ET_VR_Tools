@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 336, y: 272}
   m_MaxSize: {x: 14006, y: 10022}
   vertical: 0
-  controlID: 131
+  controlID: 148
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 167
+  controlID: 56
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 14006, y: 14044}
   vertical: 1
-  controlID: 59
+  controlID: 57
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 60
+  controlID: 58
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -387,20 +387,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Dependencies/SteamVR
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 50
   m_LastFolders:
-  - Assets/Dependencies/SteamVR
+  - Assets/Scripts
   m_LastFoldersGridSize: 50
   m_LastProjectPath: D:\Nina_ET_VR\ET_VR_Tools\Unity_ET_VR
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 104}
-    m_SelectedIDs: 22500000
-    m_LastClickedID: 20514
-    m_ExpandedIDs: 00000000c44c00002250000040500000085100003e520000ac520000b8520000b0530000065500003c560000b456000012580000cc590000be5a0000645b0000965b00008e6900009069000000ca9a3b
+    scrollPos: {x: 0, y: 904}
+    m_SelectedIDs: 66370000
+    m_LastClickedID: 14182
+    m_ExpandedIDs: 0000000036320000623500007c3500003e36000066370000ce370000d8370000b43800000a3a00003e3b0000b43b0000ec3c0000a03e0000883f0000244000005a400000164c0000184c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -428,7 +428,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c44c00002250000040500000085100003e520000ac520000b8520000b0530000065500003c560000b4560000cc590000be5a0000645b0000965b00008e69000090690000
+    m_ExpandedIDs: 0000000036320000623500007c3500003e36000066370000ce370000d8370000b43800000a3a00003e3b0000b43b0000a03e0000883f0000244000005a400000164c0000184c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -551,9 +551,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c87a0000
-      m_LastClickedID: 31432
-      m_ExpandedIDs: 0ac7ffff36c7ffffaed0ffffd4d0ffff8cd1fffff4ffffff8c5e0000
+      m_SelectedIDs: a2440000
+      m_LastClickedID: 17570
+      m_ExpandedIDs: 70fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -648,9 +648,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.18383384, y: 0.6673222, z: -0.17526613, w: -0.70012}
   m_Size:
-    m_Target: 58.133434
+    m_Target: 65.40523
     speed: 2
-    m_Value: 58.133434
+    m_Value: 65.40523
   m_Ortho:
     m_Target: 0
     speed: 2

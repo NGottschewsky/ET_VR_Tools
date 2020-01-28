@@ -93,6 +93,7 @@ public class Trial
     public string cue; // Lift or Use
     public double start;
     public double end;
+    public List<double> triggerEvents;
     
     // Samples
     public List<FrameData> samples;
@@ -101,6 +102,7 @@ public class Trial
     {
         colls = new List<Coll>();
         samples = new List<FrameData>();
+        triggerEvents = new List<double>();
     }
 }
 

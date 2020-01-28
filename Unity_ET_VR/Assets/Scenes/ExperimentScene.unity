@@ -14891,10 +14891,10 @@ MonoBehaviour:
   spawnerPositionSPEICHLeft: {fileID: 1876061426}
   spawnerPositionFORKRight: {fileID: 906515039}
   spawnerPositionFORKLeft: {fileID: 1927092343}
-  rightHand: 2
-  grabPinch:
-    actionPath: 
+  grabGrip:
+    actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
+  inputSource: 2
 --- !u!1001 &1906620778
 PrefabInstance:
   m_ObjectHideFlags: 0

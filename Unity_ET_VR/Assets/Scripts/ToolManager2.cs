@@ -53,6 +53,34 @@ public class ToolManager2 : MonoBehaviour
     private ToolController _lastUsedTool;
 
     private Database _database = Database.Instance;
+    
+    
+    public SteamVR_Action_Boolean grabGrip; //Grab Pinch is the trigger, select from inspector
+    public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.Any; //which controller
+
+    void OnEnable()
+    {
+        if (grabGrip != null)
+        {
+            grabGrip.AddOnChangeListener(VRController_OnInteract_ButtonPressed, inputSource);
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (grabGrip != null)
+        {
+            grabGrip.RemoveOnChangeListener(VRController_OnInteract_ButtonPressed, inputSource);
+        }
+    }
+
+    private void VRController_OnInteract_ButtonPressed(SteamVR_Action_Boolean action, SteamVR_Input_Sources sources,
+        bool isConnected)
+    {
+        Debug.Log("Interact");
+        double triggerTime = _database.getCurrentTimestamp();
+        _database.experiment.blocks.Last().trials.Last().triggerEvents.Add(triggerTime);
+    }
    
     
     #region Singelton
@@ -64,15 +92,6 @@ public class ToolManager2 : MonoBehaviour
     }
 
     #endregion
-    
-    public SteamVR_Input_Sources rightHand = SteamVR_Input_Sources.RightHand;//which controller
-    public SteamVR_Action_Boolean grabPinch; //Grab Pinch is the trigger, select from inspector
-    //this is one way to do it, but an event listener might be better. maybe a function that saves the timestamp in a
-    //list every time the trigger is pressed?
-    private bool CheckGrab()
-    {
-        return grabPinch.GetState(rightHand);
-    }
     
 
     void Start()
@@ -304,4 +323,5 @@ public class ToolManager2 : MonoBehaviour
     {
         _lastUsedTool = tool;
     }
+
 }

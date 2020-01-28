@@ -23,10 +23,11 @@ public class ToolManager2 : MonoBehaviour
     public string age;
     public int block;
     
+    // make a singleton instance of ToolManager to be able to call RegistrateCurrentUsedTool method etc. 
     public static ToolManager2 instance;
 
     [Header("Tool Models")] 
-    [SerializeField] public List<ToolController> _tools;
+    [SerializeField] public List<ToolController> _tools; //List of all tool prefabs in diff. orientations and with diff. cues (48 in total)
     [SerializeField] public GameObject spawnerPositionLeft;
     [SerializeField] public GameObject spawnerPositionRight;
     [SerializeField] public GameObject spawnerPositionSPEICHRight;
@@ -34,30 +35,38 @@ public class ToolManager2 : MonoBehaviour
     [SerializeField] public GameObject spawnerPositionFORKRight;
     [SerializeField] public GameObject spawnerPositionFORKLeft;
 
+    // List of tools that should be presented with left or right orientation respectively
     private string[] _leftTools = new string[] {"1", "2", "5", "6", "9", "10", "13", "14", "17", "18", "21", "22", "25", "26", "33", "34", "37", "38", "41", "42"};
     private string[] _rightTools = new string[] {"3", "4", "7", "8", "11", "12","15", "16", "19", "20", "23", "24", "27", "28", "35", "36", "39", "40", "43", "44"};
     
+    // List of tools that should be presented in combination with lift or use cue respectively
     private string[] _liftCue = new string[] {"1", "3", "5", "7", "9", "11", "13", "15", "17", "19", "21", "23", "25", "27", "29", "31", "33", "35", "37", "39", "41", "43", "45", "47"};
     private string[] _useCue = new string[] {"2", "4", "6", "8", "10", "12","14", "16", "18", "20", "22", "24", "26", "28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48"};
 
+    // Current trial (up to 144) 
     private int _trial;
 
+    // randomised order of tools (48 different) is stored in a list of arrays, each array for representing one participant
     private List<string[]> _toolOrder = new List<string[]>();
     
-    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
-    //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    //private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    // csv file that contains the order of tool presentation and is read into the _toolOrder list
+    private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     
-    private bool _endOfBlock = false;
-    private bool _endOfTrial = false;
+    private bool _endOfBlock = false; // set to true after 144 trials
+    private bool _endOfTrial = false; // set to true in method where new trial is started
 
+    // last used tool is saved so that it can be deactivated before the new tool is activated 
     private ToolController _lastUsedTool;
 
+    // singleton instance of class Database is creatd, 1 instance per participant
     private Database _database = Database.Instance;
     
     
-    public SteamVR_Action_Boolean grabGrip; //Grab Pinch is the trigger, select from inspector
+    public SteamVR_Action_Boolean grabGrip; //Grab Grip is the trigger, select from inspector
     public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.Any; //which controller
 
+    // add an Event listener to the SteamVR action grab grip 
     void OnEnable()
     {
         if (grabGrip != null)

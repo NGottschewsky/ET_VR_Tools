@@ -1,0 +1,21 @@
+{
+    "name": "EyeClops",
+    "references": [
+        "GUID:cb807672721914542b4fccde7512c257",
+        "GUID:4b118c84f0b8f8e47a48546ba9ecb4dd",
+        "GUID:6dab8868877219348a109fab0c78d5e1",
+        "GUID:67a80de88b5c7cd4d9f7eab39a745c05",
+        "GUID:3473af7dcfee45c4088e04300671f761",
+        "GUID:b1fcceb142564eb4ba19a5e1e6c8a25e",
+        "GUID:aca0c2c367ed2f84b81ff67e0f79ee7b"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

@@ -49,9 +49,9 @@ public class ToolManager2 : MonoBehaviour
     // randomised order of tools (48 different) is stored in a list of arrays, each array for representing one participant
     private List<string[]> _toolOrder = new List<string[]>();
     
-    //private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     // csv file that contains the order of tool presentation and is read into the _toolOrder list
-    private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     
     private bool _endOfBlock = false; // set to true after 144 trials
     private bool _endOfTrial = false; // set to true in method where new trial is started
@@ -65,7 +65,8 @@ public class ToolManager2 : MonoBehaviour
     
     public SteamVR_Action_Boolean grabGrip; //Grab Grip is the trigger, select from inspector
     public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.Any; //which controller
-
+    public SteamVR_Behaviour_Pose rightHand;
+    
     // add an Event listener to the SteamVR action grab grip 
     void OnEnable()
     {

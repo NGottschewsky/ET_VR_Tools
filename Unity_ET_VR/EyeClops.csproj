@@ -73,6 +73,7 @@
      <Compile Include="Assets\EyeClops\Scripts\DataLayer\Mapper\GazeValidationDataMapper\GazeValidationStringDataMapper.cs" />
      <Compile Include="Assets\EyeClops\Scripts\DataLayer\Mapper\GenericAbstractMapper.cs" />
      <Compile Include="Assets\EyeClops\Scripts\DataLayer\Mapper\ValidationDataMapper\EyeTrackingAbstractValidationDataMapper.cs" />
+     <Compile Include="Assets\EyeClops\Scripts\DataLayer\Mapper\ValidationDataMapper\EyeTrackingBinaryValidationDataMapper.cs" />
      <Compile Include="Assets\EyeClops\Scripts\DataLayer\Mapper\ValidationDataMapper\EyeTrackingStringValidationDataMapper.cs" />
      <Compile Include="Assets\EyeClops\Scripts\DataTransferObjects\DeserializedDataSet.cs" />
      <Compile Include="Assets\EyeClops\Scripts\DataTransferObjects\EyeClopsData.cs" />

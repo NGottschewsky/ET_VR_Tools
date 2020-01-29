@@ -16,7 +16,7 @@ public class ToolManager2 : MonoBehaviour
     public ToolPresenter toolPresenter;
     public TrialManager trialManager;
     
-    [Header("Experiment parameters")] 
+    [Header("Experiment parameters")] [Range(1, 20)]
     public int participantNr;
     public int participantID;
     public string gender;
@@ -88,11 +88,15 @@ public class ToolManager2 : MonoBehaviour
         bool isConnected)
     {
         Debug.Log("Interact");
-        double triggerTime = _database.getCurrentTimestamp();
+        var triggerTime = _database.getCurrentTimestamp();
         _database.experiment.blocks.Last().trials.Last().triggerEvents.Add(triggerTime);
     }
+
+    private IEnumerator GetPoseData()
+    {
+        throw new NotImplementedException();
+    }
    
-    
     #region Singelton
     //make ToolManager2 singleton to be able to create 1 instance on which to call its methods
     private void Awake()

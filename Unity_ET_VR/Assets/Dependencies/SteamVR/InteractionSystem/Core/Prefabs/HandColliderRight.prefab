@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 135000014001595118}
   m_Layer: 8
   m_Name: Sphere (2)
-  m_TagString: Untagged
+  m_TagString: MyControllerTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -502,7 +502,7 @@ GameObject:
   - component: {fileID: 54000012734507470}
   m_Layer: 8
   m_Name: HandColliderRight
-  m_TagString: Untagged
+  m_TagString: MyControllerTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

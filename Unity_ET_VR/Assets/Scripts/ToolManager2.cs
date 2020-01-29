@@ -63,33 +63,36 @@ public class ToolManager2 : MonoBehaviour
     private Database _database = Database.Instance;
     
     
-    public SteamVR_Action_Boolean grabGrip; //Grab Grip is the trigger, select from inspector
+    public SteamVR_Action_Boolean grabPinch; //Grab Pinch is the trigger, select from inspector
     public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.Any; //which controller
     public SteamVR_Behaviour_Pose rightHand;
     
     // add an Event listener to the SteamVR action grab grip 
     void OnEnable()
     {
-        if (grabGrip != null)
+        if (grabPinch != null)
         {
-            grabGrip.AddOnChangeListener(VRController_OnInteract_ButtonPressed, inputSource);
+            grabPinch.AddOnChangeListener(VRController_OnInteract_ButtonPressed, inputSource);
+            //rightHand.onTransformUpdated.AddListener;
         }
     }
 
     private void OnDisable()
     {
-        if (grabGrip != null)
+        if (grabPinch != null)
         {
-            grabGrip.RemoveOnChangeListener(VRController_OnInteract_ButtonPressed, inputSource);
+            grabPinch.RemoveOnChangeListener(VRController_OnInteract_ButtonPressed, inputSource);
         }
     }
 
     private void VRController_OnInteract_ButtonPressed(SteamVR_Action_Boolean action, SteamVR_Input_Sources sources,
         bool isConnected)
     {
-        Debug.Log("Interact");
-        var triggerTime = _database.getCurrentTimestamp();
-        _database.experiment.blocks.Last().trials.Last().triggerEvents.Add(triggerTime);
+        double triggerTime = _database.getCurrentTimestamp();
+        if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
+        {
+            _database.experiment.blocks.Last().trials.Last().triggerEvents.Add(triggerTime);
+        }
     }
 
     private IEnumerator GetPoseData()

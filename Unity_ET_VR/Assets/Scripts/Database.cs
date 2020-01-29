@@ -94,6 +94,7 @@ public class Trial
     public double start;
     public double end;
     public List<double> triggerEvents;
+    public List<FrameData> framedata;
     
     // Samples
     public List<FrameData> samples;
@@ -103,6 +104,7 @@ public class Trial
         colls = new List<Coll>();
         samples = new List<FrameData>();
         triggerEvents = new List<double>();
+        framedata = new List<FrameData>();
     }
 }
 

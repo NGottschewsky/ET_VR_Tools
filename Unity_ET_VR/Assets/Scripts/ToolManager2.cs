@@ -66,6 +66,8 @@ public class ToolManager2 : MonoBehaviour
     public SteamVR_Action_Boolean grabPinch; //Grab Pinch is the trigger, select from inspector
     public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.Any; //which controller
     public SteamVR_Behaviour_Pose rightHand;
+
+    public SteamVR_Input_Sources RightHand = SteamVR_Input_Sources.RightHand;
     
     // add an Event listener to the SteamVR action grab grip 
     void OnEnable()
@@ -85,6 +87,8 @@ public class ToolManager2 : MonoBehaviour
         }
     }
 
+    // "Button pressed" saves the time of the trigger pulling as well as the trigger releasing, so every second saved 
+    // timepoint is the pulled trigger and every other timepoint is the released trigger
     private void VRController_OnInteract_ButtonPressed(SteamVR_Action_Boolean action, SteamVR_Input_Sources sources,
         bool isConnected)
     {
@@ -93,6 +97,7 @@ public class ToolManager2 : MonoBehaviour
         {
             _database.experiment.blocks.Last().trials.Last().triggerEvents.Add(triggerTime);
         }
+        Debug.Log(_database.experiment.blocks.Last().trials.Last().triggerEvents.Last());
     }
 
     private IEnumerator GetPoseData()
@@ -218,7 +223,7 @@ public class ToolManager2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
         if (TrialEndReached() && !_endOfBlock)  //Input.GetKeyDown(KeyCode.Space) && !_endOfBlock)
         {
             if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)

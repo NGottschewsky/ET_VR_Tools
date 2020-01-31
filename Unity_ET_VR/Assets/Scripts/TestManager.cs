@@ -27,7 +27,7 @@ public class TestManager : MonoBehaviour
     // Current trial (up to 144) 
     private int _trial;
     
-    private string[] _toolOrder = new string[]{"1","2"};
+    private string[] _toolOrder = {"1","2"};
     
     private bool _endOfBlock = false; // set to true after 2 trials
     private bool _endOfTrial = false; // set to true in method where new trial is started
@@ -60,17 +60,6 @@ public class TestManager : MonoBehaviour
 
         foreach (var toolController in _tools)
         {
-            /*if (_trial >= _tools.Count)
-            {
-                if (toolController.id == _toolOrder[_trial])
-                {
-                    returnTool = toolController;
-                }
-            }
-            else
-            {
-                return;
-            }*/
             if (toolController.id == _toolOrder[_trial])
             {
                 returnTool = toolController;
@@ -79,8 +68,13 @@ public class TestManager : MonoBehaviour
     }
     void Update()
     {
+        if (_trial == _toolOrder.Length)
+        {
+            _endOfBlock = true; 
+        }
 
-        if (TrialEndReached() && !_endOfBlock)  //Input.GetKeyDown(KeyCode.Space) && !_endOfBlock)
+
+        if (TrialEndReached() && !_endOfBlock)  //Input.GetKeyDown(KeyCode.Space) && !_endOfBlock) _trial <= _toolOrder.Length) //!
         {
             GetNextTool(out var internalTool);
             TrialManager.colliderInstance.ResetTriggerValue();
@@ -88,13 +82,13 @@ public class TestManager : MonoBehaviour
             
             if (internalTool.cue == "Lift")
             {
-                ShowMessage(Color.white, "   ");
-                StartCoroutine(ShowMessageCoroutine(Color.white, "Lift"));
+                ShowMessage(Color.white, "   ", 60);
+                StartCoroutine(ShowMessageCoroutine(Color.white, "Lift", 60));
             }
             else if(internalTool.cue == "Use")
             {
-                ShowMessage(Color.white, "   ");
-                StartCoroutine(ShowMessageCoroutine(Color.white, "Use"));
+                ShowMessage(Color.white, "   ", 60);
+                StartCoroutine(ShowMessageCoroutine(Color.white, "Use", 60));
 
             }
             else
@@ -120,33 +114,31 @@ public class TestManager : MonoBehaviour
             
         }
 
-        if (_trial > _toolOrder.Length)
-        {
-            _endOfBlock = true; 
-            ShowMessage(Color.white, "You have finished the test trials.");
-        }
-
+        
         if (TrialEndReached()  && _endOfBlock)
         {
+            DeactivateLastTool();
             Debug.Log("End of Block.");
             TrialManager.colliderInstance.ResetTriggerValue();
-            // Start second block 
+            ShowMessage(Color.white, "You have finished the test trials.", 30);
         }
         
     }
     
     // shows text after a 1 second delay
-    IEnumerator ShowMessageCoroutine(Color32 color, string msg) 
+    IEnumerator ShowMessageCoroutine(Color32 color, string msg, int fontsize) 
     {
         yield return new WaitForSeconds(1.0f);
         cuePresenter.lableColor = color;
+        cuePresenter.font = fontsize;
         cuePresenter.ShowText(msg);
     }
     
     // shows text without a delay 
-    public void ShowMessage(Color32 color, string msg)
+    public void ShowMessage(Color32 color, string msg, int fontsize)
     {
         cuePresenter.lableColor = color;
+        cuePresenter.font = fontsize;
         cuePresenter.ShowText(msg);
     }
 

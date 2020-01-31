@@ -21,7 +21,7 @@ public class ToolManager2 : MonoBehaviour
     public int participantID;
     public string gender;
     public string age;
-    public int block;
+    private int _block = 1;
     
     // make a singleton instance of ToolManager to be able to call RegistrateCurrentUsedTool method etc. 
     public static ToolManager2 instance;
@@ -45,6 +45,8 @@ public class ToolManager2 : MonoBehaviour
 
     // Current trial (up to 144) 
     private int _trial;
+    private int _totalNrofTrials;
+    private int _nrOfTrialsPerBlock;
 
     // randomised order of tools (48 different) is stored in a list of arrays, each array for representing one participant
     private List<string[]> _toolOrder = new List<string[]>();
@@ -96,8 +98,8 @@ public class ToolManager2 : MonoBehaviour
         if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
         {
             _database.experiment.blocks.Last().trials.Last().triggerEvents.Add(triggerTime);
+            Debug.Log(_database.experiment.blocks.Last().trials.Last().triggerEvents.Last());
         }
-        Debug.Log(_database.experiment.blocks.Last().trials.Last().triggerEvents.Last());
     }
 
     private IEnumerator GetPoseData()
@@ -121,9 +123,12 @@ public class ToolManager2 : MonoBehaviour
         _trial = 0;
         
         _toolOrder = ReadCsvFile(_filePath);
+
+        _totalNrofTrials = _toolOrder[participantNr].Length;
+        _nrOfTrialsPerBlock = _totalNrofTrials / 2;
         
         Block b = new Block();
-        b.ID = block;
+        b.ID = _block;
         _database.experiment.blocks.Add(b);
 
         foreach (var tool in _tools)
@@ -223,6 +228,10 @@ public class ToolManager2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_trial == _nrOfTrialsPerBlock)
+        {
+            _endOfBlock = true; 
+        }
         
         if (TrialEndReached() && !_endOfBlock)  //Input.GetKeyDown(KeyCode.Space) && !_endOfBlock)
         {
@@ -242,13 +251,13 @@ public class ToolManager2 : MonoBehaviour
             
             if (Array.Exists(_liftCue, element => element == internalTool.id))
             {
-                ShowMessage(Color.white, "   ");
-                StartCoroutine(ShowMessageCoroutine(Color.white, "Lift"));
+                ShowMessage(Color.white, "   ", 60);
+                StartCoroutine(ShowMessageCoroutine(Color.white, "Lift", 60));
             }
             else if(Array.Exists(_useCue, element => element == internalTool.id))
             {
-                ShowMessage(Color.white, "   ");
-                StartCoroutine(ShowMessageCoroutine(Color.white, "Use"));
+                ShowMessage(Color.white, "   ", 60);
+                StartCoroutine(ShowMessageCoroutine(Color.white, "Use", 60));
 
             }
             else
@@ -295,33 +304,39 @@ public class ToolManager2 : MonoBehaviour
             
         }
 
-        if (_trial == _toolOrder[participantNr].Length)
-        {
-            _endOfBlock = true; 
-            ShowMessage(Color.red, "End of Block");
-        }
-
         if (TrialEndReached()  && _endOfBlock)
         {
+            DeactivateLastTool();
             Debug.Log("End of Block.");
             TrialManager.colliderInstance.ResetTriggerValue();
-            // Start second block 
+            ShowMessage(Color.red, "End of Block", 50);
+            _endOfBlock = false;
+            _nrOfTrialsPerBlock = _totalNrofTrials;
+            _block++;
+            if (_block == 2)
+            {
+                Block b = new Block();
+                b.ID = _block;
+                _database.experiment.blocks.Add(b);
+            }
         }
         
     }
     
     // shows text after a 1 second delay
-    IEnumerator ShowMessageCoroutine(Color32 color, string msg) 
+    IEnumerator ShowMessageCoroutine(Color32 color, string msg, int fontsize) 
     {
         yield return new WaitForSeconds(1.0f);
         cuePresenter.lableColor = color;
+        cuePresenter.font = fontsize;
         cuePresenter.ShowText(msg);
     }
     
     // shows text without a delay 
-    public void ShowMessage(Color32 color, string msg)
+    public void ShowMessage(Color32 color, string msg, int fontsize)
     {
         cuePresenter.lableColor = color;
+        cuePresenter.font = fontsize;
         cuePresenter.ShowText(msg);
     }
 

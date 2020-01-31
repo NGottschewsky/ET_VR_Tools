@@ -8261,6 +8261,7 @@ MonoBehaviour:
   lableColor:
     serializedVersion: 2
     rgba: 0
+  font: 0
 --- !u!4 &977676052
 Transform:
   m_ObjectHideFlags: 0
@@ -11944,6 +11945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 144230, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_TagString
       value: MyControllerTag
@@ -13503,7 +13508,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1793321933 stripped
 GameObject:
@@ -13522,7 +13527,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1798911368
 GameObject:
@@ -15057,7 +15062,6 @@ MonoBehaviour:
   participantID: 1
   gender: F
   age: 22
-  block: 1
   _tools:
   - {fileID: 182118192}
   - {fileID: 1949224891}
@@ -15117,6 +15121,7 @@ MonoBehaviour:
     actionPath: /actions/default/in/GrabPinch
     needsReinit: 0
   inputSource: 0
+  rightHand: {fileID: 0}
   RightHand: 2
 --- !u!1001 &1906620778
 PrefabInstance:

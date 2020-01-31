@@ -33,5 +33,6 @@ public class ToolController : MonoBehaviour
         transform1.rotation = rotation;
         //every time a tool is set active it is saved as the current tool
         ToolManager2.instance.RegistrateCurrentUsedTool(this);
+        //TestManager.instance.RegistrateCurrentUsedTool(this);
     }
 }

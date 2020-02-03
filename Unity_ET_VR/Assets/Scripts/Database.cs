@@ -59,6 +59,7 @@ public class Database : MonoBehaviour
 [Serializable]
 public class Exp_ParticipantInfo
 {
+    public int participantNr;
     public int ID;
     public int age;
     public string gender;
@@ -94,6 +95,7 @@ public class Trial
     public double start;
     public double end;
     public List<double> triggerEvents;
+    public List<Transform> controllerPosition;
     public List<FrameData> framedata;
     
     // Samples

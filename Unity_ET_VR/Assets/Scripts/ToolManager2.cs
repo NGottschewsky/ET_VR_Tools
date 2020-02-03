@@ -20,7 +20,7 @@ public class ToolManager2 : MonoBehaviour
     public int participantNr;
     public int participantID;
     public string gender;
-    public string age;
+    public int age;
     private int _block = 1;
     
     // make a singleton instance of ToolManager to be able to call RegistrateCurrentUsedTool method etc. 
@@ -51,9 +51,9 @@ public class ToolManager2 : MonoBehaviour
     // randomised order of tools (48 different) is stored in a list of arrays, each array for representing one participant
     private List<string[]> _toolOrder = new List<string[]>();
     
-    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    //private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     // csv file that contains the order of tool presentation and is read into the _toolOrder list
-    //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     
     private bool _endOfBlock = false; // set to true after 144 trials
     private bool _endOfTrial = false; // set to true in method where new trial is started
@@ -130,6 +130,13 @@ public class ToolManager2 : MonoBehaviour
         Block b = new Block();
         b.ID = _block;
         _database.experiment.blocks.Add(b);
+        _database.experiment.participantNr = participantNr;
+        _database.experiment.ID = participantID;
+        _database.experiment.age = age;
+        _database.experiment.gender = gender;
+        
+        Debug.Log(_database.experiment.gender);
+        Debug.Log(_database.experiment.age);
 
         foreach (var tool in _tools)
         {
@@ -168,6 +175,9 @@ public class ToolManager2 : MonoBehaviour
                 _database.experiment.blocks.Last().trials.Last().toolOrientation = returnTool.orientation;
                 _database.experiment.blocks.Last().trials.Last().cue = returnTool.cue;
                 _database.experiment.blocks.Last().trials.Last().toolPosition = returnTool.transform;
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().toolPosition.position);
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().toolPosition.rotation);
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().toolPosition);
 
                 Debug.Log(_database.experiment.blocks.Last().trials.Last().toolModel);
                 Debug.Log(_database.experiment.blocks.Last().trials.Last().toolOrientation);

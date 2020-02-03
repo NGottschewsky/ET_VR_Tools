@@ -6,8 +6,11 @@ using UnityEditor;
 using UnityEngine;
 using System.Linq;
 using TMPro;
+using Tobii.StreamEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 using Valve.VR;
+using Valve.VR.InteractionSystem;
 
 public class ToolManager2 : MonoBehaviour
 {
@@ -51,9 +54,9 @@ public class ToolManager2 : MonoBehaviour
     // randomised order of tools (48 different) is stored in a list of arrays, each array for representing one participant
     private List<string[]> _toolOrder = new List<string[]>();
     
-    //private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     // csv file that contains the order of tool presentation and is read into the _toolOrder list
-    private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     
     private bool _endOfBlock = false; // set to true after 144 trials
     private bool _endOfTrial = false; // set to true in method where new trial is started
@@ -63,13 +66,14 @@ public class ToolManager2 : MonoBehaviour
 
     // singleton instance of class Database is creatd, 1 instance per participant
     private Database _database = Database.Instance;
-    
+    private float _samplingRate = 1/90f; //90 Hz sampling rate for eye-tracking samples and controller position samples
     
     public SteamVR_Action_Boolean grabPinch; //Grab Pinch is the trigger, select from inspector
-    public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.Any; //which controller
-    public SteamVR_Behaviour_Pose rightHand;
-
-    public SteamVR_Input_Sources RightHand = SteamVR_Input_Sources.RightHand;
+    public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.RightHand; //which controller
+    public Hand hand;
+    public tobii_head_pose_callback_t headPos;
+    public HmdQuaternion_t hmdPosition;
+        
     
     // add an Event listener to the SteamVR action grab grip 
     void OnEnable()
@@ -94,12 +98,23 @@ public class ToolManager2 : MonoBehaviour
     private void VRController_OnInteract_ButtonPressed(SteamVR_Action_Boolean action, SteamVR_Input_Sources sources,
         bool isConnected)
     {
-        double triggerTime = _database.getCurrentTimestamp();
+        Debug.Log("Trigger pressed.");
+        /*double triggerTime = _database.getCurrentTimestamp();
         if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
         {
             _database.experiment.blocks.Last().trials.Last().triggerEvents.Add(triggerTime);
-            Debug.Log(_database.experiment.blocks.Last().trials.Last().triggerEvents.Last());
+        }*/
+    }
+
+    // Still needs to be tested, but HMD and controllers are gone
+    IEnumerator GetControllerData()
+    {
+        if (_database.experiment.blocks.Last().trials.Last().framedata.LastOrDefault() != default)
+        {
+            _database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed = grabPinch.state;
+            _database.experiment.blocks.Last().trials.Last().framedata.Last().controllerPosition = hand.transform;
         }
+        yield return new WaitForSeconds(_samplingRate);
     }
 
     private IEnumerator GetPoseData()
@@ -135,9 +150,6 @@ public class ToolManager2 : MonoBehaviour
         _database.experiment.age = age;
         _database.experiment.gender = gender;
         
-        Debug.Log(_database.experiment.gender);
-        Debug.Log(_database.experiment.age);
-
         foreach (var tool in _tools)
         {
             if (Array.Exists(_liftCue, element => element == tool.id))
@@ -175,9 +187,6 @@ public class ToolManager2 : MonoBehaviour
                 _database.experiment.blocks.Last().trials.Last().toolOrientation = returnTool.orientation;
                 _database.experiment.blocks.Last().trials.Last().cue = returnTool.cue;
                 _database.experiment.blocks.Last().trials.Last().toolPosition = returnTool.transform;
-                Debug.Log(_database.experiment.blocks.Last().trials.Last().toolPosition.position);
-                Debug.Log(_database.experiment.blocks.Last().trials.Last().toolPosition.rotation);
-                Debug.Log(_database.experiment.blocks.Last().trials.Last().toolPosition);
 
                 Debug.Log(_database.experiment.blocks.Last().trials.Last().toolModel);
                 Debug.Log(_database.experiment.blocks.Last().trials.Last().toolOrientation);
@@ -253,6 +262,7 @@ public class ToolManager2 : MonoBehaviour
             t.ID = _trial;
             t.start = _database.getCurrentTimestamp();
             _database.experiment.blocks.Last().trials.Add(t);
+            StartCoroutine(GetControllerData());
             Debug.Log(_database.experiment.blocks.Last().trials.Last().ID);
             
             GetNextTool(out var internalTool);
@@ -332,7 +342,7 @@ public class ToolManager2 : MonoBehaviour
         }
         
     }
-    
+
     // shows text after a 1 second delay
     IEnumerator ShowMessageCoroutine(Color32 color, string msg, int fontsize) 
     {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17295013, g: 0.21614331, b: 0.2981185, a: 1}
+  m_IndirectSpecularColor: {r: 0.1729506, g: 0.21614386, b: 0.29811966, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13510,6 +13510,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1779784535 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1505355672}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779784530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e3e4511966ba94d8ba0b98c6c62f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1793321933 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 144230, guid: dc06161b6d97feb419f45f03b62e14b9,
@@ -15120,9 +15132,8 @@ MonoBehaviour:
   grabPinch:
     actionPath: /actions/default/in/GrabPinch
     needsReinit: 0
-  inputSource: 0
-  rightHand: {fileID: 0}
-  RightHand: 2
+  inputSource: 2
+  hand: {fileID: 1779784535}
 --- !u!1001 &1906620778
 PrefabInstance:
   m_ObjectHideFlags: 0

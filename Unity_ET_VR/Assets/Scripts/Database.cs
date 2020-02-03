@@ -94,8 +94,7 @@ public class Trial
     public string cue; // Lift or Use
     public double start;
     public double end;
-    public List<double> triggerEvents;
-    public List<Transform> controllerPosition;
+    // public List<double> triggerEvents;
     public List<FrameData> framedata;
     
     // Samples
@@ -105,7 +104,7 @@ public class Trial
     {
         colls = new List<Coll>();
         samples = new List<FrameData>();
-        triggerEvents = new List<double>();
+        // triggerEvents = new List<double>();
         framedata = new List<FrameData>();
     }
 }
@@ -117,43 +116,6 @@ public class Coll
     public Vector3 center;
     public Vector3 size;
 }
-
-/*
-[Serializable]
-public class Cube
-{
-    public int ID;
-
-    public string cubeType;
-    public List<Vector3> cubePositions;
-
-    public Cube()
-    {
-        cubePositions = new List<Vector3>();
-    }
-}
-
-
-[Serializable]
-public class Alignment
-{
-    public int ID;
-    public double start;
-    public double end;
-    public string alignmentType;
-
-    public int cube1_ID;
-    public int cube2_ID;
-
-    public Vector3 endPosCurrentCube;
-    public List<FrameData> framedata;
-
-    public Alignment()
-    {
-        framedata = new List<FrameData>();
-    }
-}
-*/
 
 [Serializable]
 public class FrameData
@@ -178,7 +140,9 @@ public class FrameData
     public List<RayHit> middlePointHits;
     
     // trigger pressed 
-    // public bool 
+    public bool triggerPressed;
+    public Transform controllerPosition; // is it enough to save transform or do I have to save position, rotation and 
+    // scale individually?
 
     public FrameData()
     {

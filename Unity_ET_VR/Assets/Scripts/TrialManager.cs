@@ -49,13 +49,19 @@ public class TrialManager : MonoBehaviour
     {
         if (other.CompareTag("MyControllerTag") && _isTriggerEntered)
         {
+            // This needs to be tested, but the Vive and the controllers are gone
+            if (ToolManager2.instance.grabPinch.state == true)
+            {
+                _nextTrial = true;
+                _timerBlocked = true;
+            }
             //Debug.Log("Countdown not yet done");
-            if (_waitTime <= 0)
+            /*if (_waitTime <= 0)
             {
                 Debug.Log("Lange genug im Trigger gewesen");
                 _nextTrial = true;
                 _timerBlocked = true;
-            }
+            }*/
         }
     }
 

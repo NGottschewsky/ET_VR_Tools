@@ -66,6 +66,7 @@ public class TrialManager : MonoBehaviour
                 _nextTrial = true;
                 _timerBlocked = true;
                 sphereTrigger.GetComponent<Throwable>().enabled = false;
+                sphereTrigger.GetComponent<Interactable>().enabled = false;
                 sphereTrigger.transform.position = spherePosition.position;
                 StartCoroutine(Reset());
             }
@@ -79,7 +80,7 @@ public class TrialManager : MonoBehaviour
         _nextTrial = false;
         _timerBlocked = false;
         _waitTime = 2.0f;
-        StartCoroutine(ActivateThrowable());
+        StartCoroutine(ActivateScripts());
     }
 
     /*private void OnTriggerExit(Collider other)
@@ -105,7 +106,7 @@ public class TrialManager : MonoBehaviour
         return _nextTrial;
     }
 
-    IEnumerator ActivateThrowable()
+    IEnumerator ActivateScripts()
     {
         yield return new WaitForSeconds(2.0f);
         sphereTrigger.GetComponent<Throwable>().enabled = true;

@@ -73,13 +73,19 @@ public class ToolManager2 : MonoBehaviour
     public Hand hand;
     public tobii_head_pose_callback_t headPos;
     public HmdQuaternion_t hmdPosition;
-        
+    public Camera c;
+    private Transform _camPos;
+    
+
     #region Singelton
     //make ToolManager2 singleton to be able to create 1 instance on which to call its methods
     private void Awake()
     {
         if (instance == null)
             instance = this;
+        c = Camera.main;
+        _camPos = c.transform;
+
     }
 
     #endregion
@@ -123,14 +129,10 @@ public class ToolManager2 : MonoBehaviour
         _database.experiment.blocks.Last().trials.Last().framedata.Add(oneFrame);
         _database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed = grabPinch.state;
         _database.experiment.blocks.Last().trials.Last().framedata.Last().controllerPosition = hand.transform;
+        // save rotation, position and scale individually
+        // save HMD data here
         Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed);
         Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().controllerPosition);
-        /*
-        if (_database.experiment.blocks.Last().trials.Last().framedata.LastOrDefault() != default)
-        {
-            _database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed = grabPinch.state;
-            _database.experiment.blocks.Last().trials.Last().framedata.Last().controllerPosition = hand.transform;
-        }*/
     }
 
     private IEnumerator GetPoseData()
@@ -263,13 +265,15 @@ public class ToolManager2 : MonoBehaviour
             if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
             {
                 _database.experiment.blocks.Last().trials.Last().end = _database.getCurrentTimestamp();
+                StopCoroutine(RecordControllerTriggerAndPositionData());  // Yet to be tested
             }
             Trial t = new Trial();
             t.ID = _trial;
             t.start = _database.getCurrentTimestamp();
             _database.experiment.blocks.Last().trials.Add(t);
-            // StartCoroutine(RecordControllerTriggerAndPositionData());
+            StartCoroutine(RecordControllerTriggerAndPositionData());
             Debug.Log(_database.experiment.blocks.Last().trials.Last().ID);
+            
             
             GetNextTool(out var internalTool);
             TrialManager.colliderInstance.ResetTriggerValue();

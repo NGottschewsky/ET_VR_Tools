@@ -10578,6 +10578,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 131.44165, y: 86.81538, z: 369.5941}
   m_Center: {x: -0.6023546, y: 5.6497164, z: 60.1941}
+--- !u!114 &1344154575 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 562983964}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e3e4511966ba94d8ba0b98c6c62f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1351157786 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3409145643327394403, guid: bc372038c8b9d9f4690dada5bc9a17bb,
@@ -15107,7 +15119,7 @@ MonoBehaviour:
     actionPath: /actions/default/in/GrabPinch
     needsReinit: 0
   inputSource: 2
-  hand: {fileID: 0}
+  hand: {fileID: 1344154575}
 --- !u!1001 &1906620778
 PrefabInstance:
   m_ObjectHideFlags: 0

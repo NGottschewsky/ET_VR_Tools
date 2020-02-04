@@ -141,7 +141,8 @@ public class FrameData
     
     // trigger pressed 
     public bool triggerPressed;
-    public Transform controllerPosition; // is it enough to save transform or do I have to save position, rotation and 
+    public Transform controllerPosition;
+    // is it enough to save transform or do I have to save position, rotation and 
     // scale individually?
 
     public FrameData()

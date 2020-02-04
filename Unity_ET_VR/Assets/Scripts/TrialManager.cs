@@ -4,9 +4,12 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Experimental.PlayerLoop;
+using Valve.VR.InteractionSystem;
 
 public class TrialManager : MonoBehaviour
 {
+    public GameObject sphereTrigger;
+    public Transform spherePosition;
     private bool _isTriggerEntered;
     private bool _nextTrial = false;
     private bool _timerBlocked = false;
@@ -50,22 +53,36 @@ public class TrialManager : MonoBehaviour
         if (other.CompareTag("MyControllerTag") && _isTriggerEntered)
         {
             // This needs to be tested, but the Vive and the controllers are gone
-            if (ToolManager2.instance.grabPinch.state == true)
+            // okey turns out this doesn't work
+            /*if (ToolManager2.instance.grabPinch.state == true)
             {
                 _nextTrial = true;
                 _timerBlocked = true;
-            }
+            }*/
             //Debug.Log("Countdown not yet done");
-            /*if (_waitTime <= 0)
+            if (_waitTime <= 0)
             {
                 Debug.Log("Lange genug im Trigger gewesen");
                 _nextTrial = true;
                 _timerBlocked = true;
-            }*/
+                sphereTrigger.GetComponent<Throwable>().enabled = false;
+                sphereTrigger.transform.position = spherePosition.position;
+                StartCoroutine(Reset());
+            }
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    IEnumerator Reset()
+    {
+        yield return new WaitForSeconds(1.0f);
+        _isTriggerEntered = false;
+        _nextTrial = false;
+        _timerBlocked = false;
+        _waitTime = 2.0f;
+        StartCoroutine(ActivateThrowable());
+    }
+
+    /*private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("MyControllerTag"))
         {
@@ -75,7 +92,7 @@ public class TrialManager : MonoBehaviour
             _timerBlocked = false;
             _waitTime = 2.0f;
         }
-    }
+    }*/
     
     public void ResetTriggerValue()
     {
@@ -87,4 +104,11 @@ public class TrialManager : MonoBehaviour
     {
         return _nextTrial;
     }
+
+    IEnumerator ActivateThrowable()
+    {
+        yield return new WaitForSeconds(2.0f);
+        sphereTrigger.GetComponent<Throwable>().enabled = true;
+    }
+
 }

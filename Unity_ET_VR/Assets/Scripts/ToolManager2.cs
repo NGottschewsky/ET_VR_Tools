@@ -74,6 +74,15 @@ public class ToolManager2 : MonoBehaviour
     public tobii_head_pose_callback_t headPos;
     public HmdQuaternion_t hmdPosition;
         
+    #region Singelton
+    //make ToolManager2 singleton to be able to create 1 instance on which to call its methods
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+    }
+
+    #endregion
     
     // add an Event listener to the SteamVR action grab grip 
     void OnEnable()
@@ -106,15 +115,22 @@ public class ToolManager2 : MonoBehaviour
         }*/
     }
 
-    // Still needs to be tested, but HMD and controllers are gone
-    IEnumerator GetControllerData()
+    // Still needs to be tested
+    private IEnumerator RecordControllerTriggerAndPositionData()
     {
+        yield return new WaitForSeconds(_samplingRate);
+        FrameData oneFrame = new FrameData();
+        _database.experiment.blocks.Last().trials.Last().framedata.Add(oneFrame);
+        _database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed = grabPinch.state;
+        _database.experiment.blocks.Last().trials.Last().framedata.Last().controllerPosition = hand.transform;
+        Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed);
+        Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().controllerPosition);
+        /*
         if (_database.experiment.blocks.Last().trials.Last().framedata.LastOrDefault() != default)
         {
             _database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed = grabPinch.state;
             _database.experiment.blocks.Last().trials.Last().framedata.Last().controllerPosition = hand.transform;
-        }
-        yield return new WaitForSeconds(_samplingRate);
+        }*/
     }
 
     private IEnumerator GetPoseData()
@@ -122,17 +138,6 @@ public class ToolManager2 : MonoBehaviour
         throw new NotImplementedException();
     }
    
-    #region Singelton
-    //make ToolManager2 singleton to be able to create 1 instance on which to call its methods
-    private void Awake()
-    {
-        if (instance == null)
-            instance = this;
-    }
-
-    #endregion
-    
-
     void Start()
     {
         _trial = 0;
@@ -171,11 +176,11 @@ public class ToolManager2 : MonoBehaviour
         }
     }
 
-
+    
     
     private void GetNextTool(out ToolController returnTool)
     {
-        returnTool = new ToolController();
+        returnTool = null; //new ToolController();
         
         foreach (var toolController in _tools)
         {
@@ -211,6 +216,7 @@ public class ToolManager2 : MonoBehaviour
             
         }
     }
+    
     
     
     public static List<string[]> ReadCsvFile(string path)
@@ -262,66 +268,73 @@ public class ToolManager2 : MonoBehaviour
             t.ID = _trial;
             t.start = _database.getCurrentTimestamp();
             _database.experiment.blocks.Last().trials.Add(t);
-            StartCoroutine(GetControllerData());
+            // StartCoroutine(RecordControllerTriggerAndPositionData());
             Debug.Log(_database.experiment.blocks.Last().trials.Last().ID);
             
             GetNextTool(out var internalTool);
             TrialManager.colliderInstance.ResetTriggerValue();
-            
-            
-            if (Array.Exists(_liftCue, element => element == internalTool.id))
-            {
-                ShowMessage(Color.white, "   ", 60);
-                StartCoroutine(ShowMessageCoroutine(Color.white, "Lift", 60));
-            }
-            else if(Array.Exists(_useCue, element => element == internalTool.id))
-            {
-                ShowMessage(Color.white, "   ", 60);
-                StartCoroutine(ShowMessageCoroutine(Color.white, "Use", 60));
 
-            }
-            else
+            if (internalTool != null)
             {
-                Debug.Log("Tool Id in neither cue list");
-            }
-            
-            
-            if (Array.Exists(_leftTools, element => element == internalTool.id))
-            {
-                StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "left"));
-            }
-            else if (Array.Exists(_rightTools, element => element == internalTool.id))
-            {
-                StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "right"));
-            }
-            else
-            {
-                switch (internalTool.id)
+
+                if (Array.Exists(_liftCue, element => element == internalTool.id))
                 {
-                    case "29" :
-                    case "30" :    
-                        StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool,"speichenschlüssel left"));
-                        break;
-                    case "31" :
-                    case "32" :    
-                        StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool,"speichenschlüssel right"));    
-                        break;
-                    case "45" :
-                    case "46" :    
-                        StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool,"fork left")); 
-                        break;
-                    case "47" :
-                    case "48" :    
-                        StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool,"fork right")); 
-                        break;
-                    default :
-                        Debug.LogError("tool ID not contained in either list of tools");
-                        break;
+                    ShowMessage(Color.white, "   ", 60);
+                    StartCoroutine(ShowMessageCoroutine(Color.white, "Lift", 60));
                 }
+                else if (Array.Exists(_useCue, element => element == internalTool.id))
+                {
+                    ShowMessage(Color.white, "   ", 60);
+                    StartCoroutine(ShowMessageCoroutine(Color.white, "Use", 60));
+
+                }
+                else
+                {
+                    Debug.Log("Tool Id in neither cue list");
+                }
+
+
+                if (Array.Exists(_leftTools, element => element == internalTool.id))
+                {
+                    StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "left"));
+                }
+                else if (Array.Exists(_rightTools, element => element == internalTool.id))
+                {
+                    StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "right"));
+                }
+                else
+                {
+                    switch (internalTool.id)
+                    {
+                        case "29":
+                        case "30":
+                            StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "speichenschlüssel left"));
+                            break;
+                        case "31":
+                        case "32":
+                            StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "speichenschlüssel right"));
+                            break;
+                        case "45":
+                        case "46":
+                            StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "fork left"));
+                            break;
+                        case "47":
+                        case "48":
+                            StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "fork right"));
+                            break;
+                        default:
+                            Debug.LogError("tool ID not contained in either list of tools");
+                            break;
+                    }
+                }
+
+                _trial++;
+            }
+            else
+            {
+                Debug.LogError("No tool returned.");
             }
 
-            _trial++;
-            
         }
 
         if (TrialEndReached()  && _endOfBlock)

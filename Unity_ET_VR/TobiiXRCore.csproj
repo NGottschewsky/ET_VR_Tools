@@ -56,27 +56,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\CameraHelper.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\CompilerFlagAttribute.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\Convergence.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\IEyeTrackingFilter.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\IEyeTrackingProvider.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\ProviderDisplayNameAttribute.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\Providers\EyeTrackingDataHelper.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\Providers\HmdToWorldTransformer.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\Providers\Mouse\MouseProvider.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\Providers\NoseDirection\NoseDirectionProvider.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\Providers\Tobii\InternalOpenVRApi.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\Providers\Tobii\OpenVRManager.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\Providers\Tobii\Plugins\Tobii.StreamEngine.Interop.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\Providers\Tobii\StreamEngineConnection.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\Providers\Tobii\StreamEngineContext.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\Providers\Tobii\StreamEngineTracker.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\Providers\Tobii\StreamEngineTracker_Description.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\Providers\Tobii\TobiiProvider.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\SupportedPlatformAttribute.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\TobiiXR_EyeTrackingData.cs" />
-     <None Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Core\TobiiXRCore.asmdef" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\CameraHelper.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\CompilerFlagAttribute.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\Convergence.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\EyeTrackingFilterBase.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\IEyeTrackingProvider.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\ProviderDisplayNameAttribute.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\Providers\EyeTrackingDataHelper.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\Providers\HmdToWorldTransformer.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\Providers\Mouse\MouseProvider.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\Providers\NoseDirection\NoseDirectionProvider.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\Providers\Tobii\InternalOpenVRApi.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\Providers\Tobii\OpenVRManager.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\Providers\Tobii\Plugins\Tobii.StreamEngine.Interop.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\Providers\Tobii\StreamEngineConnection.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\Providers\Tobii\StreamEngineContext.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\Providers\Tobii\StreamEngineTracker.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\Providers\Tobii\StreamEngineTracker_Description.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\Providers\Tobii\TobiiProvider.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\SupportedPlatformAttribute.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\TobiiXR_EyeTrackingData.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Core\TobiiXR_TrackingSpace.cs" />
+     <None Include="Assets\Dependencies\TobiiXR\Core\TobiiXRCore.asmdef" />
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>

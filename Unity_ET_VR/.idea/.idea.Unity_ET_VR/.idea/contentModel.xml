@@ -8,365 +8,6 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Dependencies" t="Include">
-          <e p="EyeClops" t="Include">
-            <e p="Dependencies" t="Include">
-              <e p="TobiiXR" t="Include">
-                <e p="API" t="Include">
-                  <e p="AssemblyInfo.cs" t="Include" />
-                  <e p="Internal" t="Include">
-                    <e p="AssemblyUtils.cs" t="Include" />
-                    <e p="Editor" t="Include">
-                      <e p="AssemblyInfo.cs" t="Include" />
-                      <e p="EditorUtils.cs" t="Include" />
-                      <e p="IEditorSettings.cs" t="Include" />
-                      <e p="IProviderSettings.cs" t="Include" />
-                      <e p="ISettingsEditorExtension.cs" t="Include" />
-                      <e p="PathHelper.cs" t="Include" />
-                      <e p="ProviderSettingsAttribute.cs" t="Include" />
-                      <e p="TobiiEulaCheck.cs" t="Include" />
-                      <e p="TobiiXR_ExecutionOrderValidator.cs" t="Include" />
-                      <e p="TobiiXR_SettingsEditor.cs" t="Include" />
-                      <e p="TobiiXR_SettingsEditorWindow.cs" t="Include" />
-                      <e p="TobiiXRInternalEditor.asmdef" t="Include" />
-                    </e>
-                    <e p="TobiiEulaFile.cs" t="Include" />
-                    <e p="TobiiXR_Lifecycle.cs" t="Include" />
-                    <e p="TobiiXR_Settings.cs" t="Include" />
-                  </e>
-                  <e p="TobiiXR.cs" t="Include" />
-                  <e p="TobiiXRAPI.asmdef" t="Include" />
-                </e>
-                <e p="Core" t="Include">
-                  <e p="CameraHelper.cs" t="Include" />
-                  <e p="CompilerFlagAttribute.cs" t="Include" />
-                  <e p="Convergence.cs" t="Include" />
-                  <e p="IEyeTrackingFilter.cs" t="Include" />
-                  <e p="IEyeTrackingProvider.cs" t="Include" />
-                  <e p="ProviderDisplayNameAttribute.cs" t="Include" />
-                  <e p="Providers" t="Include">
-                    <e p="EyeTrackingDataHelper.cs" t="Include" />
-                    <e p="HmdToWorldTransformer.cs" t="Include" />
-                    <e p="Mouse" t="Include">
-                      <e p="MouseProvider.cs" t="Include" />
-                    </e>
-                    <e p="NoseDirection" t="Include">
-                      <e p="NoseDirectionProvider.cs" t="Include" />
-                    </e>
-                    <e p="Tobii" t="Include">
-                      <e p="InternalOpenVRApi.cs" t="Include" />
-                      <e p="OpenVRManager.cs" t="Include" />
-                      <e p="Plugins" t="Include">
-                        <e p="Tobii.StreamEngine.Interop.cs" t="Include" />
-                      </e>
-                      <e p="StreamEngineConnection.cs" t="Include" />
-                      <e p="StreamEngineContext.cs" t="Include" />
-                      <e p="StreamEngineTracker.cs" t="Include" />
-                      <e p="StreamEngineTracker_Description.cs" t="Include" />
-                      <e p="TobiiProvider.cs" t="Include" />
-                    </e>
-                  </e>
-                  <e p="SupportedPlatformAttribute.cs" t="Include" />
-                  <e p="TobiiXR_EyeTrackingData.cs" t="Include" />
-                  <e p="TobiiXRCore.asmdef" t="Include" />
-                </e>
-                <e p="DevTools" t="Include">
-                  <e p="DevToolMenu" t="Include">
-                    <e p="DevToolsControllerManager.cs" t="Include" />
-                    <e p="DevToolsMenuController.cs" t="Include" />
-                    <e p="DisableGazeModifierOnFocus.cs" t="Include" />
-                    <e p="Fonts" t="Include">
-                      <e p="MerriweatherSans.txt" t="Include" />
-                      <e p="OFL.txt" t="Include" />
-                    </e>
-                    <e p="IDisableGazeModifier.cs" t="Include" />
-                    <e p="UI Scripts" t="Include">
-                      <e p="DevToolsUIEvents.cs" t="Include" />
-                      <e p="G2OMVisualisation.cs" t="Include" />
-                      <e p="Graphics" t="Include">
-                        <e p="DevToolsUIGazeButtonGraphics.cs" t="Include" />
-                        <e p="DevToolsUIGazeSliderGraphics.cs" t="Include" />
-                        <e p="DevToolsUIGazeToggleButtonGraphics.cs" t="Include" />
-                      </e>
-                      <e p="Trigger" t="Include">
-                        <e p="DevToolsUITriggerDragDetector.cs" t="Include" />
-                        <e p="DevToolsUITriggerGazeButton.cs" t="Include" />
-                        <e p="DevToolsUITriggerGazeSlider.cs" t="Include" />
-                        <e p="DevToolsUITriggerGazeToggleButton.cs" t="Include" />
-                      </e>
-                    </e>
-                  </e>
-                  <e p="GazeModifier" t="Include">
-                    <e p="Editor" t="Include">
-                      <e p="GazeModifierEditor.asmdef" t="Include" />
-                      <e p="GazeModifierSettingsExtension.cs" t="Include" />
-                    </e>
-                    <e p="GazeModifierFilter.cs" t="Include" />
-                    <e p="GazeModifierSettings.cs" t="Include" />
-                    <e p="GetValueForAngle.cs" t="Include" />
-                    <e p="IGazeModifier.cs" t="Include" />
-                    <e p="IGazeModifierSettings.cs" t="Include" />
-                    <e p="ILerpValue.cs" t="Include" />
-                    <e p="LinqExtensions.cs" t="Include" />
-                    <e p="Metrics.cs" t="Include" />
-                    <e p="MetricsForPercentile.cs" t="Include" />
-                    <e p="Modifiers" t="Include">
-                      <e p="AccuracyModifier.cs" t="Include" />
-                      <e p="PrecisionModifier.cs" t="Include" />
-                      <e p="TrackabilityModifier.cs" t="Include" />
-                    </e>
-                    <e p="PercentileData.cs" t="Include" />
-                    <e p="PercentileRepository.cs" t="Include" />
-                  </e>
-                  <e p="GazeVisualizer" t="Include">
-                    <e p="CustomProviderVisualizer.cs" t="Include" />
-                    <e p="Editor" t="Include">
-                      <e p="CustomProviderVisualizerEditor.cs" t="Include" />
-                      <e p="TobiiXRGazeVisualizerEditor.asmdef" t="Include" />
-                    </e>
-                    <e p="GazeVisualizer.cs" t="Include" />
-                    <e p="Shader" t="Include">
-                      <e p="Sprite_NoZTest.shader" t="Include" />
-                    </e>
-                  </e>
-                  <e p="TobiiXRDevTools.asmdef" t="Include" />
-                </e>
-                <e p="Examples" t="Include">
-                  <e p="HandEyeCoordination_Example" t="Include">
-                    <e p="Plugins" t="Include">
-                      <e p="Tobii.HEC.Interop.cs" t="Include" />
-                    </e>
-                    <e p="Scripts" t="Include">
-                      <e p="Grabbing" t="Include">
-                        <e p="GazeGrab.cs" t="Include" />
-                        <e p="GazeGrabbableObject.cs" t="Include" />
-                      </e>
-                      <e p="Throwing" t="Include">
-                        <e p="GazeThrowableObject.cs" t="Include" />
-                        <e p="GazeThrowTarget.cs" t="Include" />
-                        <e p="ThrowAtGaze.cs" t="Include" />
-                      </e>
-                      <e p="Utilities" t="Include">
-                        <e p="GazeOutline.cs" t="Include" />
-                        <e p="ResetObjectPosition.cs" t="Include" />
-                        <e p="TobiiXRThrowingSceneManager.cs" t="Include" />
-                      </e>
-                    </e>
-                    <e p="Shaders" t="Include">
-                      <e p="LICENSE.txt" t="Include" />
-                      <e p="UltimateOutline.shader" t="Include" />
-                    </e>
-                  </e>
-                  <e p="Social_Example" t="Include">
-                    <e p="Scripts" t="Include">
-                      <e p="FollowCameraHeight.cs" t="Include" />
-                      <e p="Handle2DEyes.cs" t="Include" />
-                      <e p="Handle3DExpressions.cs" t="Include" />
-                      <e p="Handle3DEyelids.cs" t="Include" />
-                      <e p="Handle3DEyes.cs" t="Include" />
-                      <e p="HandleHands.cs" t="Include" />
-                      <e p="RotateWithHMD.cs" t="Include" />
-                    </e>
-                  </e>
-                  <e p="UI_Example" t="Include">
-                    <e p="Scripts" t="Include">
-                      <e p="Graphics" t="Include">
-                        <e p="UIGazeButtonGraphics.cs" t="Include" />
-                        <e p="UIGazeSliderGraphics.cs" t="Include" />
-                        <e p="UIGazeToggleButtonGraphics.cs" t="Include" />
-                      </e>
-                      <e p="Touchpad" t="Include">
-                        <e p="UITouchpadGazeButton.cs" t="Include" />
-                        <e p="UITouchpadGazeSlider.cs" t="Include" />
-                        <e p="UITouchpadGazeToggleButton.cs" t="Include" />
-                        <e p="UITouchpadSwipeDetector.cs" t="Include" />
-                      </e>
-                      <e p="Trigger" t="Include">
-                        <e p="UITriggerDragDetector.cs" t="Include" />
-                        <e p="UITriggerGazeButton.cs" t="Include" />
-                        <e p="UITriggerGazeSlider.cs" t="Include" />
-                        <e p="UITriggerGazeToggleButton.cs" t="Include" />
-                      </e>
-                      <e p="Utilities" t="Include">
-                        <e p="UIEvents.cs" t="Include" />
-                        <e p="UIPrinter.cs" t="Include" />
-                      </e>
-                    </e>
-                  </e>
-                  <e p="Utilities" t="Include">
-                    <e p="Controller" t="Include">
-                      <e p="Plugins" t="Include">
-                        <e p="openvr_api.cs" t="Include" />
-                      </e>
-                      <e p="Scripts" t="Include">
-                        <e p="ControllerManager.cs" t="Include" />
-                        <e p="ControllerVisualizer.cs" t="Include" />
-                      </e>
-                    </e>
-                    <e p="G2OM_DebugVisualization.cs" t="Include" />
-                    <e p="G2OM_Example.cs" t="Include" />
-                    <e p="G2OM_SimpleMovement.cs" t="Include" />
-                    <e p="G2OM_SimpleRotation.cs" t="Include" />
-                    <e p="G2OM_SimpleScaling.cs" t="Include" />
-                    <e p="HighlightAtGaze.cs" t="Include" />
-                    <e p="TobiiXR_Initializer.cs" t="Include" />
-                    <e p="UIGazeCollider.cs" t="Include" />
-                    <e p="UIHighlightAtGaze.cs" t="Include" />
-                  </e>
-                </e>
-                <e p="External" t="Include">
-                  <e p="Providers" t="Include">
-                    <e p="HTC" t="Include">
-                      <e p="HTCProvider.cs" t="Include" />
-                      <e p="README.txt" t="Include" />
-                    </e>
-                    <e p="TobiiHTC" t="Include">
-                      <e p="README.txt" t="Include" />
-                      <e p="TobiiHTCProvider.cs" t="Include" />
-                    </e>
-                  </e>
-                  <e p="README.txt" t="Include" />
-                </e>
-                <e p="G2OM" t="Include">
-                  <e p="Plugins" t="Include">
-                    <e p="Tobii.G2OM.Interop.cs" t="Include" />
-                    <e p="Tobii.G2OM.UnityExtensionMethods.cs" t="Include" />
-                  </e>
-                  <e p="README.txt" t="Include" />
-                  <e p="Scripts" t="Include">
-                    <e p="G2OM.cs" t="Include" />
-                    <e p="G2OM_ColliderDataProvider.cs" t="Include" />
-                    <e p="G2OM_Context.cs" t="Include" />
-                    <e p="G2OM_ObjectDistinguisher.cs" t="Include" />
-                    <e p="G2OM_ObjectFinder.cs" t="Include" />
-                    <e p="G2OM_PostTicker.cs" t="Include" />
-                    <e p="IG2OM_ColliderDataProvider.cs" t="Include" />
-                    <e p="IG2OM_Context.cs" t="Include" />
-                    <e p="IG2OM_ObjectDistinguisher.cs" t="Include" />
-                    <e p="IG2OM_ObjectFinder.cs" t="Include" />
-                    <e p="IG2OM_PostTicker.cs" t="Include" />
-                    <e p="IGazeFocusable.cs" t="Include" />
-                  </e>
-                  <e p="TobiiXRG2OM.asmdef" t="Include" />
-                </e>
-                <e p="README.txt" t="Include" />
-                <e p="TobiiXRVersion.txt" t="Include" />
-              </e>
-              <e p="ViveSR" t="Include">
-                <e p="Scripts" t="Include">
-                  <e p="Eye" t="Include">
-                    <e p="Sample" t="Include">
-                      <e p="DartBoard.cs" t="Include" />
-                      <e p="SRanipal_AvatarEyeSample.cs" t="Include" />
-                      <e p="SRanipal_AvatarEyeSample_v2.cs" t="Include" />
-                      <e p="SRanipal_EyeFocusSample.cs" t="Include" />
-                      <e p="SRanipal_EyeFocusSample_v2.cs" t="Include" />
-                      <e p="SRanipal_EyeSettingSample.cs" t="Include" />
-                      <e p="SRanipal_GazeRaySample.cs" t="Include" />
-                      <e p="SRanipal_GazeRaySample_v2.cs" t="Include" />
-                      <e p="SRanipal_MirrorCameraSample_Eye.cs" t="Include" />
-                      <e p="SRanipal_MirrorCameraSample_Eye_v2.cs" t="Include" />
-                    </e>
-                    <e p="SRanipal_Eye.cs" t="Include" />
-                    <e p="SRanipal_Eye_API.cs" t="Include" />
-                    <e p="SRanipal_Eye_Enums.cs" t="Include" />
-                    <e p="SRanipal_Eye_Framework.cs" t="Include" />
-                    <e p="SRanipal_Eye_v2.cs" t="Include" />
-                    <e p="SRanipal_EyeData.cs" t="Include" />
-                    <e p="SRanipal_EyeDataType_v1.cs" t="Include" />
-                    <e p="SRanipal_EyeDataType_v2.cs" t="Include" />
-                    <e p="SRanipal_EyeShapeTableDrawer.cs" t="Include" />
-                  </e>
-                  <e p="Lip" t="Include">
-                    <e p="Sample" t="Include">
-                      <e p="SRanipal_AvatarLipSample.cs" t="Include" />
-                      <e p="SRanipal_AvatarLipSample_v2.cs" t="Include" />
-                      <e p="SRanipal_MirrorCameraSample_Lip.cs" t="Include" />
-                    </e>
-                    <e p="SRanipal_Lip.cs" t="Include" />
-                    <e p="SRanipal_Lip_API.cs" t="Include" />
-                    <e p="SRanipal_Lip_Framework.cs" t="Include" />
-                    <e p="SRanipal_Lip_v2.cs" t="Include" />
-                    <e p="SRanipal_LipData_v1.cs" t="Include" />
-                    <e p="SRanipal_LipData_v2.cs" t="Include" />
-                    <e p="SRanipal_LipShapeTableDrawer.cs" t="Include" />
-                    <e p="SRanipal_LipShapeTableDrawer_v2.cs" t="Include" />
-                  </e>
-                  <e p="SRanipal_API.cs" t="Include" />
-                  <e p="SRanipal_Enums.cs" t="Include" />
-                  <e p="SRWorks_Enums.cs" t="Include" />
-                </e>
-                <e p="Shaders" t="Include">
-                  <e p="DartBoardShader.shader" t="Include" />
-                  <e p="Unlit-Alpha2Gray.shader" t="Include" />
-                </e>
-                <e p="ViveSR.asmdef" t="Include" />
-              </e>
-            </e>
-            <e p="Scripts" t="Include">
-              <e p="Analytical" t="Include">
-                <e p="DescriptiveAnalyser.cs" t="Include" />
-                <e p="EyeClopsAnalyser.cs" t="Include" />
-              </e>
-              <e p="Controller" t="Include">
-                <e p="DeserializationController.cs" t="Include" />
-                <e p="EyeClopsController.cs" t="Include" />
-                <e p="EyeClopsGuiController.cs" t="Include" />
-                <e p="ValidationAtGazeController.cs" t="Include" />
-              </e>
-              <e p="DataLayer" t="Include">
-                <e p="DataIOConnector.cs" t="Include" />
-                <e p="DeSerializer" t="Include">
-                  <e p="BinaryDeSerializer.cs" t="Include" />
-                  <e p="CsvDeSerializer.cs" t="Include" />
-                </e>
-                <e p="FileIdentifierGenerator.cs" t="Include" />
-                <e p="Mapper" t="Include">
-                  <e p="DataMapper.cs" t="Include" />
-                  <e p="EyeTrackingDataMapper" t="Include">
-                    <e p="EyeClopsAbstractDataMapper.cs" t="Include" />
-                    <e p="EyeClopsStringDataMapper.cs" t="Include" />
-                  </e>
-                  <e p="GazeValidationDataMapper" t="Include">
-                    <e p="GazeValidationAbstractDataMapper.cs" t="Include" />
-                    <e p="GazeValidationStringDataMapper.cs" t="Include" />
-                  </e>
-                  <e p="GenericAbstractMapper.cs" t="Include" />
-                  <e p="ValidationDataMapper" t="Include">
-                    <e p="EyeTrackingAbstractValidationDataMapper.cs" t="Include" />
-                    <e p="EyeTrackingBinaryValidationDataMapper.cs" t="Include" />
-                    <e p="EyeTrackingStringValidationDataMapper.cs" t="Include" />
-                  </e>
-                </e>
-              </e>
-              <e p="DataTransferObjects" t="Include">
-                <e p="DeserializedDataSet.cs" t="Include" />
-                <e p="EyeClopsData.cs" t="Include" />
-                <e p="EyeClopsValidationData.cs" t="Include" />
-                <e p="GazeValidationData.cs" t="Include" />
-                <e p="Supporter" t="Include">
-                  <e p="CombinedEyeData.cs" t="Include" />
-                  <e p="CustomFocusInfo.cs" t="Include" />
-                  <e p="CustomTransform.cs" t="Include" />
-                  <e p="FocusData.cs" t="Include" />
-                  <e p="FocusObjectInformationData.cs" t="Include" />
-                  <e p="HeadData.cs" t="Include" />
-                  <e p="SingleEyeData.cs" t="Include" />
-                  <e p="SpecificGazeValidationData.cs" t="Include" />
-                </e>
-              </e>
-              <e p="EyeClops.asmdef" t="Include" />
-              <e p="EyeClopsConnector.cs" t="Include" />
-              <e p="Internals" t="Include">
-                <e p="InternalSettings.cs" t="Include" />
-              </e>
-              <e p="Manager" t="Include">
-                <e p="DataIOManager.cs" t="Include" />
-                <e p="DeserializationManager.cs" t="Include" />
-                <e p="EyeClopsManager.cs" t="Include" />
-                <e p="ValidationManager.cs" t="Include" />
-              </e>
-            </e>
-          </e>
           <e p="Imported" t="Include">
             <e p="Table and chair" t="Include">
               <e p="Standard Assets" t="Include">
@@ -937,10 +578,300 @@
               <e p="EmojiOne Attribution.txt" t="Include" />
             </e>
           </e>
+          <e p="TobiiXR" t="Include">
+            <e p="API" t="Include">
+              <e p="AssemblyInfo.cs" t="Include" />
+              <e p="Internal" t="Include">
+                <e p="AssemblyUtils.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="AssemblyInfo.cs" t="Include" />
+                  <e p="EditorUtils.cs" t="Include" />
+                  <e p="IEditorSettings.cs" t="Include" />
+                  <e p="PathHelper.cs" t="Include" />
+                  <e p="SerializedPropertyHelper.cs" t="Include" />
+                  <e p="TobiiEulaCheck.cs" t="Include" />
+                  <e p="TobiiXR_ExecutionOrderValidator.cs" t="Include" />
+                  <e p="TobiiXR_SettingsDrawer.cs" t="Include" />
+                  <e p="TobiiXRInternalEditor.asmdef" t="Include" />
+                </e>
+                <e p="TobiiEula.cs" t="Include" />
+                <e p="TobiiEulaFile.cs" t="Include" />
+                <e p="TobiiXR_Lifecycle.cs" t="Include" />
+                <e p="TobiiXR_Settings.cs" t="Include" />
+              </e>
+              <e p="TobiiXR.cs" t="Include" />
+              <e p="TobiiXR_Initializer.cs" t="Include" />
+              <e p="TobiiXRAPI.asmdef" t="Include" />
+            </e>
+            <e p="Core" t="Include">
+              <e p="CameraHelper.cs" t="Include" />
+              <e p="CompilerFlagAttribute.cs" t="Include" />
+              <e p="Convergence.cs" t="Include" />
+              <e p="EyeTrackingFilterBase.cs" t="Include" />
+              <e p="IEyeTrackingProvider.cs" t="Include" />
+              <e p="ProviderDisplayNameAttribute.cs" t="Include" />
+              <e p="Providers" t="Include">
+                <e p="EyeTrackingDataHelper.cs" t="Include" />
+                <e p="HmdToWorldTransformer.cs" t="Include" />
+                <e p="Mouse" t="Include">
+                  <e p="MouseProvider.cs" t="Include" />
+                </e>
+                <e p="NoseDirection" t="Include">
+                  <e p="NoseDirectionProvider.cs" t="Include" />
+                </e>
+                <e p="Tobii" t="Include">
+                  <e p="InternalOpenVRApi.cs" t="Include" />
+                  <e p="OpenVRManager.cs" t="Include" />
+                  <e p="Plugins" t="Include">
+                    <e p="Tobii.StreamEngine.Interop.cs" t="Include" />
+                  </e>
+                  <e p="StreamEngineConnection.cs" t="Include" />
+                  <e p="StreamEngineContext.cs" t="Include" />
+                  <e p="StreamEngineTracker.cs" t="Include" />
+                  <e p="StreamEngineTracker_Description.cs" t="Include" />
+                  <e p="TobiiProvider.cs" t="Include" />
+                </e>
+              </e>
+              <e p="SupportedPlatformAttribute.cs" t="Include" />
+              <e p="TobiiXR_EyeTrackingData.cs" t="Include" />
+              <e p="TobiiXR_TrackingSpace.cs" t="Include" />
+              <e p="TobiiXRCore.asmdef" t="Include" />
+            </e>
+            <e p="DevTools" t="Include">
+              <e p="DevToolMenu" t="Include">
+                <e p="DevToolsControllerManager.cs" t="Include" />
+                <e p="DevToolsMenuController.cs" t="Include" />
+                <e p="DisableGazeModifierOnFocus.cs" t="Include" />
+                <e p="Fonts" t="Include">
+                  <e p="MerriweatherSans.txt" t="Include" />
+                  <e p="OFL.txt" t="Include" />
+                </e>
+                <e p="IDisableGazeModifier.cs" t="Include" />
+                <e p="UI Scripts" t="Include">
+                  <e p="DevToolsUIEvents.cs" t="Include" />
+                  <e p="Graphics" t="Include">
+                    <e p="DevToolsUIGazeButtonGraphics.cs" t="Include" />
+                    <e p="DevToolsUIGazeSliderGraphics.cs" t="Include" />
+                    <e p="DevToolsUIGazeToggleButtonGraphics.cs" t="Include" />
+                  </e>
+                  <e p="Trigger" t="Include">
+                    <e p="DevToolsUITriggerDragDetector.cs" t="Include" />
+                    <e p="DevToolsUITriggerGazeButton.cs" t="Include" />
+                    <e p="DevToolsUITriggerGazeSlider.cs" t="Include" />
+                    <e p="DevToolsUITriggerGazeToggleButton.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="G2OMDebugger" t="Include">
+                <e p="G2OM_DebugTool.cs" t="Include" />
+                <e p="G2OM_DebugVisualization.cs" t="Include" />
+              </e>
+              <e p="GazeModifier" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="GazeModifierEditor.asmdef" t="Include" />
+                  <e p="GazeModifierFilterEditor.cs" t="Include" />
+                </e>
+                <e p="GazeModifierFilter.cs" t="Include" />
+                <e p="GazeModifierSettings.cs" t="Include" />
+                <e p="GetValueForAngle.cs" t="Include" />
+                <e p="IGazeModifier.cs" t="Include" />
+                <e p="IGazeModifierSettings.cs" t="Include" />
+                <e p="ILerpValue.cs" t="Include" />
+                <e p="LinqExtensions.cs" t="Include" />
+                <e p="Metrics.cs" t="Include" />
+                <e p="MetricsForPercentile.cs" t="Include" />
+                <e p="Modifiers" t="Include">
+                  <e p="AccuracyModifier.cs" t="Include" />
+                  <e p="PrecisionModifier.cs" t="Include" />
+                  <e p="TrackabilityModifier.cs" t="Include" />
+                </e>
+                <e p="PercentileData.cs" t="Include" />
+                <e p="PercentileRepository.cs" t="Include" />
+              </e>
+              <e p="GazeVisualizer" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="CustomProviderVisualizerEditor.cs" t="Include" />
+                  <e p="TobiiXRGazeVisualizerEditor.asmdef" t="Include" />
+                </e>
+                <e p="GazeVisualizer.cs" t="Include" />
+                <e p="Shader" t="Include">
+                  <e p="Sprite_NoZTest.shader" t="Include" />
+                </e>
+              </e>
+              <e p="TobiiXRDevTools.asmdef" t="Include" />
+            </e>
+            <e p="Examples" t="Include">
+              <e p="HandEyeCoordination_Example" t="Include">
+                <e p="Plugins" t="Include">
+                  <e p="Tobii.HEC.Interop.cs" t="Include" />
+                </e>
+                <e p="Scripts" t="Include">
+                  <e p="Grabbing" t="Include">
+                    <e p="GazeGrab.cs" t="Include" />
+                    <e p="GazeGrabbableObject.cs" t="Include" />
+                  </e>
+                  <e p="Throwing" t="Include">
+                    <e p="GazeThrowableObject.cs" t="Include" />
+                    <e p="GazeThrowTarget.cs" t="Include" />
+                    <e p="ThrowAtGaze.cs" t="Include" />
+                  </e>
+                  <e p="Utilities" t="Include">
+                    <e p="GazeOutline.cs" t="Include" />
+                    <e p="ResetObjectPosition.cs" t="Include" />
+                    <e p="TobiiXRThrowingSceneManager.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="LICENSE.txt" t="Include" />
+                  <e p="UltimateOutline.shader" t="Include" />
+                </e>
+              </e>
+              <e p="Social_Example" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="FollowCameraHeight.cs" t="Include" />
+                  <e p="Handle2DEyes.cs" t="Include" />
+                  <e p="Handle3DExpressions.cs" t="Include" />
+                  <e p="Handle3DEyelids.cs" t="Include" />
+                  <e p="Handle3DEyes.cs" t="Include" />
+                  <e p="HandleHands.cs" t="Include" />
+                  <e p="RotateWithHMD.cs" t="Include" />
+                </e>
+              </e>
+              <e p="UI_Example" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Graphics" t="Include">
+                    <e p="UIGazeButtonGraphics.cs" t="Include" />
+                    <e p="UIGazeSliderGraphics.cs" t="Include" />
+                    <e p="UIGazeToggleButtonGraphics.cs" t="Include" />
+                  </e>
+                  <e p="Touchpad" t="Include">
+                    <e p="UITouchpadGazeButton.cs" t="Include" />
+                    <e p="UITouchpadGazeSlider.cs" t="Include" />
+                    <e p="UITouchpadGazeToggleButton.cs" t="Include" />
+                    <e p="UITouchpadSwipeDetector.cs" t="Include" />
+                  </e>
+                  <e p="Trigger" t="Include">
+                    <e p="UITriggerDragDetector.cs" t="Include" />
+                    <e p="UITriggerGazeButton.cs" t="Include" />
+                    <e p="UITriggerGazeSlider.cs" t="Include" />
+                    <e p="UITriggerGazeToggleButton.cs" t="Include" />
+                  </e>
+                  <e p="Utilities" t="Include">
+                    <e p="UIEvents.cs" t="Include" />
+                    <e p="UIPrinter.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Utilities" t="Include">
+                <e p="Controller" t="Include">
+                  <e p="Plugins" t="Include">
+                    <e p="openvr_api.cs" t="Include" />
+                  </e>
+                  <e p="Scripts" t="Include">
+                    <e p="ControllerManager.cs" t="Include" />
+                    <e p="ControllerVisualizer.cs" t="Include" />
+                    <e p="OpenVRControllerAdapter.cs" t="Include" />
+                    <e p="PicoControllerAdapter.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="G2OM_SimpleMovement.cs" t="Include" />
+                <e p="G2OM_SimpleRotation.cs" t="Include" />
+                <e p="G2OM_SimpleScaling.cs" t="Include" />
+                <e p="HighlightAtGaze.cs" t="Include" />
+                <e p="UIGazeCollider.cs" t="Include" />
+                <e p="UIHighlightAtGaze.cs" t="Include" />
+              </e>
+            </e>
+            <e p="External" t="Include">
+              <e p="Providers" t="Include">
+                <e p="Pico" t="Include">
+                  <e p="PicoProvider.cs" t="Include" />
+                </e>
+                <e p="Vive" t="Include">
+                  <e p="README.txt" t="Include" />
+                  <e p="ViveProvider.cs" t="Include" />
+                </e>
+              </e>
+              <e p="README.txt" t="Include" />
+            </e>
+            <e p="G2OM" t="Include">
+              <e p="Plugins" t="Include">
+                <e p="Tobii.G2OM.Interop.cs" t="Include" />
+                <e p="Tobii.G2OM.UnityExtensionMethods.cs" t="Include" />
+              </e>
+              <e p="README.txt" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="G2OM.cs" t="Include" />
+                <e p="G2OM_ColliderDataProvider.cs" t="Include" />
+                <e p="G2OM_Context.cs" t="Include" />
+                <e p="G2OM_ObjectDistinguisher.cs" t="Include" />
+                <e p="G2OM_ObjectFinder.cs" t="Include" />
+                <e p="G2OM_PostTicker.cs" t="Include" />
+                <e p="IG2OM_ColliderDataProvider.cs" t="Include" />
+                <e p="IG2OM_Context.cs" t="Include" />
+                <e p="IG2OM_ObjectDistinguisher.cs" t="Include" />
+                <e p="IG2OM_ObjectFinder.cs" t="Include" />
+                <e p="IG2OM_PostTicker.cs" t="Include" />
+                <e p="IGazeFocusable.cs" t="Include" />
+              </e>
+              <e p="TobiiXRG2OM.asmdef" t="Include" />
+            </e>
+            <e p="README.txt" t="Include" />
+          </e>
+          <e p="ViveSR" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Eye" t="Include">
+                <e p="Sample" t="Include">
+                  <e p="DartBoard.cs" t="Include" />
+                  <e p="SRanipal_AvatarEyeSample.cs" t="Include" />
+                  <e p="SRanipal_AvatarEyeSample_v2.cs" t="Include" />
+                  <e p="SRanipal_EyeFocusSample.cs" t="Include" />
+                  <e p="SRanipal_EyeFocusSample_v2.cs" t="Include" />
+                  <e p="SRanipal_EyeSettingSample.cs" t="Include" />
+                  <e p="SRanipal_GazeRaySample.cs" t="Include" />
+                  <e p="SRanipal_GazeRaySample_v2.cs" t="Include" />
+                  <e p="SRanipal_MirrorCameraSample_Eye.cs" t="Include" />
+                  <e p="SRanipal_MirrorCameraSample_Eye_v2.cs" t="Include" />
+                </e>
+                <e p="SRanipal_Eye.cs" t="Include" />
+                <e p="SRanipal_Eye_API.cs" t="Include" />
+                <e p="SRanipal_Eye_Enums.cs" t="Include" />
+                <e p="SRanipal_Eye_Framework.cs" t="Include" />
+                <e p="SRanipal_Eye_v2.cs" t="Include" />
+                <e p="SRanipal_EyeData.cs" t="Include" />
+                <e p="SRanipal_EyeDataType_v1.cs" t="Include" />
+                <e p="SRanipal_EyeDataType_v2.cs" t="Include" />
+                <e p="SRanipal_EyeShapeTableDrawer.cs" t="Include" />
+              </e>
+              <e p="Lip" t="Include">
+                <e p="Sample" t="Include">
+                  <e p="SRanipal_AvatarLipSample.cs" t="Include" />
+                  <e p="SRanipal_AvatarLipSample_v2.cs" t="Include" />
+                  <e p="SRanipal_MirrorCameraSample_Lip.cs" t="Include" />
+                </e>
+                <e p="SRanipal_Lip.cs" t="Include" />
+                <e p="SRanipal_Lip_API.cs" t="Include" />
+                <e p="SRanipal_Lip_Framework.cs" t="Include" />
+                <e p="SRanipal_Lip_v2.cs" t="Include" />
+                <e p="SRanipal_LipData_v1.cs" t="Include" />
+                <e p="SRanipal_LipData_v2.cs" t="Include" />
+                <e p="SRanipal_LipShapeTableDrawer.cs" t="Include" />
+                <e p="SRanipal_LipShapeTableDrawer_v2.cs" t="Include" />
+              </e>
+              <e p="SRanipal_API.cs" t="Include" />
+              <e p="SRanipal_Enums.cs" t="Include" />
+              <e p="SRWorks_Enums.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="DartBoardShader.shader" t="Include" />
+              <e p="Unlit-Alpha2Gray.shader" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="CuePresenter.cs" t="Include" />
           <e p="Database.cs" t="Include" />
+          <e p="EyeTrackingManager.cs" t="Include" />
           <e p="TestManager.cs" t="Include" />
           <e p="ToolController.cs" t="Include" />
           <e p="ToolManager2.cs" t="Include" />
@@ -953,7 +884,6 @@
           </e>
         </e>
       </e>
-      <e p="EyeClops.csproj" t="IncludeRecursive" />
       <e p="GazeModifierEditor.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
@@ -970,7 +900,6 @@
       <e p="TobiiXRInternalEditor.csproj" t="IncludeRecursive" />
       <e p="TobiiXRSDK.csproj" t="IncludeRecursive" />
       <e p="Unity_ET_VR.sln" t="IncludeFlat" />
-      <e p="ViveSR.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

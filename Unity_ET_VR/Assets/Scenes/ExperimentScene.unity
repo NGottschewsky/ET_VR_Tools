@@ -1675,7 +1675,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &200778443
 Transform:
   m_ObjectHideFlags: 0
@@ -2931,6 +2931,12 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!20 &296735331 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2014920, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 562983964}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &305862391
 GameObject:
   m_ObjectHideFlags: 0
@@ -3518,6 +3524,93 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358884654}
   m_Mesh: {fileID: 8691780276856062721, guid: 322e6f5261ccf794db14798d149b1b7d, type: 3}
+--- !u!1001 &359168730
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1483824241731922, guid: 596e593361e094a43934c013fa0b5764, type: 3}
+      propertyPath: m_Name
+      value: TobiiXR Initializer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789807657892548, guid: 596e593361e094a43934c013fa0b5764, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789807657892548, guid: 596e593361e094a43934c013fa0b5764, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789807657892548, guid: 596e593361e094a43934c013fa0b5764, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789807657892548, guid: 596e593361e094a43934c013fa0b5764, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789807657892548, guid: 596e593361e094a43934c013fa0b5764, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789807657892548, guid: 596e593361e094a43934c013fa0b5764, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789807657892548, guid: 596e593361e094a43934c013fa0b5764, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789807657892548, guid: 596e593361e094a43934c013fa0b5764, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789807657892548, guid: 596e593361e094a43934c013fa0b5764, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789807657892548, guid: 596e593361e094a43934c013fa0b5764, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789807657892548, guid: 596e593361e094a43934c013fa0b5764, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114404013065818992, guid: 596e593361e094a43934c013fa0b5764,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114404013065818992, guid: 596e593361e094a43934c013fa0b5764,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.data[3].TypeName
+      value: Tobii.XR.MouseProvider
+      objectReference: {fileID: 0}
+    - target: {fileID: 114404013065818992, guid: 596e593361e094a43934c013fa0b5764,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.data[0].TypeName
+      value: HTCProvider
+      objectReference: {fileID: 0}
+    - target: {fileID: 114404013065818992, guid: 596e593361e094a43934c013fa0b5764,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.data[1].TypeName
+      value: Tobii.XR.TobiiProvider
+      objectReference: {fileID: 0}
+    - target: {fileID: 114404013065818992, guid: 596e593361e094a43934c013fa0b5764,
+        type: 3}
+      propertyPath: Settings.StandaloneEyeTrackingProviders.Array.data[2].TypeName
+      value: Tobii.XR.NoseDirectionProvider
+      objectReference: {fileID: 0}
+    - target: {fileID: 114404013065818992, guid: 596e593361e094a43934c013fa0b5764,
+        type: 3}
+      propertyPath: Settings.FieldOfUse
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 596e593361e094a43934c013fa0b5764, type: 3}
 --- !u!1 &376516375
 GameObject:
   m_ObjectHideFlags: 0
@@ -13239,7 +13332,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: efd8d4af644c89a4fbf491c08402e654,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efd8d4af644c89a4fbf491c08402e654, type: 3}
@@ -15120,6 +15213,7 @@ MonoBehaviour:
     needsReinit: 0
   inputSource: 2
   hand: {fileID: 1344154575}
+  c: {fileID: 296735331}
 --- !u!1001 &1906620778
 PrefabInstance:
   m_ObjectHideFlags: 0

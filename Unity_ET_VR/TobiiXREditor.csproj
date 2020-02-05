@@ -56,8 +56,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\DevTools\GazeVisualizer\Editor\CustomProviderVisualizerEditor.cs" />
-     <None Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\DevTools\GazeVisualizer\Editor\TobiiXRGazeVisualizerEditor.asmdef" />
+     <Compile Include="Assets\Dependencies\TobiiXR\DevTools\GazeVisualizer\Editor\CustomProviderVisualizerEditor.cs" />
+     <None Include="Assets\Dependencies\TobiiXR\DevTools\GazeVisualizer\Editor\TobiiXRGazeVisualizerEditor.asmdef" />
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>

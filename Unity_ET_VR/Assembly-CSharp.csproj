@@ -56,49 +56,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Plugins\Tobii.HEC.Interop.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Grabbing\GazeGrab.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Grabbing\GazeGrabbableObject.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Throwing\GazeThrowableObject.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Throwing\GazeThrowTarget.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Throwing\ThrowAtGaze.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Utilities\GazeOutline.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Utilities\ResetObjectPosition.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Utilities\TobiiXRThrowingSceneManager.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Social_Example\Scripts\FollowCameraHeight.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Social_Example\Scripts\Handle2DEyes.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Social_Example\Scripts\Handle3DExpressions.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Social_Example\Scripts\Handle3DEyelids.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Social_Example\Scripts\Handle3DEyes.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Social_Example\Scripts\HandleHands.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Social_Example\Scripts\RotateWithHMD.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Graphics\UIGazeButtonGraphics.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Graphics\UIGazeSliderGraphics.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Graphics\UIGazeToggleButtonGraphics.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Touchpad\UITouchpadGazeButton.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Touchpad\UITouchpadGazeSlider.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Touchpad\UITouchpadGazeToggleButton.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Touchpad\UITouchpadSwipeDetector.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Trigger\UITriggerDragDetector.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Trigger\UITriggerGazeButton.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Trigger\UITriggerGazeSlider.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Trigger\UITriggerGazeToggleButton.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Utilities\UIEvents.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Utilities\UIPrinter.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Utilities\Controller\Plugins\openvr_api.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Utilities\Controller\Scripts\ControllerManager.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Utilities\Controller\Scripts\ControllerVisualizer.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Utilities\G2OM_DebugVisualization.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Utilities\G2OM_Example.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Utilities\G2OM_SimpleMovement.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Utilities\G2OM_SimpleRotation.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Utilities\G2OM_SimpleScaling.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Utilities\HighlightAtGaze.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Utilities\TobiiXR_Initializer.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Utilities\UIGazeCollider.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\Utilities\UIHighlightAtGaze.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\External\Providers\HTC\HTCProvider.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\External\Providers\TobiiHTC\TobiiHTCProvider.cs" />
      <Compile Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\AntiAliasing.cs" />
      <Compile Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\Common\ImageEffectHelper.cs" />
      <Compile Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\Common\RenderTexureUtility.cs" />
@@ -176,8 +133,84 @@
      <Compile Include="Assets\Dependencies\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\Dependencies\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\Dependencies\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Plugins\Tobii.HEC.Interop.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Grabbing\GazeGrab.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Grabbing\GazeGrabbableObject.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Throwing\GazeThrowableObject.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Throwing\GazeThrowTarget.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Throwing\ThrowAtGaze.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Utilities\GazeOutline.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Utilities\ResetObjectPosition.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Scripts\Utilities\TobiiXRThrowingSceneManager.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Social_Example\Scripts\FollowCameraHeight.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Social_Example\Scripts\Handle2DEyes.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Social_Example\Scripts\Handle3DExpressions.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Social_Example\Scripts\Handle3DEyelids.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Social_Example\Scripts\Handle3DEyes.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Social_Example\Scripts\HandleHands.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Social_Example\Scripts\RotateWithHMD.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Graphics\UIGazeButtonGraphics.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Graphics\UIGazeSliderGraphics.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Graphics\UIGazeToggleButtonGraphics.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Touchpad\UITouchpadGazeButton.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Touchpad\UITouchpadGazeSlider.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Touchpad\UITouchpadGazeToggleButton.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Touchpad\UITouchpadSwipeDetector.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Trigger\UITriggerDragDetector.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Trigger\UITriggerGazeButton.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Trigger\UITriggerGazeSlider.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Trigger\UITriggerGazeToggleButton.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Utilities\UIEvents.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\UI_Example\Scripts\Utilities\UIPrinter.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Utilities\Controller\Plugins\openvr_api.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Utilities\Controller\Scripts\ControllerManager.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Utilities\Controller\Scripts\ControllerVisualizer.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Utilities\Controller\Scripts\OpenVRControllerAdapter.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Utilities\Controller\Scripts\PicoControllerAdapter.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Utilities\G2OM_SimpleMovement.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Utilities\G2OM_SimpleRotation.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Utilities\G2OM_SimpleScaling.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Utilities\HighlightAtGaze.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Utilities\UIGazeCollider.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\Examples\Utilities\UIHighlightAtGaze.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\External\Providers\Pico\PicoProvider.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\External\Providers\Vive\ViveProvider.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\Sample\DartBoard.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\Sample\SRanipal_AvatarEyeSample.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\Sample\SRanipal_AvatarEyeSample_v2.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\Sample\SRanipal_EyeFocusSample.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\Sample\SRanipal_EyeFocusSample_v2.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\Sample\SRanipal_EyeSettingSample.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\Sample\SRanipal_GazeRaySample.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\Sample\SRanipal_GazeRaySample_v2.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\Sample\SRanipal_MirrorCameraSample_Eye.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\Sample\SRanipal_MirrorCameraSample_Eye_v2.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\SRanipal_Eye.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\SRanipal_Eye_API.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\SRanipal_Eye_Enums.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\SRanipal_Eye_Framework.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\SRanipal_Eye_v2.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\SRanipal_EyeData.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\SRanipal_EyeDataType_v1.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\SRanipal_EyeDataType_v2.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Eye\SRanipal_EyeShapeTableDrawer.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Lip\Sample\SRanipal_AvatarLipSample.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Lip\Sample\SRanipal_AvatarLipSample_v2.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Lip\Sample\SRanipal_MirrorCameraSample_Lip.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Lip\SRanipal_Lip.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Lip\SRanipal_Lip_API.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Lip\SRanipal_Lip_Framework.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Lip\SRanipal_Lip_v2.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Lip\SRanipal_LipData_v1.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Lip\SRanipal_LipData_v2.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Lip\SRanipal_LipShapeTableDrawer.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\Lip\SRanipal_LipShapeTableDrawer_v2.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\SRanipal_API.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\SRanipal_Enums.cs" />
+     <Compile Include="Assets\Dependencies\ViveSR\Scripts\SRWorks_Enums.cs" />
      <Compile Include="Assets\Scripts\CuePresenter.cs" />
      <Compile Include="Assets\Scripts\Database.cs" />
+     <Compile Include="Assets\Scripts\EyeTrackingManager.cs" />
      <Compile Include="Assets\Scripts\TestManager.cs" />
      <Compile Include="Assets\Scripts\ToolController.cs" />
      <Compile Include="Assets\Scripts\ToolManager2.cs" />
@@ -191,12 +224,11 @@
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
-     <None Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\External\Providers\TobiiHTC\readme.txt" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
      <None Include="Assets\Dependencies\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Dependencies\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
-     <None Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\External\readme.txt" />
+     <None Include="Assets\Dependencies\TobiiXR\External\readme.txt" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
@@ -221,6 +253,7 @@
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\Shaders\DepthOfField.shader" />
      <None Include="Assets\Dependencies\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\Dependencies\ViveSR\Shaders\DartBoardShader.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\ScreenSpaceReflection\Shaders\ScreenSpaceRaytrace.cginc" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\TonemappingColorGradingHistogram.shader" />
@@ -235,7 +268,7 @@
      <None Include="Assets\Dependencies\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
      <None Include="Assets\Dependencies\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\readme.txt" />
+     <None Include="Assets\Dependencies\TobiiXR\readme.txt" />
      <None Include="Assets\Dependencies\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
      <None Include="Assets\Dependencies\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
@@ -253,11 +286,10 @@
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
-     <None Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\TobiiXRVersion.txt" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
-     <None Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Shaders\LICENSE.txt" />
+     <None Include="Assets\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Shaders\LICENSE.txt" />
      <None Include="Assets\Dependencies\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
      <None Include="Assets\Dependencies\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
@@ -280,7 +312,7 @@
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\Shaders\MedianFilter.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
-     <None Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Shaders\UltimateOutline.shader" />
+     <None Include="Assets\Dependencies\TobiiXR\Examples\HandEyeCoordination_Example\Shaders\UltimateOutline.shader" />
      <None Include="Assets\Dependencies\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\Dependencies\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
@@ -294,11 +326,12 @@
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
      <None Include="Assets\Dependencies\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
-     <None Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\External\Providers\HTC\readme.txt" />
+     <None Include="Assets\Dependencies\TobiiXR\External\Providers\Vive\readme.txt" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\Histogram.compute" />
      <None Include="Assets\Dependencies\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\Dependencies\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\Dependencies\ViveSR\Shaders\Unlit-Alpha2Gray.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
@@ -883,6 +916,26 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{7C6CFB60-0CA6-1FF1-7D7D-C519324BA4BE}</Project>
+      <Name>SteamVR_Actions</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Input_Editor.csproj">
+      <Project>{C3071E2D-2CC4-9CF7-D305-D5A579AEAE7B}</Project>
+      <Name>SteamVR_Input_Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Editor.csproj">
+      <Project>{4A0B5D80-34DE-81BF-51D3-6B89ED51390D}</Project>
+      <Name>SteamVR_Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR.csproj">
+      <Project>{B500842D-407A-3C1C-5CAF-48DFA3449B73}</Project>
+      <Name>SteamVR</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
+      <Project>{D887D219-60F4-E844-AADD-7D02032D9079}</Project>
+      <Name>SteamVR_Windows_EditorHelper</Name>
+    </ProjectReference>
     <ProjectReference Include="TobiiXREditor.csproj">
       <Project>{ABCD43E1-13B3-36A3-A418-AD25CCF2D82A}</Project>
       <Name>TobiiXREditor</Name>
@@ -894,14 +947,6 @@
     <ProjectReference Include="GazeModifierEditor.csproj">
       <Project>{92798DE7-18F6-2D50-BA2D-DBE2C841AC64}</Project>
       <Name>GazeModifierEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="ViveSR.csproj">
-      <Project>{621DF12E-823B-1AC5-6E0C-453669081AAE}</Project>
-      <Name>ViveSR</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR_Actions.csproj">
-      <Project>{7C6CFB60-0CA6-1FF1-7D7D-C519324BA4BE}</Project>
-      <Name>SteamVR_Actions</Name>
     </ProjectReference>
     <ProjectReference Include="TobiiXRCore.csproj">
       <Project>{37FD5755-833C-DB49-E90C-007009EB2CAC}</Project>
@@ -915,29 +960,9 @@
       <Project>{690AAF99-3E46-A3C9-29D4-7D989E191AEE}</Project>
       <Name>TobiiXRG2OM</Name>
     </ProjectReference>
-    <ProjectReference Include="EyeClops.csproj">
-      <Project>{05A65F9E-4DDE-6D62-CDDC-D6E10928FF37}</Project>
-      <Name>EyeClops</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR_Input_Editor.csproj">
-      <Project>{C3071E2D-2CC4-9CF7-D305-D5A579AEAE7B}</Project>
-      <Name>SteamVR_Input_Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="TobiiXRDevTools.csproj">
       <Project>{1AA9B592-7CA0-73A6-CF7C-D0F6154EFC45}</Project>
       <Name>TobiiXRDevTools</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR_Editor.csproj">
-      <Project>{4A0B5D80-34DE-81BF-51D3-6B89ED51390D}</Project>
-      <Name>SteamVR_Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR.csproj">
-      <Project>{B500842D-407A-3C1C-5CAF-48DFA3449B73}</Project>
-      <Name>SteamVR</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
-      <Project>{D887D219-60F4-E844-AADD-7D02032D9079}</Project>
-      <Name>SteamVR_Windows_EditorHelper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

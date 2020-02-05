@@ -56,22 +56,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\Plugins\Tobii.G2OM.Interop.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\Plugins\Tobii.G2OM.UnityExtensionMethods.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\Scripts\G2OM.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\Scripts\G2OM_ColliderDataProvider.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\Scripts\G2OM_Context.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\Scripts\G2OM_ObjectDistinguisher.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\Scripts\G2OM_ObjectFinder.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\Scripts\G2OM_PostTicker.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\Scripts\IG2OM_ColliderDataProvider.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\Scripts\IG2OM_Context.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\Scripts\IG2OM_ObjectDistinguisher.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\Scripts\IG2OM_ObjectFinder.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\Scripts\IG2OM_PostTicker.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\Scripts\IGazeFocusable.cs" />
-     <None Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\TobiiXRG2OM.asmdef" />
-     <None Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\G2OM\README.txt" />
+     <Compile Include="Assets\Dependencies\TobiiXR\G2OM\Plugins\Tobii.G2OM.Interop.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\G2OM\Plugins\Tobii.G2OM.UnityExtensionMethods.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\G2OM\Scripts\G2OM.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\G2OM\Scripts\G2OM_ColliderDataProvider.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\G2OM\Scripts\G2OM_Context.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\G2OM\Scripts\G2OM_ObjectDistinguisher.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\G2OM\Scripts\G2OM_ObjectFinder.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\G2OM\Scripts\G2OM_PostTicker.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\G2OM\Scripts\IG2OM_ColliderDataProvider.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\G2OM\Scripts\IG2OM_Context.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\G2OM\Scripts\IG2OM_ObjectDistinguisher.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\G2OM\Scripts\IG2OM_ObjectFinder.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\G2OM\Scripts\IG2OM_PostTicker.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\G2OM\Scripts\IGazeFocusable.cs" />
+     <None Include="Assets\Dependencies\TobiiXR\G2OM\TobiiXRG2OM.asmdef" />
+     <None Include="Assets\Dependencies\TobiiXR\G2OM\README.txt" />
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>

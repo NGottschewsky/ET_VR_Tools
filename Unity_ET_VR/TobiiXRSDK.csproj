@@ -56,13 +56,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\AssemblyInfo.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\AssemblyUtils.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\TobiiEulaFile.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\TobiiXR_Lifecycle.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\TobiiXR_Settings.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\TobiiXR.cs" />
-     <None Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\TobiiXRAPI.asmdef" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\AssemblyInfo.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\Internal\AssemblyUtils.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\Internal\TobiiEula.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\Internal\TobiiEulaFile.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\Internal\TobiiXR_Lifecycle.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\Internal\TobiiXR_Settings.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\TobiiXR.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\TobiiXR_Initializer.cs" />
+     <None Include="Assets\Dependencies\TobiiXR\API\TobiiXRAPI.asmdef" />
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>

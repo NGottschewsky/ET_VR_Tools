@@ -6,11 +6,11 @@ using UnityEditor;
 using UnityEngine;
 using System.Linq;
 using TMPro;
-using Tobii.StreamEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 using Valve.VR;
 using Valve.VR.InteractionSystem;
+using Tobii.XR;
 
 public class ToolManager2 : MonoBehaviour
 {
@@ -66,13 +66,12 @@ public class ToolManager2 : MonoBehaviour
 
     // singleton instance of class Database is creatd, 1 instance per participant
     private Database _database = Database.Instance;
-    private float _samplingRate = 1/90f; //90 Hz sampling rate for eye-tracking samples and controller position samples
+    private float _samplingRate = 1/90f; // 90 Hz sampling rate for eye-tracking samples and controller position samples
     
     public SteamVR_Action_Boolean grabPinch; //Grab Pinch is the trigger, select from inspector
     public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.RightHand; //which controller
     public Hand hand;
-    public tobii_head_pose_callback_t headPos;
-    public HmdQuaternion_t hmdPosition;
+    private Transform _handPos;
     public Camera c;
     private Transform _camPos;
     
@@ -84,12 +83,13 @@ public class ToolManager2 : MonoBehaviour
         if (instance == null)
             instance = this;
         c = Camera.main;
-        _camPos = c.transform;
-
+        
+        // start eye tracker here
     }
 
     #endregion
     
+    /*
     // add an Event listener to the SteamVR action grab grip 
     void OnEnable()
     {
@@ -118,21 +118,39 @@ public class ToolManager2 : MonoBehaviour
         if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
         {
             _database.experiment.blocks.Last().trials.Last().triggerEvents.Add(triggerTime);
-        }*/
-    }
+        }
+    } */
 
+    private IEnumerator PrintHello()
+    {
+        while (!_endOfTrial)
+        {
+            yield return new WaitForSeconds(_samplingRate);
+            Debug.Log("Hello");
+        }
+    }
     // Still needs to be tested
     private IEnumerator RecordControllerTriggerAndPositionData()
     {
-        yield return new WaitForSeconds(_samplingRate);
-        FrameData oneFrame = new FrameData();
-        _database.experiment.blocks.Last().trials.Last().framedata.Add(oneFrame);
-        _database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed = grabPinch.state;
-        _database.experiment.blocks.Last().trials.Last().framedata.Last().controllerPosition = hand.transform;
-        // save rotation, position and scale individually
-        // save HMD data here
-        Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed);
-        Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().controllerPosition);
+        while (!_endOfTrial)
+        {
+            yield return new WaitForSeconds(_samplingRate);
+            FrameData f = new FrameData();
+            f.timeStamp = _database.getCurrentTimestamp();
+            f.triggerPressed = grabPinch.state;
+            f.controllerTransform = _handPos;
+            f.controllerPosition = _handPos.position;
+            f.controllerRotation = _handPos.rotation.eulerAngles;
+            f.controllerScale = _handPos.lossyScale;
+            f.hmdPos = _camPos.position;
+            f.hmdDirectionForward = _camPos.forward;
+            f.hmdDirectionUp = _camPos.up;
+            f.hmdDirectionRight = _camPos.right;
+            // maybe also save hmd rotation
+            _database.experiment.blocks.Last().trials.Last().framedata.Add(f);
+            Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed);
+            Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().hmdPos);
+        }
     }
 
     private IEnumerator GetPoseData()
@@ -148,6 +166,9 @@ public class ToolManager2 : MonoBehaviour
 
         _totalNrofTrials = _toolOrder[participantNr].Length;
         _nrOfTrialsPerBlock = _totalNrofTrials / 2;
+        
+        if (c != null) _camPos = c.transform;
+        if (hand != null) _handPos = hand.transform;
         
         Block b = new Block();
         b.ID = _block;
@@ -193,8 +214,11 @@ public class ToolManager2 : MonoBehaviour
                 _database.experiment.blocks.Last().trials.Last().toolModel = returnTool.name;
                 _database.experiment.blocks.Last().trials.Last().toolOrientation = returnTool.orientation;
                 _database.experiment.blocks.Last().trials.Last().cue = returnTool.cue;
-                _database.experiment.blocks.Last().trials.Last().toolPosition = returnTool.transform;
-
+                _database.experiment.blocks.Last().trials.Last().toolTransform = returnTool.transform;
+                _database.experiment.blocks.Last().trials.Last().toolPosition = returnTool.transform.position;
+                _database.experiment.blocks.Last().trials.Last().toolRotation = returnTool.transform.rotation.eulerAngles;
+                _database.experiment.blocks.Last().trials.Last().toolScale = returnTool.transform.lossyScale;
+                
                 Debug.Log(_database.experiment.blocks.Last().trials.Last().toolModel);
                 Debug.Log(_database.experiment.blocks.Last().trials.Last().toolOrientation);
                 Debug.Log(_database.experiment.blocks.Last().trials.Last().cue = returnTool.cue);
@@ -255,23 +279,33 @@ public class ToolManager2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //StartCoroutine(PrintHello());
         if (_trial == _nrOfTrialsPerBlock)
         {
             _endOfBlock = true; 
         }
         
-        if (TrialEndReached() && !_endOfBlock)  //Input.GetKeyDown(KeyCode.Space) && !_endOfBlock)
+        if (TrialEndReached() && !_endOfBlock) 
         {
             if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
             {
+                if (_database.experiment.blocks.Last().trials.Last().framedata.LastOrDefault() != default)
+                {
+                    Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed);
+                    Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().controllerTransform);
+                }
+
                 _database.experiment.blocks.Last().trials.Last().end = _database.getCurrentTimestamp();
+                _endOfTrial = true;
                 StopCoroutine(RecordControllerTriggerAndPositionData());  // Yet to be tested
             }
             Trial t = new Trial();
             t.ID = _trial;
             t.start = _database.getCurrentTimestamp();
             _database.experiment.blocks.Last().trials.Add(t);
+            _endOfTrial = false;
             StartCoroutine(RecordControllerTriggerAndPositionData());
+            StartCoroutine(PrintHello());
             Debug.Log(_database.experiment.blocks.Last().trials.Last().ID);
             
             
@@ -356,6 +390,9 @@ public class ToolManager2 : MonoBehaviour
                 b.ID = _block;
                 _database.experiment.blocks.Add(b);
             }
+            
+            // Call the save function in here 
+            
         }
         
     }

@@ -668,6 +668,26 @@
       <Project>{762DA813-0BD3-A13E-5FEF-4785CEC012CD}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{7C6CFB60-0CA6-1FF1-7D7D-C519324BA4BE}</Project>
+      <Name>SteamVR_Actions</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Input_Editor.csproj">
+      <Project>{C3071E2D-2CC4-9CF7-D305-D5A579AEAE7B}</Project>
+      <Name>SteamVR_Input_Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Editor.csproj">
+      <Project>{4A0B5D80-34DE-81BF-51D3-6B89ED51390D}</Project>
+      <Name>SteamVR_Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR.csproj">
+      <Project>{B500842D-407A-3C1C-5CAF-48DFA3449B73}</Project>
+      <Name>SteamVR</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
+      <Project>{D887D219-60F4-E844-AADD-7D02032D9079}</Project>
+      <Name>SteamVR_Windows_EditorHelper</Name>
+    </ProjectReference>
     <ProjectReference Include="TobiiXREditor.csproj">
       <Project>{ABCD43E1-13B3-36A3-A418-AD25CCF2D82A}</Project>
       <Name>TobiiXREditor</Name>
@@ -679,14 +699,6 @@
     <ProjectReference Include="GazeModifierEditor.csproj">
       <Project>{92798DE7-18F6-2D50-BA2D-DBE2C841AC64}</Project>
       <Name>GazeModifierEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="ViveSR.csproj">
-      <Project>{621DF12E-823B-1AC5-6E0C-453669081AAE}</Project>
-      <Name>ViveSR</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR_Actions.csproj">
-      <Project>{7C6CFB60-0CA6-1FF1-7D7D-C519324BA4BE}</Project>
-      <Name>SteamVR_Actions</Name>
     </ProjectReference>
     <ProjectReference Include="TobiiXRCore.csproj">
       <Project>{37FD5755-833C-DB49-E90C-007009EB2CAC}</Project>
@@ -700,29 +712,9 @@
       <Project>{690AAF99-3E46-A3C9-29D4-7D989E191AEE}</Project>
       <Name>TobiiXRG2OM</Name>
     </ProjectReference>
-    <ProjectReference Include="EyeClops.csproj">
-      <Project>{05A65F9E-4DDE-6D62-CDDC-D6E10928FF37}</Project>
-      <Name>EyeClops</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR_Input_Editor.csproj">
-      <Project>{C3071E2D-2CC4-9CF7-D305-D5A579AEAE7B}</Project>
-      <Name>SteamVR_Input_Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="TobiiXRDevTools.csproj">
       <Project>{1AA9B592-7CA0-73A6-CF7C-D0F6154EFC45}</Project>
       <Name>TobiiXRDevTools</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR_Editor.csproj">
-      <Project>{4A0B5D80-34DE-81BF-51D3-6B89ED51390D}</Project>
-      <Name>SteamVR_Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR.csproj">
-      <Project>{B500842D-407A-3C1C-5CAF-48DFA3449B73}</Project>
-      <Name>SteamVR</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
-      <Project>{D887D219-60F4-E844-AADD-7D02032D9079}</Project>
-      <Name>SteamVR_Windows_EditorHelper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -56,18 +56,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\Editor\AssemblyInfo.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\Editor\EditorUtils.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\Editor\IEditorSettings.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\Editor\IProviderSettings.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\Editor\ISettingsEditorExtension.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\Editor\PathHelper.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\Editor\ProviderSettingsAttribute.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\Editor\TobiiEulaCheck.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\Editor\TobiiXR_ExecutionOrderValidator.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\Editor\TobiiXR_SettingsEditor.cs" />
-     <Compile Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\Editor\TobiiXR_SettingsEditorWindow.cs" />
-     <None Include="Assets\Dependencies\EyeClops\Dependencies\TobiiXR\API\Internal\Editor\TobiiXRInternalEditor.asmdef" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\Internal\Editor\AssemblyInfo.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\Internal\Editor\EditorUtils.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\Internal\Editor\IEditorSettings.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\Internal\Editor\PathHelper.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\Internal\Editor\SerializedPropertyHelper.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\Internal\Editor\TobiiEulaCheck.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\Internal\Editor\TobiiXR_ExecutionOrderValidator.cs" />
+     <Compile Include="Assets\Dependencies\TobiiXR\API\Internal\Editor\TobiiXR_SettingsDrawer.cs" />
+     <None Include="Assets\Dependencies\TobiiXR\API\Internal\Editor\TobiiXRInternalEditor.asmdef" />
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>

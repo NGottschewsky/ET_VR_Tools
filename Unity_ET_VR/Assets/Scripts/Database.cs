@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using System.IO;
 using UnityEditor;
+using UnityEngine.UIElements;
 
 public class Database : MonoBehaviour
 {
@@ -90,7 +91,10 @@ public class Trial
     public string toolModel; // Screwdriver etc. 
     public string toolOrientation; // Left or Right
     public List<Coll> colls; // Handle collider and effector collider 
-    public Transform toolPosition;
+    public Transform toolTransform;
+    public Vector3 toolPosition;
+    public Vector3 toolRotation;
+    public Vector3 toolScale;
     public string cue; // Lift or Use
     public double start;
     public double end;
@@ -131,6 +135,7 @@ public class FrameData
     public Vector3 leftEyeDirectionForward;
     public Vector3 middlePointDirectionForward;
     public Vector3 hmdDirectionForward;
+    public Vector3 hmdDirectionRight;
 
 
     public Vector3 hmdDirectionUp;
@@ -141,10 +146,10 @@ public class FrameData
     
     // trigger pressed 
     public bool triggerPressed;
-    public Transform controllerPosition;
-    // is it enough to save transform or do I have to save position, rotation and 
-    // scale individually?
-
+    public Transform controllerTransform;
+    public Vector3 controllerPosition;
+    public Vector3 controllerRotation;
+    public Vector3 controllerScale;
     public FrameData()
     {
         rightEyeHits = new List<RayHit>();

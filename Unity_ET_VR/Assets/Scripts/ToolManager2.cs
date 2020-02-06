@@ -18,6 +18,8 @@ public class ToolManager2 : MonoBehaviour
     public CuePresenter cuePresenter;
     public ToolPresenter toolPresenter;
     public TrialManager trialManager;
+    public EyeTrackingManager eyeTrackingManager;
+    public Canvas cueCanvas;
     
     [Header("Experiment parameters")] [Range(1, 20)]
     public int participantNr;
@@ -40,8 +42,10 @@ public class ToolManager2 : MonoBehaviour
 
     // List of tools that should be presented with left or right orientation respectively
     private string[] _leftTools = new string[] {"1", "2", "5", "6", "9", "10", "13", "14", "17", "18", "21", "22", "25", "26", "33", "34", "37", "38", "41", "42"};
+    private string[] _differentLeftTools = new string[] {"29","30","45","46"};
     private string[] _rightTools = new string[] {"3", "4", "7", "8", "11", "12","15", "16", "19", "20", "23", "24", "27", "28", "35", "36", "39", "40", "43", "44"};
-    
+    private string[] _differentRightTools = new string[] {"31","32","47","48"};
+
     // List of tools that should be presented in combination with lift or use cue respectively
     private string[] _liftCue = new string[] {"1", "3", "5", "7", "9", "11", "13", "15", "17", "19", "21", "23", "25", "27", "29", "31", "33", "35", "37", "39", "41", "43", "45", "47"};
     private string[] _useCue = new string[] {"2", "4", "6", "8", "10", "12","14", "16", "18", "20", "22", "24", "26", "28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48"};
@@ -121,14 +125,6 @@ public class ToolManager2 : MonoBehaviour
         }
     } */
 
-    private IEnumerator PrintHello()
-    {
-        while (!_endOfTrial)
-        {
-            yield return new WaitForSeconds(_samplingRate);
-            Debug.Log("Hello");
-        }
-    }
     // Still needs to be tested
     private IEnumerator RecordControllerTriggerAndPositionData()
     {
@@ -136,6 +132,26 @@ public class ToolManager2 : MonoBehaviour
         {
             yield return new WaitForSeconds(_samplingRate);
             FrameData f = new FrameData();
+            var eyeTrackingDataWorld = TobiiXR.GetEyeTrackingData(TobiiXR_TrackingSpace.World);
+            var eyeTrackingDataLocal = TobiiXR.GetEyeTrackingData(TobiiXR_TrackingSpace.Local);
+
+            if (eyeTrackingDataWorld.GazeRay.IsValid)
+            {
+                f.tobiiTimeStamp = eyeTrackingDataWorld.Timestamp;
+                f.eyePosWorld = eyeTrackingDataWorld.GazeRay.Origin;
+                f.eyeDirWorld = eyeTrackingDataWorld.GazeRay.Direction;
+                f.isLeftBlinkingW = eyeTrackingDataWorld.IsLeftEyeBlinking;
+                f.isRightBlinkingW = eyeTrackingDataWorld.IsRightEyeBlinking;
+            }
+
+            if (eyeTrackingDataLocal.GazeRay.IsValid)
+            {
+                f.eyePosLocal = eyeTrackingDataLocal.GazeRay.Origin;
+                f.eyeDirLocal = eyeTrackingDataLocal.GazeRay.Direction;
+                f.isLeftBlinkingL = eyeTrackingDataLocal.IsLeftEyeBlinking;
+                f.isRightBlinkingL = eyeTrackingDataLocal.IsRightEyeBlinking;
+            }
+            
             f.timeStamp = _database.getCurrentTimestamp();
             f.triggerPressed = grabPinch.state;
             f.controllerTransform = _handPos;
@@ -150,6 +166,8 @@ public class ToolManager2 : MonoBehaviour
             _database.experiment.blocks.Last().trials.Last().framedata.Add(f);
             Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed);
             Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().hmdPos);
+            
+            
         }
     }
 
@@ -188,13 +206,21 @@ public class ToolManager2 : MonoBehaviour
             {
                 tool.cue = "use";
             }
-            if (Array.Exists(_leftTools, element => element == tool.id))
+            if (Array.Exists(_leftTools, element => element == tool.id) || Array.Exists(_differentLeftTools, element => element == tool.id))
             {
                 tool.orientation = "left";
             }
-            else if (Array.Exists(_rightTools, element => element == tool.id))
+            else if (Array.Exists(_rightTools, element => element == tool.id) || Array.Exists(_differentRightTools, element => element == tool.id))
             {
                 tool.orientation = "right";
+            }
+        }
+
+        foreach (var tool in _tools)
+        {
+            if (tool.orientation == "left")
+            {
+                Debug.Log(tool);
             }
         }
     }
@@ -287,6 +313,8 @@ public class ToolManager2 : MonoBehaviour
         
         if (TrialEndReached() && !_endOfBlock) 
         {
+            cueCanvas.gameObject.SetActive(true);
+            
             if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
             {
                 if (_database.experiment.blocks.Last().trials.Last().framedata.LastOrDefault() != default)
@@ -297,41 +325,41 @@ public class ToolManager2 : MonoBehaviour
 
                 _database.experiment.blocks.Last().trials.Last().end = _database.getCurrentTimestamp();
                 _endOfTrial = true;
+                
                 StopCoroutine(RecordControllerTriggerAndPositionData());  // Yet to be tested
             }
+            
             Trial t = new Trial();
             t.ID = _trial;
             t.start = _database.getCurrentTimestamp();
             _database.experiment.blocks.Last().trials.Add(t);
             _endOfTrial = false;
             StartCoroutine(RecordControllerTriggerAndPositionData());
-            StartCoroutine(PrintHello());
             Debug.Log(_database.experiment.blocks.Last().trials.Last().ID);
-            
             
             GetNextTool(out var internalTool);
             TrialManager.colliderInstance.ResetTriggerValue();
 
             if (internalTool != null)
             {
-
                 if (Array.Exists(_liftCue, element => element == internalTool.id))
                 {
                     ShowMessage(Color.white, "   ", 60);
                     StartCoroutine(ShowMessageCoroutine(Color.white, "Lift", 60));
+                    StartCoroutine(DisableCanvas());
                 }
                 else if (Array.Exists(_useCue, element => element == internalTool.id))
                 {
                     ShowMessage(Color.white, "   ", 60);
                     StartCoroutine(ShowMessageCoroutine(Color.white, "Use", 60));
-
+                    StartCoroutine(DisableCanvas());
                 }
                 else
                 {
                     Debug.Log("Tool Id in neither cue list");
                 }
 
-
+                
                 if (Array.Exists(_leftTools, element => element == internalTool.id))
                 {
                     StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "left"));
@@ -377,7 +405,13 @@ public class ToolManager2 : MonoBehaviour
 
         if (TrialEndReached()  && _endOfBlock)
         {
+            cueCanvas.gameObject.SetActive(true);
             DeactivateLastTool();
+            /***
+             * Test the saving as soon as hmd is back
+             */
+            //_database.Save(_block);
+            
             Debug.Log("End of Block.");
             TrialManager.colliderInstance.ResetTriggerValue();
             ShowMessage(Color.red, "End of Block", 50);
@@ -389,6 +423,7 @@ public class ToolManager2 : MonoBehaviour
                 Block b = new Block();
                 b.ID = _block;
                 _database.experiment.blocks.Add(b);
+                // Call calibration function for eye tracker here again
             }
             
             // Call the save function in here 
@@ -404,6 +439,15 @@ public class ToolManager2 : MonoBehaviour
         cuePresenter.lableColor = color;
         cuePresenter.font = fontsize;
         cuePresenter.ShowText(msg);
+        _database.experiment.blocks.Last().trials.Last().cueStart = _database.getCurrentTimestamp();
+    }
+
+    IEnumerator DisableCanvas()
+    {
+        yield return new WaitForSeconds(3.0f);
+        cueCanvas.gameObject.SetActive(false);
+        _database.experiment.blocks.Last().trials.Last().cueEnd = _database.getCurrentTimestamp();
+
     }
     
     // shows text without a delay 

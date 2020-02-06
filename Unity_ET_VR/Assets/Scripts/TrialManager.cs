@@ -15,9 +15,10 @@ public class TrialManager : MonoBehaviour
     private bool _timerBlocked = false;
     private float _waitTime = 2.0f;
     public static TrialManager colliderInstance;
+    private Hand rightHand = ToolManager2.instance.hand;
     
     #region Singelton
-    //make ToolManager2 singleton to be able to create 1 instance on which to call its methods
+    //make TrialManager singleton to be able to create 1 instance on which to call its methods
     private void Awake()
     {
         if (colliderInstance == null)
@@ -37,8 +38,12 @@ public class TrialManager : MonoBehaviour
                 _waitTime = 0;
             }
         }
+        
+        
     } 
-
+    
+    
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("MyControllerTag"))

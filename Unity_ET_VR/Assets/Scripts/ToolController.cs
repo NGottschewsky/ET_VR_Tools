@@ -12,9 +12,9 @@ public class ToolController : MonoBehaviour
     public string id;
     public string name;
     
-    [HideInInspector]
+    //[HideInInspector]
     public string orientation;
-    [HideInInspector]
+    //[HideInInspector]
     public string cue;
 
     

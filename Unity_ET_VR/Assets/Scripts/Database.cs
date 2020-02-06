@@ -98,7 +98,8 @@ public class Trial
     public string cue; // Lift or Use
     public double start;
     public double end;
-    // public List<double> triggerEvents;
+    public double cueStart;
+    public double cueEnd;
     public List<FrameData> framedata;
     
     // Samples
@@ -108,7 +109,6 @@ public class Trial
     {
         colls = new List<Coll>();
         samples = new List<FrameData>();
-        // triggerEvents = new List<double>();
         framedata = new List<FrameData>();
     }
 }
@@ -125,11 +125,18 @@ public class Coll
 public class FrameData
 {
     public double timeStamp;
-
-    public Vector3 rightEyePos;
-    public Vector3 leftEyePos;
-    public Vector3 middlePointPos;
+    public double tobiiTimeStamp;
+    
     public Vector3 hmdPos;
+
+    public Vector3 eyePosWorld;
+    public Vector3 eyeDirWorld;
+    public Vector3 eyePosLocal;
+    public Vector3 eyeDirLocal;
+    public bool isLeftBlinkingW;
+    public bool isRightBlinkingW;
+    public bool isLeftBlinkingL;
+    public bool isRightBlinkingL;
 
     public Vector3 rightEyeDirectionForward;
     public Vector3 leftEyeDirectionForward;

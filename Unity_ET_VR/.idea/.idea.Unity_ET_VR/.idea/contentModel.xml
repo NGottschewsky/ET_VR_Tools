@@ -872,6 +872,7 @@
           <e p="CuePresenter.cs" t="Include" />
           <e p="Database.cs" t="Include" />
           <e p="EyeTrackingManager.cs" t="Include" />
+          <e p="OtherTrialManager.cs" t="Include" />
           <e p="TestManager.cs" t="Include" />
           <e p="ToolController.cs" t="Include" />
           <e p="ToolManager2.cs" t="Include" />

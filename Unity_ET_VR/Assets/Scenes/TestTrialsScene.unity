@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.1729506, g: 0.21614386, b: 0.29811966, a: 1}
+  m_IndirectSpecularColor: {r: 0.17295013, g: 0.21614331, b: 0.2981185, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -420,6 +420,36 @@ RectTransform:
   m_AnchoredPosition: {x: -82.8, y: 106.1}
   m_SizeDelta: {x: 1361.9999, y: 759}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &233304068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233304069}
+  m_Layer: 0
+  m_Name: SpherePosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &233304069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233304068}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 66.97, y: 128.36, z: -119.64}
+  m_LocalScale: {x: 3.353, y: 3.353, z: 3.353}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &311496046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,18 +1144,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.21542874, y: 0.10757887, z: 0.3935379}
   m_Center: {x: 0.0007724464, y: 0.023988128, z: -0.0735379}
---- !u!114 &894790889 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114000011957598740, guid: dc06161b6d97feb419f45f03b62e14b9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1505355672}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779784530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a5fb0ca93b55ef4b8d54b512b103341, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &950088230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,6 +1274,7 @@ MonoBehaviour:
   lableColor:
     serializedVersion: 2
     rgba: 0
+  font: 0
 --- !u!4 &977676052
 Transform:
   m_ObjectHideFlags: 0
@@ -1334,6 +1353,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e3586803fc14414d8459e628a446f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sphereTrigger: {fileID: 652928494}
+  spherePosition: {fileID: 233304069}
 --- !u!54 &1199835709
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1943,11 +1964,12 @@ MonoBehaviour:
   cuePresenter: {fileID: 977676051}
   toolPresenter: {fileID: 173025987}
   trialManager: {fileID: 1199835708}
+  eyeTrackingManager: {fileID: 0}
+  cueCanvas: {fileID: 0}
   participantNr: 1
   participantID: 1
   gender: F
   age: 22
-  block: 1
   _tools:
   - {fileID: 0}
   - {fileID: 1949224891}
@@ -2007,7 +2029,8 @@ MonoBehaviour:
     actionPath: /actions/default/in/GrabPinch
     needsReinit: 0
   inputSource: 2
-  rightHand: {fileID: 894790889}
+  hand: {fileID: 0}
+  c: {fileID: 0}
 --- !u!4 &1913116073
 Transform:
   m_ObjectHideFlags: 0

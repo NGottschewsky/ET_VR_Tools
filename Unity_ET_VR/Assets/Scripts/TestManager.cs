@@ -144,7 +144,7 @@ public class TestManager : MonoBehaviour
 
     private bool TrialEndReached()
     {
-        return TrialManager.colliderInstance.GetTriggerValue();
+        return OtherTrialManager.instance.GetTriggerValue();
         
         //throw new NotImplementedException();
         //if vr controller held into collider for 5 secs or if it is placed in a snapzone or smth similar

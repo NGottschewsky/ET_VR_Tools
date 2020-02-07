@@ -75,9 +75,9 @@ public class ToolManager2 : MonoBehaviour
     public SteamVR_Action_Boolean grabPinch; //Grab Pinch is the trigger, select from inspector
     public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.RightHand; //which controller
     public Hand hand;
-    private Transform _handPos;
+    private Transform _handTransform;
     public Camera c;
-    private Transform _camPos;
+    private Transform _cameraTransform;
     
 
     #region Singelton
@@ -154,18 +154,21 @@ public class ToolManager2 : MonoBehaviour
             
             f.timeStamp = _database.getCurrentTimestamp();
             f.triggerPressed = grabPinch.state;
-            f.controllerTransform = _handPos;
-            f.controllerPosition = _handPos.position;
-            f.controllerRotation = _handPos.rotation.eulerAngles;
-            f.controllerScale = _handPos.lossyScale;
-            f.hmdPos = _camPos.position;
-            f.hmdDirectionForward = _camPos.forward;
-            f.hmdDirectionUp = _camPos.up;
-            f.hmdDirectionRight = _camPos.right;
-            // maybe also save hmd rotation
+            f.controllerTransform = _handTransform;
+            f.controllerPosition = _handTransform.position;
+            f.controllerRotation = _handTransform.rotation.eulerAngles;
+            f.controllerScale = _handTransform.lossyScale;
+            f.hmdPos = _cameraTransform.position;
+            f.hmdDirectionForward = _cameraTransform.forward;
+            f.hmdDirectionUp = _cameraTransform.up;
+            f.hmdDirectionRight = _cameraTransform.right;
+            f.hmdRotation = _cameraTransform.rotation.eulerAngles;
+            
             _database.experiment.blocks.Last().trials.Last().framedata.Add(f);
-            Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed);
-            Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().hmdPos);
+            //Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed);
+            //Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().hmdPos);
+            
+            Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().isLeftBlinkingW);
             
             
         }
@@ -185,8 +188,8 @@ public class ToolManager2 : MonoBehaviour
         _totalNrofTrials = _toolOrder[participantNr].Length;
         _nrOfTrialsPerBlock = _totalNrofTrials / 2;
         
-        if (c != null) _camPos = c.transform;
-        if (hand != null) _handPos = hand.transform;
+        if (c != null) _cameraTransform = c.transform;
+        if (hand != null) _handTransform = hand.transform;
         
         Block b = new Block();
         b.ID = _block;
@@ -216,13 +219,6 @@ public class ToolManager2 : MonoBehaviour
             }
         }
 
-        foreach (var tool in _tools)
-        {
-            if (tool.orientation == "left")
-            {
-                Debug.Log(tool);
-            }
-        }
     }
 
     
@@ -245,9 +241,9 @@ public class ToolManager2 : MonoBehaviour
                 _database.experiment.blocks.Last().trials.Last().toolRotation = returnTool.transform.rotation.eulerAngles;
                 _database.experiment.blocks.Last().trials.Last().toolScale = returnTool.transform.lossyScale;
                 
-                Debug.Log(_database.experiment.blocks.Last().trials.Last().toolModel);
-                Debug.Log(_database.experiment.blocks.Last().trials.Last().toolOrientation);
-                Debug.Log(_database.experiment.blocks.Last().trials.Last().cue = returnTool.cue);
+                //Debug.Log(_database.experiment.blocks.Last().trials.Last().toolModel);
+                //Debug.Log(_database.experiment.blocks.Last().trials.Last().toolOrientation);
+                //Debug.Log(_database.experiment.blocks.Last().trials.Last().cue = returnTool.cue);
 
                 for (int i = 0; i < returnTool.transform.childCount; i++)
                 {

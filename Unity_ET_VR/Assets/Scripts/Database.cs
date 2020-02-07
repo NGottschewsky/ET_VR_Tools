@@ -143,6 +143,7 @@ public class FrameData
     public Vector3 middlePointDirectionForward;
     public Vector3 hmdDirectionForward;
     public Vector3 hmdDirectionRight;
+    public Vector3 hmdRotation;
 
 
     public Vector3 hmdDirectionUp;

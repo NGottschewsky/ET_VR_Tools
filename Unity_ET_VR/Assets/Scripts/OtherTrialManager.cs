@@ -22,9 +22,11 @@ public class OtherTrialManager : MonoBehaviour
 
     private void OnHandHoverBegin( Hand hand )
     {
+        Debug.Log("Hand hover begin");
         if (hand == ToolManager2.instance.hand)
         {
             _handInCollider = true;
+            Debug.Log("Right hand hover");
         }
     }
 
@@ -39,9 +41,19 @@ public class OtherTrialManager : MonoBehaviour
         {
             if (ToolManager2.instance.grabPinch.state)
             {
-                
+                _nextTrial = true;
             }
         }
+    }
+    
+    public bool GetTriggerValue()
+    {
+        return _nextTrial;
+    }
+    
+    public void ResetTriggerValue()
+    {
+        _nextTrial = false;
     }
 
 }

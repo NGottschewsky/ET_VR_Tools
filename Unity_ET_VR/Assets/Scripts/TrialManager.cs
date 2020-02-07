@@ -15,7 +15,7 @@ public class TrialManager : MonoBehaviour
     private bool _timerBlocked = false;
     private float _waitTime = 2.0f;
     public static TrialManager colliderInstance;
-    private Hand rightHand = ToolManager2.instance.hand;
+//    private Hand _rightHand = ToolManager2.instance.hand;
     
     #region Singelton
     //make TrialManager singleton to be able to create 1 instance on which to call its methods

@@ -15,8 +15,16 @@ public class EyeTrackingManager : MonoBehaviour
     {
         if (instanceEyeTrackingManager == null)
             instanceEyeTrackingManager = this;
-        TobiiXR.Start(settings);
-        //SRanipal_Eye_v2.LaunchEyeCalibration();
+        if (TobiiXR.Start(settings))
+        {
+            Debug.Log("starting succesful");
+        }
+
+
+        if (SRanipal_Eye_v2.LaunchEyeCalibration())
+        {
+            Debug.Log("calibration succesful");
+        }
     }
 
     // Start is called before the first frame update

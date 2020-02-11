@@ -71,6 +71,28 @@
             }
          ]
       },
+      "/actions/calibration" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/calibration/in/startcalibration"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/system"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/calibration/in/startcalibration"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/system"
+            }
+         ]
+      },
       "/actions/default" : {
          "chords" : [],
          "haptics" : [],

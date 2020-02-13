@@ -33,6 +33,12 @@ public class ToolPresenter : MonoBehaviour
             case "right" :
                 tool.ActivateThis(ToolManager2.instance.spawnerPositionRight.transform.position, ToolManager2.instance.spawnerPositionRight.transform.rotation);
                 break;
+            case "blumenschneider left" :
+                tool.ActivateThis(ToolManager2.instance.spawnerPositionBLUMLeft.transform.position, ToolManager2.instance.spawnerPositionBLUMLeft.transform.rotation);
+                break;
+            case "blumenschneider right" :
+                tool.ActivateThis(ToolManager2.instance.spawnerPositionBLUMRight.transform.position, ToolManager2.instance.spawnerPositionBLUMRight.transform.rotation);
+                break;
             case "speichenschlüssel right" :
                 tool.ActivateThis(ToolManager2.instance.spawnerPositionSPEICHRight.transform.position, ToolManager2.instance.spawnerPositionSPEICHRight.transform.rotation);
                 break;

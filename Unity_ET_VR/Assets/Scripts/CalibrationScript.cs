@@ -10,10 +10,11 @@ using UnityEngine.EventSystems;
 
 public class CalibrationScript : MonoBehaviour
 {
-    public SteamVR_Input_Sources source = SteamVR_Input_Sources.RightHand;
+    public SteamVR_Input_Sources source = SteamVR_Input_Sources.Any;
     public SteamVR_Action_Boolean startCalibration;
     public Hand hand;
     private Transform _handTransform;
+    public GameObject table;
     private Transform _tableTransform;
     private bool _controllerReached = false;
     
@@ -21,24 +22,26 @@ public class CalibrationScript : MonoBehaviour
     void Start()
     {
         if (hand != null) _handTransform = hand.transform;
-        _tableTransform = this.transform;
-        Debug.Log(_tableTransform.lossyScale.z);  
-        Debug.Log(_tableTransform.localScale.z);   
+        _tableTransform = table.transform;
+        var tableTransformPosition = _tableTransform.position;
+        tableTransformPosition.y = 100;
     }
 
     // Update is called once per frame
     void Update()
     {
-        while (startCalibration.state)
+        if (startCalibration.state)
         {
-            Debug.Log(this.transform.lossyScale.z);
+            Debug.Log(table.transform.lossyScale.z);
         }
-
-        while (!_controllerReached)
+        //var tableTransformLocalScale = _tableTransform.localScale;
+        //tableTransformLocalScale.z += 0.1f;
+        
+        /*if (!_controllerReached)
         {
             var tableTransformLocalScale = _tableTransform.localScale;
             tableTransformLocalScale.z += 0.1f;
-        }
+        }*/
     }
 
     private void OnCollisionEnter(Collision other)

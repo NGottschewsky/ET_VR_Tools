@@ -57,7 +57,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Dependencies\SteamVR_Input\ActionSetClasses\SteamVR_Input_ActionSet_buggy.cs" />
-     <Compile Include="Assets\Dependencies\SteamVR_Input\ActionSetClasses\SteamVR_Input_ActionSet_Calibration.cs" />
      <Compile Include="Assets\Dependencies\SteamVR_Input\ActionSetClasses\SteamVR_Input_ActionSet_default.cs" />
      <Compile Include="Assets\Dependencies\SteamVR_Input\ActionSetClasses\SteamVR_Input_ActionSet_mixedreality.cs" />
      <Compile Include="Assets\Dependencies\SteamVR_Input\ActionSetClasses\SteamVR_Input_ActionSet_platformer.cs" />

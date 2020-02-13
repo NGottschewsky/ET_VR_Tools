@@ -499,7 +499,6 @@
           <e p="SteamVR_Input" t="Include">
             <e p="ActionSetClasses" t="Include">
               <e p="SteamVR_Input_ActionSet_buggy.cs" t="Include" />
-              <e p="SteamVR_Input_ActionSet_Calibration.cs" t="Include" />
               <e p="SteamVR_Input_ActionSet_default.cs" t="Include" />
               <e p="SteamVR_Input_ActionSet_mixedreality.cs" t="Include" />
               <e p="SteamVR_Input_ActionSet_platformer.cs" t="Include" />

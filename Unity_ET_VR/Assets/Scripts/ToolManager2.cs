@@ -39,12 +39,15 @@ public class ToolManager2 : MonoBehaviour
     [SerializeField] public GameObject spawnerPositionSPEICHLeft;
     [SerializeField] public GameObject spawnerPositionFORKRight;
     [SerializeField] public GameObject spawnerPositionFORKLeft;
+    [SerializeField] public GameObject spawnerPositionBLUMLeft;
+    [SerializeField] public GameObject spawnerPositionBLUMRight;
+    
 
     // List of tools that should be presented with left or right orientation respectively
-    private string[] _leftTools = new string[] {"1", "2", "5", "6", "9", "10", "13", "14", "17", "18", "21", "22", "25", "26", "33", "34", "37", "38", "41", "42"};
-    private string[] _differentLeftTools = new string[] {"29","30","45","46"};
-    private string[] _rightTools = new string[] {"3", "4", "7", "8", "11", "12","15", "16", "19", "20", "23", "24", "27", "28", "35", "36", "39", "40", "43", "44"};
-    private string[] _differentRightTools = new string[] {"31","32","47","48"};
+    private string[] _leftTools = new string[] {"1", "2", "9", "10", "13", "14", "17", "18", "21", "22", "25", "26", "33", "34", "37", "38", "41", "42"};
+    private string[] _differentLeftTools = new string[] {"5","6","29","30","45","46"};
+    private string[] _rightTools = new string[] {"3", "4", "11", "12","15", "16", "19", "20", "23", "24", "27", "28", "35", "36", "39", "40", "43", "44"};
+    private string[] _differentRightTools = new string[] {"7","8","31","32","47","48"};
 
     // List of tools that should be presented in combination with lift or use cue respectively
     private string[] _liftCue = new string[] {"1", "3", "5", "7", "9", "11", "13", "15", "17", "19", "21", "23", "25", "27", "29", "31", "33", "35", "37", "39", "41", "43", "45", "47"};
@@ -58,9 +61,9 @@ public class ToolManager2 : MonoBehaviour
     // randomised order of tools (48 different) is stored in a list of arrays, each array for representing one participant
     private List<string[]> _toolOrder = new List<string[]>();
     
-    //private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     // csv file that contains the order of tool presentation and is read into the _toolOrder list
-    private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     
     private bool _endOfBlock = false; // set to true after 144 trials
     private bool _endOfTrial = false; // set to true in method where new trial is started
@@ -316,7 +319,7 @@ public class ToolManager2 : MonoBehaviour
                 if (_database.experiment.blocks.Last().trials.Last().framedata.LastOrDefault() != default)
                 {
                     Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed);
-                    Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().controllerTransform);
+                    Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().controllerTransform.position);
                 }
 
                 _database.experiment.blocks.Last().trials.Last().end = _database.getCurrentTimestamp();
@@ -368,6 +371,14 @@ public class ToolManager2 : MonoBehaviour
                 {
                     switch (internalTool.id)
                     {
+                        case "5":
+                        case "6":
+                            StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "blumenschneider left"));
+                            break;
+                        case "7":
+                        case "8":
+                            StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "blumenschneider right"));
+                            break;
                         case "29":
                         case "30":
                             StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "speichenschlüssel left"));

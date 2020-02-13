@@ -41,6 +41,7 @@ public class OtherTrialManager : MonoBehaviour
         {
             if (ToolManager2.instance.grabPinch.state)
             {
+                Debug.Log("NextTrial");
                 _nextTrial = true;
             }
         }

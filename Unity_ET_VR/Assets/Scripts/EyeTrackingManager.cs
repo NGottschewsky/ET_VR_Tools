@@ -21,10 +21,10 @@ public class EyeTrackingManager : MonoBehaviour
         }
 
 
-        if (SRanipal_Eye_v2.LaunchEyeCalibration())
+        /*if (SRanipal_Eye_v2.LaunchEyeCalibration())
         {
             Debug.Log("calibration succesful");
-        }
+        }*/
     }
 
     // Start is called before the first frame update

@@ -872,6 +872,10 @@
           <e p="CalibrationScript.cs" t="Include" />
           <e p="CuePresenter.cs" t="Include" />
           <e p="Database.cs" t="Include" />
+          <e p="ET Validation" t="Include">
+            <e p="etgvalidation.cs" t="Include" />
+            <e p="EyeValidationSample.cs" t="Include" />
+          </e>
           <e p="EyeTrackingManager.cs" t="Include" />
           <e p="OtherTrialManager.cs" t="Include" />
           <e p="TestManager.cs" t="Include" />
@@ -886,6 +890,7 @@
             <e p="GrabbingScript.cs" t="Include" />
           </e>
         </e>
+        <e p="TableCallibration.cs" t="Include" />
       </e>
       <e p="GazeModifierEditor.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />

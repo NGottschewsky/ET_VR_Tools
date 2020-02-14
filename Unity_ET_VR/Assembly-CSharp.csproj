@@ -211,6 +211,8 @@
      <Compile Include="Assets\Scripts\CalibrationScript.cs" />
      <Compile Include="Assets\Scripts\CuePresenter.cs" />
      <Compile Include="Assets\Scripts\Database.cs" />
+     <Compile Include="Assets\Scripts\ET Validation\ETGValidation.cs" />
+     <Compile Include="Assets\Scripts\ET Validation\EyeValidationSample.cs" />
      <Compile Include="Assets\Scripts\EyeTrackingManager.cs" />
      <Compile Include="Assets\Scripts\OtherTrialManager.cs" />
      <Compile Include="Assets\Scripts\TestManager.cs" />
@@ -222,6 +224,7 @@
      <Compile Include="Assets\Scripts\UnusedScripts\ColliderFitting.cs" />
      <Compile Include="Assets\Scripts\UnusedScripts\Grabable.cs" />
      <Compile Include="Assets\Scripts\UnusedScripts\GrabbingScript.cs" />
+     <Compile Include="Assets\TableCallibration.cs" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />

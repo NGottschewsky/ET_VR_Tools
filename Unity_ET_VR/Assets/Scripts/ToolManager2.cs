@@ -11,6 +11,7 @@ using UnityEngine.UIElements;
 using Valve.VR;
 using Valve.VR.InteractionSystem;
 using Tobii.XR;
+using ViveSR.anipal.Eye;
 
 public class ToolManager2 : MonoBehaviour
 {
@@ -140,11 +141,19 @@ public class ToolManager2 : MonoBehaviour
 
             if (eyeTrackingDataWorld.GazeRay.IsValid)
             {
+                
                 f.tobiiTimeStamp = eyeTrackingDataWorld.Timestamp;
                 f.eyePosWorld = eyeTrackingDataWorld.GazeRay.Origin;
                 f.eyeDirWorld = eyeTrackingDataWorld.GazeRay.Direction;
                 f.isLeftBlinkingW = eyeTrackingDataWorld.IsLeftEyeBlinking;
                 f.isRightBlinkingW = eyeTrackingDataWorld.IsRightEyeBlinking;
+                RaycastHit hitInfo;
+                if (Physics.Raycast( eyeTrackingDataWorld.GazeRay.Origin, eyeTrackingDataWorld.GazeRay.Direction, out hitInfo))
+                {
+                    f.hitObjectName = hitInfo.collider.name;
+                    f.hitPointOnObject = hitInfo.point;
+                    f.hitObjectCenterInWorld = hitInfo.collider.transform.position;
+                }
             }
 
             if (eyeTrackingDataLocal.GazeRay.IsValid)
@@ -337,8 +346,8 @@ public class ToolManager2 : MonoBehaviour
             Debug.Log(_database.experiment.blocks.Last().trials.Last().ID);
             
             GetNextTool(out var internalTool);
-            TrialManager.colliderInstance.ResetTriggerValue();
-            //OtherTrialManager.instance.ResetTriggerValue();
+            //TrialManager.colliderInstance.ResetTriggerValue();
+            OtherTrialManager.instance.ResetTriggerValue();
 
             if (internalTool != null)
             {
@@ -469,10 +478,10 @@ public class ToolManager2 : MonoBehaviour
 
     private bool TrialEndReached()
     {
-        return TrialManager.colliderInstance.GetTriggerValue();
-        /*bool trialEnd = OtherTrialManager.instance.GetTriggerValue();
+        //return TrialManager.colliderInstance.GetTriggerValue();
+        bool trialEnd = OtherTrialManager.instance.GetTriggerValue();
         OtherTrialManager.instance.ResetTriggerValue();
-        return trialEnd;*/
+        return trialEnd;
         //throw new NotImplementedException();
         //if vr controller held into collider for 5 secs or if it is placed in a snapzone or smth similar
     }

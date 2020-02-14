@@ -39,7 +39,7 @@ public class OtherTrialManager : MonoBehaviour
     {
         if (_handInCollider)
         {
-            if (ToolManager2.instance.grabPinch.state)
+            if (ToolManager2.instance.grabPinch.GetStateDown(ToolManager2.instance.inputSource))
             {
                 Debug.Log("NextTrial");
                 _nextTrial = true;

@@ -3,22 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="15408367-e7ce-4c21-a405-63d5ec361c67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ExperimentScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ExperimentScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestTrialsScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestTrialsScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Database.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EyeTrackingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EyeTrackingManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OtherTrialManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OtherTrialManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/8d7ebe-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/8d7ebe-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/b254ac-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/b254ac-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/0a/0a8bdc087d578784cb8f36640145caf8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/0a/0a8bdc087d578784cb8f36640145caf8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/c0/c079ac8579f461b49b2751527f5624f4" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c0/c079ac8579f461b49b2751527f5624f4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/3d/3d2db9c5590b25048a775a9df324cbfe" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/3d/3d2db9c5590b25048a775a9df324cbfe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/50/5044b63adc9e5644ea45fa5425e04d2c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/50/5044b63adc9e5644ea45fa5425e04d2c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ba/baa915735445f2e4f8c8e0f7715bde06" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ba/baa915735445f2e4f8c8e0f7715bde06" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +66,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Dependencies/SteamVR/InteractionSystem/Core/Scripts/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OtherTrialManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TableCallibration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ET Validation/EyeValidationSample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ET Validation/ETGValidation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestTrialManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CalibrationScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -93,14 +100,17 @@
         <option value="$PROJECT_DIR$/Assets/Dependencies/TobiiXR/API/TobiiXR_Initializer.cs" />
         <option value="$PROJECT_DIR$/Assets/Dependencies/SteamVR/InteractionSystem/Samples/Scripts/InteractableExample.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TrialManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Database.cs" />
         <option value="$PROJECT_DIR$/Assets/Dependencies/SteamVR/InteractionSystem/Core/Scripts/Hand.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CalibrationScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EyeTrackingManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/OtherTrialManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestTrialManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OtherTrialManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ET Validation/EyeValidationSample.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ET Validation/ETGValidation.cs" />
+        <option value="$PROJECT_DIR$/Assets/TableCallibration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EyeTrackingManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Database.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" />
       </list>
     </option>
@@ -209,6 +219,7 @@
       <workItem from="1581501297884" duration="2954000" />
       <workItem from="1581584003252" duration="4011000" />
       <workItem from="1581676533818" duration="2104000" />
+      <workItem from="1581685382204" duration="11886000" />
     </task>
     <servers />
   </component>

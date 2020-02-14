@@ -148,22 +148,37 @@ public class FrameData
 
     public Vector3 hmdDirectionUp;
 
-    public List<RayHit> rightEyeHits;
-    public List<RayHit> leftEyeHits;
-    public List<RayHit> middlePointHits;
-    
+//    public List<RayHit> rightEyeHits;
+//    public List<RayHit> leftEyeHits;
+//    public List<RayHit> middlePointHits;
+    public string hitObjectName;
+    public Vector3 hitPointOnObject;
+    public Vector3 hitObjectCenterInWorld;
+
     // trigger pressed 
     public bool triggerPressed;
     public Transform controllerTransform;
     public Vector3 controllerPosition;
     public Vector3 controllerRotation;
     public Vector3 controllerScale;
-    public FrameData()
-    {
-        rightEyeHits = new List<RayHit>();
-        leftEyeHits = new List<RayHit>();
-        middlePointHits = new List<RayHit>();
-    }
+
+
+//    public FrameData()
+
+
+//    {
+
+
+//        rightEyeHits = new List<RayHit>();
+
+
+//        leftEyeHits = new List<RayHit>();
+
+
+//        middlePointHits = new List<RayHit>();
+
+
+//    }
 }
 
 [Serializable]

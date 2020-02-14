@@ -8,6 +8,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine.UIElements;
 using Valve.VR;
+using Valve.VR.InteractionSystem;
 
 public class TestManager : MonoBehaviour
 {
@@ -34,6 +35,11 @@ public class TestManager : MonoBehaviour
     
     // last used tool is saved so that it can be deactivated before the new tool is activated 
     private ToolController _lastUsedTool;
+    
+    public SteamVR_Action_Boolean grabPinch; //Grab Pinch is the trigger, select from inspector
+    public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.RightHand; //which controller
+    public Hand hand;
+    
     
     #region Singelton
     //make ToolManager2 singleton to be able to create 1 instance on which to call its methods
@@ -77,7 +83,7 @@ public class TestManager : MonoBehaviour
         if (TrialEndReached() && !_endOfBlock)  //Input.GetKeyDown(KeyCode.Space) && !_endOfBlock) _trial <= _toolOrder.Length) //!
         {
             GetNextTool(out var internalTool);
-            TrialManager.colliderInstance.ResetTriggerValue();
+            TestTrialManager.instance.ResetTriggerValue();
             
             
             if (internalTool.cue == "Lift")
@@ -119,7 +125,7 @@ public class TestManager : MonoBehaviour
         {
             DeactivateLastTool();
             Debug.Log("End of Block.");
-            TrialManager.colliderInstance.ResetTriggerValue();
+            TestTrialManager.instance.ResetTriggerValue();
             ShowMessage(Color.white, "You have finished the test trials.", 30);
         }
         
@@ -144,8 +150,10 @@ public class TestManager : MonoBehaviour
 
     private bool TrialEndReached()
     {
-        return OtherTrialManager.instance.GetTriggerValue();
-        
+        bool triggerValue = TestTrialManager.instance.GetTriggerValue();
+        TestTrialManager.instance.ResetTriggerValue();
+        return triggerValue;
+
         //throw new NotImplementedException();
         //if vr controller held into collider for 5 secs or if it is placed in a snapzone or smth similar
     }

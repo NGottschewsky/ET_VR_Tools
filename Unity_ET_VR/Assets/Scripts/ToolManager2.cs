@@ -338,6 +338,7 @@ public class ToolManager2 : MonoBehaviour
             
             GetNextTool(out var internalTool);
             TrialManager.colliderInstance.ResetTriggerValue();
+            //OtherTrialManager.instance.ResetTriggerValue();
 
             if (internalTool != null)
             {
@@ -421,6 +422,7 @@ public class ToolManager2 : MonoBehaviour
             
             Debug.Log("End of Block.");
             TrialManager.colliderInstance.ResetTriggerValue();
+            //OtherTrialManager.instance.ResetTriggerValue();
             ShowMessage(Color.red, "End of Block", 50);
             _endOfBlock = false;
             _nrOfTrialsPerBlock = _totalNrofTrials;
@@ -468,7 +470,9 @@ public class ToolManager2 : MonoBehaviour
     private bool TrialEndReached()
     {
         return TrialManager.colliderInstance.GetTriggerValue();
-        
+        /*bool trialEnd = OtherTrialManager.instance.GetTriggerValue();
+        OtherTrialManager.instance.ResetTriggerValue();
+        return trialEnd;*/
         //throw new NotImplementedException();
         //if vr controller held into collider for 5 secs or if it is placed in a snapzone or smth similar
     }

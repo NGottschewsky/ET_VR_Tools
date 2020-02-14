@@ -2857,8 +2857,8 @@ GameObject:
   - component: {fileID: 652928496}
   - component: {fileID: 652928495}
   - component: {fileID: 652928501}
-  - component: {fileID: 652928500}
   - component: {fileID: 652928502}
+  - component: {fileID: 652928500}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: MyControllerTag

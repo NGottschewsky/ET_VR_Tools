@@ -214,6 +214,7 @@
      <Compile Include="Assets\Scripts\EyeTrackingManager.cs" />
      <Compile Include="Assets\Scripts\OtherTrialManager.cs" />
      <Compile Include="Assets\Scripts\TestManager.cs" />
+     <Compile Include="Assets\Scripts\TestTrialManager.cs" />
      <Compile Include="Assets\Scripts\ToolController.cs" />
      <Compile Include="Assets\Scripts\ToolManager2.cs" />
      <Compile Include="Assets\Scripts\ToolPresenter.cs" />

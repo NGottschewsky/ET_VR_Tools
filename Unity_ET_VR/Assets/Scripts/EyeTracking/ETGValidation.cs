@@ -14,7 +14,6 @@ public class ETGValidation : MonoBehaviour
 
     public List<Vector3> keyPositions;
 //    public TextMeshProUGUI validationResultText;
-    
 
     private int validationPointIdx;
     private int validationTrial;
@@ -34,6 +33,7 @@ public class ETGValidation : MonoBehaviour
 
     public void StartValidation()
     {
+        gameObject.SetActive(true);
         StartCoroutine(Validate());
     }
 
@@ -85,19 +85,18 @@ public class ETGValidation : MonoBehaviour
             {
                 transform.position = Player.instance.hmdTransform.position + Player.instance.hmdTransform.rotation * keyPositions[i] ;
                 transform.LookAt(Player.instance.hmdTransform);
-                var validationSample = GetValidationSample();
+                EyeValidationSample validationSample = GetValidationSample();
                 
 
-                if (validationSample != null && validationSample.CombinedEyeAngleOffset != null)
+                if (validationSample != null && validationSample.validationData.CombinedEyeAngleOffset != null)
                 {
-                    anglesX.Add(validationSample.CombinedEyeAngleOffset.x);
-                    anglesY.Add(validationSample.CombinedEyeAngleOffset.y);
-                    anglesZ.Add(validationSample.CombinedEyeAngleOffset.z);
+                    anglesX.Add(validationSample.validationData.CombinedEyeAngleOffset.x);
+                    anglesY.Add(validationSample.validationData.CombinedEyeAngleOffset.y);
+                    anglesZ.Add(validationSample.validationData.CombinedEyeAngleOffset.z);
+                    validationSample.Save(validationTrial);
                 }
-                
                 yield return new WaitForEndOfFrame();
                 timeDiff = Time.time - startTime;
-                
             }
         }
 
@@ -109,6 +108,11 @@ public class ETGValidation : MonoBehaviour
                                     CalculateValidationError(anglesZ).ToString("0.00") + ")";
         Debug.LogWarning(validationResult);
         gameObject.SetActive(false);
+        if (CalculateValidationError(anglesX) > 1 || CalculateValidationError(anglesY) > 1 ||
+            CalculateValidationError(anglesZ) > 1)
+        {
+            SRanipal_Eye_v2.LaunchEyeCalibration();
+        }
     }
 
 
@@ -123,9 +127,9 @@ public class ETGValidation : MonoBehaviour
         sample = GetViveValidationSample();
         
 
-        sample.HeadTransform = Player.instance.hmdTransform;
+        sample.validationData.HeadTransform = Player.instance.hmdTransform;
 //        sample.PointToFocus = transform.position.ToVec3();
-        sample.PointToFocus = transform.position;
+        sample.validationData.PointToFocus = transform.position;
 
         return sample;
     }
@@ -134,15 +138,17 @@ public class ETGValidation : MonoBehaviour
     {
         Ray ray;
 
-        EyeValidationSample sample = new EyeValidationSample();
+        EyeValidationSample sample = EyeValidationSample.Instance;//new EyeValidationSample();
 
-        sample.ValidationTrial = validationTrial;
-        sample.ValidationPointIdx = validationPointIdx;
+        sample.validationData.ValidationTrial = validationTrial;
+        sample.validationData.ValidationPointIdx = validationPointIdx;
+        sample.validationData.participantNr = ToolManager2.instance.participantNr;
+        sample.validationData.block = ToolManager2.instance._block;
         
         var debText = "";
 
-        sample.UnixTimestamp = new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds();
-        sample.Timestamp = Time.realtimeSinceStartup;
+        sample.validationData.UnixTimestamp = sample.getCurrentTimestamp();//new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds();
+        sample.validationData.Timestamp = Time.realtimeSinceStartup;
 
         var hmdTransform = Player.instance.hmdTransform;
 
@@ -152,7 +158,7 @@ public class ETGValidation : MonoBehaviour
                 .eulerAngles;
 
             debText += "\nLeft Eye: " + angles + "\n";
-            sample.LeftEyeAngleOffset = angles;
+            sample.validationData.LeftEyeAngleOffset = angles;
         }
 
         if (SRanipal_Eye.GetGazeRay(GazeIndex.RIGHT, out ray))
@@ -160,7 +166,7 @@ public class ETGValidation : MonoBehaviour
             var angles = Quaternion.FromToRotation((transform.position - hmdTransform.position).normalized, hmdTransform.rotation * ray.direction)
                 .eulerAngles;
             debText += "Right Eye: " + angles + "\n";
-            sample.RightEyeAngleOffset = angles;
+            sample.validationData.RightEyeAngleOffset = angles;
         }
 
         if (SRanipal_Eye.GetGazeRay(GazeIndex.COMBINE, out ray))
@@ -168,7 +174,7 @@ public class ETGValidation : MonoBehaviour
             var angles = Quaternion.FromToRotation((transform.position - hmdTransform.position).normalized, hmdTransform.rotation * ray.direction)
                 .eulerAngles;
             debText += "Combined Eye: " + angles + "\n";
-            sample.CombinedEyeAngleOffset = angles;
+            sample.validationData.CombinedEyeAngleOffset = angles;
         }
 
   

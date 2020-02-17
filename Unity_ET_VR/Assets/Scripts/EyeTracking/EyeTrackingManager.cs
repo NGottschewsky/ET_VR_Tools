@@ -28,22 +28,20 @@ public class EyeTrackingManager : MonoBehaviour
         }
 
 
-//        if (SRanipal_Eye_v2.LaunchEyeCalibration())
-//        {
-//            Debug.Log("calibration succesful");
-//        }
-//
-//        if (validator != null)
-//        {
-//            validator.StartValidation();
-//        }
-//        else
-//        {
-//            Debug.LogError("ETGValidation field is not setup.");
-//        }
+        if (SRanipal_Eye_v2.LaunchEyeCalibration())
+        {
+            Debug.Log("calibration succesful");
+        }
+
+        if (validator != null)
+        {
+            validator.StartValidation();
+        }
+        else
+        {
+            Debug.LogError("ETGValidation field is not setup.");
+        }
     }
-
-
 
     // Update is called once per frame
     void LateUpdate()
@@ -58,7 +56,8 @@ public class EyeTrackingManager : MonoBehaviour
 
         if (Input.GetKeyDown(ValidationButton))
         {
-            //enable sphere
+            validator.gameObject.SetActive(true);
+            
             if (validator != null)
             {
                 validator.StartValidation();

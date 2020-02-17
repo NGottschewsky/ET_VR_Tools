@@ -18,7 +18,6 @@ public class ToolManager2 : MonoBehaviour
     [Header("Experiment components")]
     public CuePresenter cuePresenter;
     public ToolPresenter toolPresenter;
-    public TrialManager trialManager;
     public EyeTrackingManager eyeTrackingManager;
     public Canvas cueCanvas;
     
@@ -27,7 +26,8 @@ public class ToolManager2 : MonoBehaviour
     public int participantID;
     public string gender;
     public int age;
-    private int _block = 1;
+    [HideInInspector]
+    public int _block = 1;
     
     // make a singleton instance of ToolManager to be able to call RegistrateCurrentUsedTool method etc. 
     public static ToolManager2 instance;
@@ -80,8 +80,9 @@ public class ToolManager2 : MonoBehaviour
     public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.RightHand; //which controller
     public Hand hand;
     private Transform _handTransform;
-    public Camera c;
-    private Transform _cameraTransform;
+    private Transform _hmdTransform;
+    //public Camera c;
+    //private Transform _cameraTransform;
     
 
     #region Singelton
@@ -90,9 +91,8 @@ public class ToolManager2 : MonoBehaviour
     {
         if (instance == null)
             instance = this;
-        c = Camera.main;
-        
-        // start eye tracker here
+        //c = Camera.main;
+        _hmdTransform = Player.instance.hmdTransform;
     }
 
     #endregion
@@ -170,15 +170,18 @@ public class ToolManager2 : MonoBehaviour
             f.controllerPosition = _handTransform.position;
             f.controllerRotation = _handTransform.rotation.eulerAngles;
             f.controllerScale = _handTransform.lossyScale;
-            f.hmdPos = _cameraTransform.position;
-            f.hmdDirectionForward = _cameraTransform.forward;
-            f.hmdDirectionUp = _cameraTransform.up;
-            f.hmdDirectionRight = _cameraTransform.right;
-            f.hmdRotation = _cameraTransform.rotation.eulerAngles;
+            //f.hmdPos = _cameraTransform.position;
+            f.hmdPos = _hmdTransform.position;
+            //f.hmdDirectionForward = _cameraTransform.forward;
+            f.hmdDirectionForward = _hmdTransform.forward;
+            //f.hmdDirectionUp = _cameraTransform.up;
+            f.hmdDirectionUp = _hmdTransform.up;
+            //f.hmdDirectionRight = _cameraTransform.right;
+            f.hmdDirectionRight = _hmdTransform.right;
+            //f.hmdRotation = _cameraTransform.rotation.eulerAngles;
+            f.hmdRotation = _hmdTransform.rotation.eulerAngles;
             
             _database.experiment.blocks.Last().trials.Last().framedata.Add(f);
-            //Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed);
-            //Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().hmdPos);
             
             Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().isLeftBlinkingW);
             
@@ -200,7 +203,7 @@ public class ToolManager2 : MonoBehaviour
         _totalNrofTrials = _toolOrder[participantNr].Length;
         _nrOfTrialsPerBlock = _totalNrofTrials / 2;
         
-        if (c != null) _cameraTransform = c.transform;
+        //if (c != null) _cameraTransform = c.transform;
         if (hand != null) _handTransform = hand.transform;
         
         Block b = new Block();
@@ -253,9 +256,9 @@ public class ToolManager2 : MonoBehaviour
                 _database.experiment.blocks.Last().trials.Last().toolRotation = returnTool.transform.rotation.eulerAngles;
                 _database.experiment.blocks.Last().trials.Last().toolScale = returnTool.transform.lossyScale;
                 
-                //Debug.Log(_database.experiment.blocks.Last().trials.Last().toolModel);
-                //Debug.Log(_database.experiment.blocks.Last().trials.Last().toolOrientation);
-                //Debug.Log(_database.experiment.blocks.Last().trials.Last().cue = returnTool.cue);
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().toolModel);
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().toolOrientation);
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().cue = returnTool.cue);
 
                 for (int i = 0; i < returnTool.transform.childCount; i++)
                 {
@@ -321,16 +324,32 @@ public class ToolManager2 : MonoBehaviour
         
         if (TrialEndReached() && !_endOfBlock) 
         {
+            if (_trial == 36 || _trial == 108)
+            {
+                eyeTrackingManager.validator.gameObject.SetActive(true);
+                
+                if (eyeTrackingManager.validator != null)
+                {
+                    eyeTrackingManager.validator.StartValidation();
+                }
+                else
+                {
+                    Debug.LogError("ETGValidation field is not setup.");
+                }
+            }
+            
+            /**
+             * remove this before start of experiment
+             */
+            if (_trial == 10)
+            {
+                _database.Save(_block);
+            }
+            
             cueCanvas.gameObject.SetActive(true);
             
             if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
             {
-                if (_database.experiment.blocks.Last().trials.Last().framedata.LastOrDefault() != default)
-                {
-                    Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().triggerPressed);
-                    Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().controllerTransform.position);
-                }
-
                 _database.experiment.blocks.Last().trials.Last().end = _database.getCurrentTimestamp();
                 _endOfTrial = true;
                 
@@ -427,11 +446,11 @@ public class ToolManager2 : MonoBehaviour
             /***
              * Test the saving as soon as hmd is back
              */
-            //_database.Save(_block);
+            _database.Save(_block);
             
             Debug.Log("End of Block.");
-            TrialManager.colliderInstance.ResetTriggerValue();
-            //OtherTrialManager.instance.ResetTriggerValue();
+            //TrialManager.colliderInstance.ResetTriggerValue();
+            OtherTrialManager.instance.ResetTriggerValue();
             ShowMessage(Color.red, "End of Block", 50);
             _endOfBlock = false;
             _nrOfTrialsPerBlock = _totalNrofTrials;
@@ -441,7 +460,8 @@ public class ToolManager2 : MonoBehaviour
                 Block b = new Block();
                 b.ID = _block;
                 _database.experiment.blocks.Add(b);
-                // Call calibration function for eye tracker here again
+                // Call calibration function for eye tracker here again DONE
+                SRanipal_Eye_v2.LaunchEyeCalibration();
             }
             
             // Call the save function in here 

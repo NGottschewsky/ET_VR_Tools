@@ -16,7 +16,6 @@ public class TableCallibration : MonoBehaviour
     {
         if (additive)
         {
-            Debug.LogError("hellooooo ");
             transform.localScale += new Vector3(0, 0, scale);
         }
         else

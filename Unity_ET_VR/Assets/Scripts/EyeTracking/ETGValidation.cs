@@ -93,7 +93,7 @@ public class ETGValidation : MonoBehaviour
                     anglesX.Add(validationSample.validationData.CombinedEyeAngleOffset.x);
                     anglesY.Add(validationSample.validationData.CombinedEyeAngleOffset.y);
                     anglesZ.Add(validationSample.validationData.CombinedEyeAngleOffset.z);
-                    validationSample.Save(validationTrial);
+                    validationSample.Save(validationSample.validationData.ValidationTrial);
                 }
                 yield return new WaitForEndOfFrame();
                 timeDiff = Time.time - startTime;

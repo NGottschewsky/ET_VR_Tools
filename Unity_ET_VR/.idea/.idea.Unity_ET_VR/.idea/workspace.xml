@@ -2,51 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15408367-e7ce-4c21-a405-63d5ec361c67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ExperimentScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ExperimentScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CalibrationScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CalibrationScript.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ET Validation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ET Validation/ETGValidation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ET Validation/ETGValidation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ET Validation/EyeValidationSample.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ET Validation/EyeValidationSample.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EyeTrackingManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EyeTrackingManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OtherTrialManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OtherTrialManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestTrialManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestTrialManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrialManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrialManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TableCallibration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TableCallibration.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EyeTracking/ETGValidation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EyeTracking/ETGValidation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/8d7ebe-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/8d7ebe-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/b254ac-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/b254ac-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/0a/0a8bdc087d578784cb8f36640145caf8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/0a/0a8bdc087d578784cb8f36640145caf8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/2e/2e3586803fc14414d8459e628a446f13" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/2e/2e3586803fc14414d8459e628a446f13" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/50/5044b63adc9e5644ea45fa5425e04d2c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/50/5044b63adc9e5644ea45fa5425e04d2c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/5a/5a539c020f7e12145999bee488a54045" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5a/5a539c020f7e12145999bee488a54045" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/5a/5a539c020f7e12145999bee488a54045.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5a/5a539c020f7e12145999bee488a54045.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/78/782bdf63531022a4ea790163f8aaf536" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/78/782bdf63531022a4ea790163f8aaf536" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/94/940418b4c67b5ba46a01d8efbbbde727" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/94/940418b4c67b5ba46a01d8efbbbde727" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/ba/baa915735445f2e4f8c8e0f7715bde06" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ba/baa915735445f2e4f8c8e0f7715bde06" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/ba/baa915735445f2e4f8c8e0f7715bde06.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ba/baa915735445f2e4f8c8e0f7715bde06.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/c0/c079ac8579f461b49b2751527f5624f4" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c0/c079ac8579f461b49b2751527f5624f4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/d3/d33842f238d9a504c8f13a46ff3c4a8f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d3/d33842f238d9a504c8f13a46ff3c4a8f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/d3/d33842f238d9a504c8f13a46ff3c4a8f.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d3/d33842f238d9a504c8f13a46ff3c4a8f.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/df/df6c7b6c221abe94ca61fc31b15e7fcd" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/df/df6c7b6c221abe94ca61fc31b15e7fcd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/df/df6c7b6c221abe94ca61fc31b15e7fcd.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/df/df6c7b6c221abe94ca61fc31b15e7fcd.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/fc/fcc8b3dbe5678a6498cbdfdf99822a8b" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fc/fcc8b3dbe5678a6498cbdfdf99822a8b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/fc/fcc8b3dbe5678a6498cbdfdf99822a8b.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fc/fcc8b3dbe5678a6498cbdfdf99822a8b.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CuePresenter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dependencies/SteamVR/Input/SteamVR_Action_In.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dependencies/SteamVR/Input/SteamVR_Action_Boolean.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C074160-DD1A-4D91-9B45-B6E4C27A3BAC/a5/76c18145/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dependencies/SteamVR/InteractionSystem/Samples/Scripts/InteractableExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dependencies/SteamVR/InteractionSystem/Core/Scripts/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OtherTrialManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -246,6 +210,7 @@
       <workItem from="1581676533818" duration="2104000" />
       <workItem from="1581685382204" duration="11886000" />
       <workItem from="1581934875858" duration="11168000" />
+      <workItem from="1582021802818" duration="75000" />
     </task>
     <servers />
   </component>

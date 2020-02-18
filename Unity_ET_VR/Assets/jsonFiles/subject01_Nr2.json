@@ -1,0 +1,38 @@
+{
+    "validationData": {
+        "participantNr": 1,
+        "ValidationTrial": 2,
+        "block": 1,
+        "ValidationPointIdx": 4,
+        "UnixTimestamp": 1582036008.3135045,
+        "Timestamp": 488.6092529296875,
+        "HeadTransform": {
+            "instanceID": -1302
+        },
+        "PointToFocus": {
+            "x": 48.1302490234375,
+            "y": 138.39593505859376,
+            "z": -137.15335083007813
+        },
+        "LeftEyeAngleOffset": {
+            "x": 0.3429621756076813,
+            "y": 1.9744226932525635,
+            "z": 358.5593566894531
+        },
+        "RightEyeAngleOffset": {
+            "x": 359.74517822265627,
+            "y": 359.89703369140627,
+            "z": 358.14642333984377
+        },
+        "CombinedEyeAngleOffset": {
+            "x": 0.08460622280836106,
+            "y": 1.069665789604187,
+            "z": 358.37689208984377
+        },
+        "ValidationResults": {
+            "x": 0.1652815043926239,
+            "y": 0.6536213159561157,
+            "z": 0.7015684247016907
+        }
+    }
+}

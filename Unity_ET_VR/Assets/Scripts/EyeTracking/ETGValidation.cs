@@ -94,7 +94,12 @@ public class ETGValidation : MonoBehaviour
                     anglesY.Add(validationSample.validationData.CombinedEyeAngleOffset.y);
                     anglesZ.Add(validationSample.validationData.CombinedEyeAngleOffset.z);
                     validationSample.Save(validationSample.validationData.ValidationTrial);
+
+                    validationSample.validationData.ValidationResults.x = CalculateValidationError(anglesX);
+                    validationSample.validationData.ValidationResults.y = CalculateValidationError(anglesY);
+                    validationSample.validationData.ValidationResults.z = CalculateValidationError(anglesZ);
                 }
+                
                 yield return new WaitForEndOfFrame();
                 timeDiff = Time.time - startTime;
             }

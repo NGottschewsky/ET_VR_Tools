@@ -35,7 +35,7 @@ public class Database : MonoBehaviour
 
         AssetDatabase.Refresh();
 
-        experiment.blocks.Clear();
+        //experiment.blocks.Clear();
     }
 
     // singleton start

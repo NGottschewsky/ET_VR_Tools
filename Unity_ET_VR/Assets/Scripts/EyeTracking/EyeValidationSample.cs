@@ -71,6 +71,7 @@ public class EyeValidationData
     public Vector3 LeftEyeAngleOffset;
     public Vector3 RightEyeAngleOffset;
     public Vector3 CombinedEyeAngleOffset;
+    public Vector3 ValidationResults;
 }
 
     

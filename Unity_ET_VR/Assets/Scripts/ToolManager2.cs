@@ -200,7 +200,7 @@ public class ToolManager2 : MonoBehaviour
         
         _toolOrder = ReadCsvFile(_filePath);
 
-        _totalNrofTrials = _toolOrder[participantNr].Length;
+        _totalNrofTrials = 10;//_toolOrder[participantNr].Length;
         _nrOfTrialsPerBlock = _totalNrofTrials / 2;
         
         //if (c != null) _cameraTransform = c.transform;
@@ -340,11 +340,11 @@ public class ToolManager2 : MonoBehaviour
             
             /**
              * remove this before start of experiment
-             */
+             *
             if (_trial == 10)
             {
                 _database.Save(_block);
-            }
+            }*/
             
             cueCanvas.gameObject.SetActive(true);
             
@@ -441,6 +441,7 @@ public class ToolManager2 : MonoBehaviour
 
         if (TrialEndReached()  && _endOfBlock)
         {
+            Debug.Log("Last trial of block");
             cueCanvas.gameObject.SetActive(true);
             DeactivateLastTool();
             /***

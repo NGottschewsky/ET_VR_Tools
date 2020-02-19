@@ -35,7 +35,7 @@ public class Database : MonoBehaviour
 
         AssetDatabase.Refresh();
 
-        //experiment.blocks.Clear();
+        experiment.blocks.Clear();
     }
 
     // singleton start
@@ -90,16 +90,16 @@ public class Trial
     public int ID;
     public string toolModel; // Screwdriver etc. 
     public string toolOrientation; // Left or Right
-    public List<Coll> colls; // Handle collider and effector collider 
-    public Transform toolTransform;
-    public Vector3 toolPosition;
-    public Vector3 toolRotation;
-    public Vector3 toolScale;
     public string cue; // Lift or Use
     public double start;
     public double end;
     public double cueStart;
     public double cueEnd;
+    public List<Coll> colls; // Handle collider and effector collider 
+    //public Transform toolTransform;
+    public Vector3 toolPosition;
+    public Vector3 toolRotation;
+    public Vector3 toolScale;
     public List<FrameData> framedata;
     
     // Samples

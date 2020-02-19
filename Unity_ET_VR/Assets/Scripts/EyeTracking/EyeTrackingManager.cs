@@ -27,7 +27,7 @@ public class EyeTrackingManager : MonoBehaviour
             Debug.Log("starting succesful");
         }
 
-
+/*
         if (SRanipal_Eye_v2.LaunchEyeCalibration())
         {
             Debug.Log("calibration succesful");
@@ -40,7 +40,7 @@ public class EyeTrackingManager : MonoBehaviour
         else
         {
             Debug.LogError("ETGValidation field is not setup.");
-        }
+        }*/
     }
 
     // Update is called once per frame

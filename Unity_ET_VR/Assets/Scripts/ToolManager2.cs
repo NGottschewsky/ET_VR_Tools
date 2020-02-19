@@ -20,6 +20,7 @@ public class ToolManager2 : MonoBehaviour
     public ToolPresenter toolPresenter;
     public EyeTrackingManager eyeTrackingManager;
     public Canvas cueCanvas;
+    private OtherTrialManager _otherTrialManager;
     
     [Header("Experiment parameters")] [Range(1, 20)]
     public int participantNr;
@@ -68,6 +69,7 @@ public class ToolManager2 : MonoBehaviour
     
     private bool _endOfBlock = false; // set to true after 144 trials
     private bool _endOfTrial = false; // set to true in method where new trial is started
+    private bool _blocked = false;
 
     // last used tool is saved so that it can be deactivated before the new tool is activated 
     private ToolController _lastUsedTool;
@@ -81,6 +83,7 @@ public class ToolManager2 : MonoBehaviour
     public Hand hand;
     private Transform _handTransform;
     private Transform _hmdTransform;
+
     //public Camera c;
     //private Transform _cameraTransform;
     
@@ -93,6 +96,7 @@ public class ToolManager2 : MonoBehaviour
             instance = this;
         //c = Camera.main;
         _hmdTransform = Player.instance.hmdTransform;
+        _otherTrialManager = OtherTrialManager.instance;
     }
 
     #endregion
@@ -180,19 +184,25 @@ public class ToolManager2 : MonoBehaviour
             f.hmdDirectionRight = _hmdTransform.right;
             //f.hmdRotation = _cameraTransform.rotation.eulerAngles;
             f.hmdRotation = _hmdTransform.rotation.eulerAngles;
+
+            if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
+            {
+                _database.experiment.blocks.Last().trials.Last().framedata.Add(f);
+            }
+            //_database.experiment.blocks.Last().trials.Last().framedata.Add(f);
             
-            _database.experiment.blocks.Last().trials.Last().framedata.Add(f);
-            
-            Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().isLeftBlinkingW);
+            //Debug.Log(_database.experiment.blocks.Last().trials.Last().framedata.Last().isLeftBlinkingW);
             
             
         }
     }
-
+    
+    /*
     private IEnumerator GetPoseData()
     {
         throw new NotImplementedException();
-    }
+    } 
+    */
    
     void Start()
     {
@@ -200,7 +210,7 @@ public class ToolManager2 : MonoBehaviour
         
         _toolOrder = ReadCsvFile(_filePath);
 
-        _totalNrofTrials = 10;//_toolOrder[participantNr].Length;
+        _totalNrofTrials = 4;//_toolOrder[participantNr].Length;
         _nrOfTrialsPerBlock = _totalNrofTrials / 2;
         
         //if (c != null) _cameraTransform = c.transform;
@@ -251,7 +261,7 @@ public class ToolManager2 : MonoBehaviour
                 _database.experiment.blocks.Last().trials.Last().toolModel = returnTool.name;
                 _database.experiment.blocks.Last().trials.Last().toolOrientation = returnTool.orientation;
                 _database.experiment.blocks.Last().trials.Last().cue = returnTool.cue;
-                _database.experiment.blocks.Last().trials.Last().toolTransform = returnTool.transform;
+                //_database.experiment.blocks.Last().trials.Last().toolTransform = returnTool.transform;
                 _database.experiment.blocks.Last().trials.Last().toolPosition = returnTool.transform.position;
                 _database.experiment.blocks.Last().trials.Last().toolRotation = returnTool.transform.rotation.eulerAngles;
                 _database.experiment.blocks.Last().trials.Last().toolScale = returnTool.transform.lossyScale;
@@ -316,159 +326,175 @@ public class ToolManager2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //StartCoroutine(PrintHello());
-        if (_trial == _nrOfTrialsPerBlock)
+        if (_trial ==_nrOfTrialsPerBlock)
         {
-            _endOfBlock = true; 
+            Debug.Log("end of block set true");
+            EndOfBlock();
+            Debug.Log("_endOfBlock: " + _endOfBlock);
+            //_endOfBlock = true; 
         }
-        
-        if (TrialEndReached() && !_endOfBlock) 
+
+        if (TrialEndReached())
         {
-            if (_trial == 36 || _trial == 108)
+            if (_endOfBlock && !_blocked)
             {
-                eyeTrackingManager.validator.gameObject.SetActive(true);
+                _blocked = true;
+                Debug.Log("End of Block");
+                _otherTrialManager.ResetTriggerValue();
+                _endOfBlock = false;
+                if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
+                {
+                    _database.experiment.blocks.Last().trials.Last().end = _database.getCurrentTimestamp();
+                    _endOfTrial = true;
+
+                    StopCoroutine(RecordControllerTriggerAndPositionData());
+                }
+
+                Debug.Log("The block is over");
+                cueCanvas.gameObject.SetActive(true);
+                DeactivateLastTool();
                 
-                if (eyeTrackingManager.validator != null)
-                {
-                    eyeTrackingManager.validator.StartValidation();
-                }
-                else
-                {
-                    Debug.LogError("ETGValidation field is not setup.");
-                }
-            }
-            
-            /**
-             * remove this before start of experiment
-             *
-            if (_trial == 10)
-            {
                 _database.Save(_block);
-            }*/
-            
-            cueCanvas.gameObject.SetActive(true);
-            
-            if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
-            {
-                _database.experiment.blocks.Last().trials.Last().end = _database.getCurrentTimestamp();
-                _endOfTrial = true;
-                
-                StopCoroutine(RecordControllerTriggerAndPositionData());  // Yet to be tested
-            }
-            
-            Trial t = new Trial();
-            t.ID = _trial;
-            t.start = _database.getCurrentTimestamp();
-            _database.experiment.blocks.Last().trials.Add(t);
-            _endOfTrial = false;
-            StartCoroutine(RecordControllerTriggerAndPositionData());
-            Debug.Log(_database.experiment.blocks.Last().trials.Last().ID);
-            
-            GetNextTool(out var internalTool);
-            //TrialManager.colliderInstance.ResetTriggerValue();
-            OtherTrialManager.instance.ResetTriggerValue();
 
-            if (internalTool != null)
-            {
-                if (Array.Exists(_liftCue, element => element == internalTool.id))
+                _block++;
+                _nrOfTrialsPerBlock = _totalNrofTrials;
+                if (_block == 2)
                 {
-                    ShowMessage(Color.white, "   ", 60);
-                    StartCoroutine(ShowMessageCoroutine(Color.white, "Lift", 60));
-                    StartCoroutine(DisableCanvas());
-                }
-                else if (Array.Exists(_useCue, element => element == internalTool.id))
-                {
-                    ShowMessage(Color.white, "   ", 60);
-                    StartCoroutine(ShowMessageCoroutine(Color.white, "Use", 60));
-                    StartCoroutine(DisableCanvas());
+                    ShowMessage(Color.red, "End of block", 40);
+                    Block b = new Block();
+                    b.ID = _block;
+                    _database.experiment.blocks.Add(b);
+                    Debug.Log(_database.experiment.blocks.Last().ID);
+                    // Call calibration function for eye tracker here again DONE
+                    //SRanipal_Eye_v2.LaunchEyeCalibration();
                 }
                 else
                 {
-                    Debug.Log("Tool Id in neither cue list");
+                    ShowMessage(Color.red,"End of experiment", 40);
                 }
-
                 
-                if (Array.Exists(_leftTools, element => element == internalTool.id))
-                {
-                    StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "left"));
-                }
-                else if (Array.Exists(_rightTools, element => element == internalTool.id))
-                {
-                    StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "right"));
-                }
-                else
-                {
-                    switch (internalTool.id)
-                    {
-                        case "5":
-                        case "6":
-                            StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "blumenschneider left"));
-                            break;
-                        case "7":
-                        case "8":
-                            StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "blumenschneider right"));
-                            break;
-                        case "29":
-                        case "30":
-                            StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "speichenschlüssel left"));
-                            break;
-                        case "31":
-                        case "32":
-                            StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "speichenschlüssel right"));
-                            break;
-                        case "45":
-                        case "46":
-                            StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "fork left"));
-                            break;
-                        case "47":
-                        case "48":
-                            StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "fork right"));
-                            break;
-                        default:
-                            Debug.LogError("tool ID not contained in either list of tools");
-                            break;
-                    }
-                }
-
-                _trial++;
             }
             else
             {
-                Debug.LogError("No tool returned.");
-            }
+                Debug.Log("next trial");
+                if (_trial == 36 || _trial == 108)
+                {
+                    eyeTrackingManager.validator.gameObject.SetActive(true);
 
-        }
+                    if (eyeTrackingManager.validator != null)
+                    {
+                        eyeTrackingManager.validator.StartValidation();
+                    }
+                    else
+                    {
+                        Debug.LogError("ETGValidation field is not setup.");
+                    }
+                }
 
-        if (TrialEndReached()  && _endOfBlock)
-        {
-            Debug.Log("Last trial of block");
-            cueCanvas.gameObject.SetActive(true);
-            DeactivateLastTool();
-            /***
-             * Test the saving as soon as hmd is back
-             */
-            _database.Save(_block);
-            
-            Debug.Log("End of Block.");
-            //TrialManager.colliderInstance.ResetTriggerValue();
-            OtherTrialManager.instance.ResetTriggerValue();
-            ShowMessage(Color.red, "End of Block", 50);
-            _endOfBlock = false;
-            _nrOfTrialsPerBlock = _totalNrofTrials;
-            _block++;
-            if (_block == 2)
-            {
-                Block b = new Block();
-                b.ID = _block;
-                _database.experiment.blocks.Add(b);
-                // Call calibration function for eye tracker here again DONE
-                SRanipal_Eye_v2.LaunchEyeCalibration();
+                cueCanvas.gameObject.SetActive(true);
+
+                if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
+                {
+                    _database.experiment.blocks.Last().trials.Last().end = _database.getCurrentTimestamp();
+                    _endOfTrial = true;
+
+                    StopCoroutine(RecordControllerTriggerAndPositionData());
+                }
+
+                Trial t = new Trial();
+                t.ID = _trial;
+                t.start = _database.getCurrentTimestamp();
+                _database.experiment.blocks.Last().trials.Add(t);
+                _endOfTrial = false;
+                StartCoroutine(RecordControllerTriggerAndPositionData());
+                Debug.Log(_database.experiment.blocks.Last().trials.Last().ID);
+
+                GetNextTool(out var internalTool);
+                //TrialManager.colliderInstance.ResetTriggerValue();
+                _otherTrialManager.ResetTriggerValue();
+
+                if (internalTool != null)
+                {
+                    if (Array.Exists(_liftCue, element => element == internalTool.id))
+                    {
+                        ShowMessage(Color.white, "   ", 60);
+                        StartCoroutine(ShowMessageCoroutine(Color.white, "Lift", 60));
+                        StartCoroutine(DisableCanvas());
+                    }
+                    else if (Array.Exists(_useCue, element => element == internalTool.id))
+                    {
+                        ShowMessage(Color.white, "   ", 60);
+                        StartCoroutine(ShowMessageCoroutine(Color.white, "Use", 60));
+                        StartCoroutine(DisableCanvas());
+                    }
+                    else
+                    {
+                        Debug.Log("Tool Id in neither cue list");
+                    }
+
+
+                    if (Array.Exists(_leftTools, element => element == internalTool.id))
+                    {
+                        StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "left"));
+                    }
+                    else if (Array.Exists(_rightTools, element => element == internalTool.id))
+                    {
+                        StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "right"));
+                    }
+                    else
+                    {
+                        switch (internalTool.id)
+                        {
+                            case "5":
+                            case "6":
+                                StartCoroutine(
+                                    ToolPresenter.INSTANCE.PresentTool(internalTool, "blumenschneider left"));
+                                break;
+                            case "7":
+                            case "8":
+                                StartCoroutine(
+                                    ToolPresenter.INSTANCE.PresentTool(internalTool, "blumenschneider right"));
+                                break;
+                            case "29":
+                            case "30":
+                                StartCoroutine(
+                                    ToolPresenter.INSTANCE.PresentTool(internalTool, "speichenschlüssel left"));
+                                break;
+                            case "31":
+                            case "32":
+                                StartCoroutine(
+                                    ToolPresenter.INSTANCE.PresentTool(internalTool, "speichenschlüssel right"));
+                                break;
+                            case "45":
+                            case "46":
+                                StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "fork left"));
+                                break;
+                            case "47":
+                            case "48":
+                                StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "fork right"));
+                                break;
+                            default:
+                                Debug.LogError("tool ID not contained in either list of tools");
+                                break;
+                        }
+                    }
+
+                    _trial++;
+                    _blocked = false;
+                    _otherTrialManager.ResetTriggerValue();
+                }
+                else
+                {
+                    Debug.LogError("No tool returned.");
+                }
             }
-            
-            // Call the save function in here 
-            
         }
-        
+    }
+
+    private void EndOfBlock()
+    {
+        if (_endOfBlock == false)
+            _endOfBlock = true;
     }
 
     // shows text after a 1 second delay
@@ -500,8 +526,9 @@ public class ToolManager2 : MonoBehaviour
     private bool TrialEndReached()
     {
         //return TrialManager.colliderInstance.GetTriggerValue();
-        bool trialEnd = OtherTrialManager.instance.GetTriggerValue();
-        OtherTrialManager.instance.ResetTriggerValue();
+        bool trialEnd = _otherTrialManager.GetTriggerValue();
+        _otherTrialManager.ResetTriggerValue();
+        Debug.Log("trialEnd: " + trialEnd);
         return trialEnd;
         //throw new NotImplementedException();
         //if vr controller held into collider for 5 secs or if it is placed in a snapzone or smth similar

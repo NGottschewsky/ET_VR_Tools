@@ -3,22 +3,35 @@
   <component name="ChangeListManager">
     <list default="true" id="15408367-e7ce-4c21-a405-63d5ec361c67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity_ET_VR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Plane.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Plane.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PrefabsWithColliders/SpeichenschluesselLEFT 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PrefabsWithColliders/SpeichenschluesselLEFT 1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ExperimentScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ExperimentScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Database.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EyeTracking/ETGValidation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EyeTracking/ETGValidation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EyeTracking/EyeTrackingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EyeTracking/EyeTrackingManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EyeTracking/EyeValidationSample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EyeTracking/EyeValidationSample.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestTrials/TestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestTrials/TestManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/jsonFiles/subject01_Nr1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/jsonFiles/subject01_Nr1.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/jsonFiles/subject01_Nr2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/jsonFiles/subject01_Nr2.json.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/8d7ebe-7374f4199b88ca2428.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/8d7ebe-7374f4199b88ca2428.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/8d7ebe-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/8d7ebe-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/b254ac-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/b254ac-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/04/0477fa9ba37769141bd9c6430773d5e7.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/04/0477fa9ba37769141bd9c6430773d5e7.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/0a/0a8bdc087d578784cb8f36640145caf8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/0a/0a8bdc087d578784cb8f36640145caf8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/1d/1df9d5c4f15b5e44dbd36777ffaeb031" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/1d/1df9d5c4f15b5e44dbd36777ffaeb031.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/3d/3d2db9c5590b25048a775a9df324cbfe" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/3d/3d2db9c5590b25048a775a9df324cbfe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/6a/6a54ad2160f828d45bb85936c88a2b9c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/6a/6a54ad2160f828d45bb85936c88a2b9c.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/73/7374f4199b88ca2428cba474bbaf8e36" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/73/7374f4199b88ca2428cba474bbaf8e36" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ba/baa915735445f2e4f8c8e0f7715bde06" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ba/baa915735445f2e4f8c8e0f7715bde06" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/c0/c079ac8579f461b49b2751527f5624f4" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c0/c079ac8579f461b49b2751527f5624f4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/c0/c079ac8579f461b49b2751527f5624f4.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c0/c079ac8579f461b49b2751527f5624f4.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/d3/d33842f238d9a504c8f13a46ff3c4a8f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d3/d33842f238d9a504c8f13a46ff3c4a8f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/fc/fcc8b3dbe5678a6498cbdfdf99822a8b" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fc/fcc8b3dbe5678a6498cbdfdf99822a8b" afterDir="false" />
     </list>
@@ -55,6 +68,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TableCallibration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dependencies/SteamVR/InteractionSystem/Hints/Scripts/ControllerButtonHints.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dependencies/SteamVR/InteractionSystem/Core/Scripts/RenderModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A46A0F83-5304-49EC-990E-6DE3550C6389/47/cc008383/AssetDatabase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dependencies/SteamVR/InteractionSystem/Core/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dependencies/SteamVR/InteractionSystem/Core/Scripts/ModalThrowable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CuePresenter.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,6 +81,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EyeTracking/EyeValidationSample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EyeTracking/EyeTrackingManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EyeTracking/ETGValidation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestTrials/TestManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ToolPresenter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dependencies/SteamVR/Plugins/openvr_api.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" root0="FORCE_HIGHLIGHTING" />
@@ -106,9 +121,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/EyeTrackingManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TableCallibration.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OtherTrialManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EyeTracking/EyeTrackingManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EyeTracking/EyeValidationSample.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EyeTracking/ETGValidation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EyeTracking/EyeValidationSample.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TestTrials/TestManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EyeTracking/EyeTrackingManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Database.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ToolManager2.cs" />
       </list>
@@ -222,6 +238,7 @@
       <workItem from="1581934875858" duration="11168000" />
       <workItem from="1582021802818" duration="75000" />
       <workItem from="1582034737278" duration="2855000" />
+      <workItem from="1582103442243" duration="8877000" />
     </task>
     <servers />
   </component>

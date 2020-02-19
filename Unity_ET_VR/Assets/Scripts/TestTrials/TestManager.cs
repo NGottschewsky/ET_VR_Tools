@@ -62,7 +62,7 @@ public class TestManager : MonoBehaviour
 
     private void GetNextTool(out ToolController returnTool)
     {
-        returnTool = new ToolController();
+        returnTool = null;//new ToolController();
 
         foreach (var toolController in _tools)
         {

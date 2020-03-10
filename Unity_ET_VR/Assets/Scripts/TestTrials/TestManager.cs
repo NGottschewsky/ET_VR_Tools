@@ -62,7 +62,7 @@ public class TestManager : MonoBehaviour
 
     private void GetNextTool(out ToolController returnTool)
     {
-        returnTool = null;//new ToolController();
+        returnTool = new ToolController();
 
         foreach (var toolController in _tools)
         {
@@ -72,6 +72,7 @@ public class TestManager : MonoBehaviour
             }
         }
     }
+    
     void Update()
     {
         if (_trial == _toolOrder.Length)
@@ -83,7 +84,7 @@ public class TestManager : MonoBehaviour
         if (TrialEndReached() && !_endOfBlock)  //Input.GetKeyDown(KeyCode.Space) && !_endOfBlock) _trial <= _toolOrder.Length) //!
         {
             GetNextTool(out var internalTool);
-            TestTrialManager.instance.ResetTriggerValue();
+            //TestTrialManager.instance.ResetTriggerValue();
             
             
             if (internalTool.cue == "Lift")
@@ -125,7 +126,7 @@ public class TestManager : MonoBehaviour
         {
             DeactivateLastTool();
             Debug.Log("End of Block.");
-            TestTrialManager.instance.ResetTriggerValue();
+            //TestTrialManager.instance.ResetTriggerValue();
             ShowMessage(Color.white, "You have finished the test trials.", 30);
         }
         
@@ -150,9 +151,12 @@ public class TestManager : MonoBehaviour
 
     private bool TrialEndReached()
     {
+        Debug.Log(KeyCode.Space);
+        return Input.GetKeyDown(KeyCode.Space);
+        /*
         bool triggerValue = TestTrialManager.instance.GetTriggerValue();
         TestTrialManager.instance.ResetTriggerValue();
-        return triggerValue;
+        return triggerValue;*/
 
         //throw new NotImplementedException();
         //if vr controller held into collider for 5 secs or if it is placed in a snapzone or smth similar

@@ -342,40 +342,40 @@
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\Dependencies\Imported\Table and chair\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -555,16 +555,16 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
  <Reference Include="Valve.Newtonsoft.Json">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Assets/Dependencies/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Assets/Dependencies/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>D:/Nina_ET_VR/ET_VR_Tools/Unity_ET_VR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>D:/NinaETVR/ET_VR_Tools/Unity_ET_VR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.14f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

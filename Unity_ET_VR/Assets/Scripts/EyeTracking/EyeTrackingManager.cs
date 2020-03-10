@@ -15,8 +15,8 @@ public class EyeTrackingManager : MonoBehaviour
     [Space] [Header("Reference to the ETGValidation Script")]
     public ETGValidation validator;
 
-    [Space] [Header("Key bindings")] public KeyCode callibrationButton;
-    public KeyCode ValidationButton;
+    //[Space] [Header("Key bindings")] public KeyCode callibrationButton;
+    //public KeyCode ValidationButton;
 
     private void Awake()
     {
@@ -27,7 +27,7 @@ public class EyeTrackingManager : MonoBehaviour
             Debug.Log("starting succesful");
         }
 
-/*
+
         if (SRanipal_Eye_v2.LaunchEyeCalibration())
         {
             Debug.Log("calibration succesful");
@@ -40,13 +40,13 @@ public class EyeTrackingManager : MonoBehaviour
         else
         {
             Debug.LogError("ETGValidation field is not setup.");
-        }*/
+        }
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
-        if (Input.GetKeyDown(callibrationButton))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             if (SRanipal_Eye_v2.LaunchEyeCalibration())
             {
@@ -54,10 +54,9 @@ public class EyeTrackingManager : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(ValidationButton))
+        if (Input.GetKeyDown(KeyCode.V))
         {
             validator.gameObject.SetActive(true);
-            
             if (validator != null)
             {
                 validator.StartValidation();

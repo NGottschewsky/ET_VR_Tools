@@ -97,8 +97,8 @@ public class ETGValidation : MonoBehaviour
                     validationSample.validationData.ValidationResults.x = CalculateValidationError(anglesX);
                     validationSample.validationData.ValidationResults.y = CalculateValidationError(anglesY);
                     validationSample.validationData.ValidationResults.z = CalculateValidationError(anglesZ);
-                    
-                    validationSample.Save(validationSample.validationData.ValidationTrial);
+
+                    validationSample.Save(validationTrial); //validationSample.validationData.ValidationTrial);
                 }
                 
                 yield return new WaitForEndOfFrame();
@@ -118,6 +118,7 @@ public class ETGValidation : MonoBehaviour
             CalculateValidationError(anglesZ) > 1)
         {
             SRanipal_Eye_v2.LaunchEyeCalibration();
+            StartValidation();
         }
     }
 
@@ -184,7 +185,7 @@ public class ETGValidation : MonoBehaviour
         }
 
   
-        Debug.Log(debText);
+        //Debug.Log(debText);
         
 
         return sample;

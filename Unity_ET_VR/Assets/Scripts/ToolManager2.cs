@@ -24,32 +24,46 @@ public class ToolManager2 : MonoBehaviour
     
     [Header("Experiment parameters")] [Range(1, 20)]
     public int participantNr;
-    public int participantID;
+    //public int participantID;
     public string gender;
     public int age;
-    [HideInInspector]
-    public int _block = 1;
+    public int _block;//1;
     
     // make a singleton instance of ToolManager to be able to call RegistrateCurrentUsedTool method etc. 
     public static ToolManager2 instance;
 
     [Header("Tool Models")] 
     [SerializeField] public List<ToolController> _tools; //List of all tool prefabs in diff. orientations and with diff. cues (48 in total)
-    [SerializeField] public GameObject spawnerPositionLeft;
-    [SerializeField] public GameObject spawnerPositionRight;
     [SerializeField] public GameObject spawnerPositionSPEICHRight;
     [SerializeField] public GameObject spawnerPositionSPEICHLeft;
     [SerializeField] public GameObject spawnerPositionFORKRight;
     [SerializeField] public GameObject spawnerPositionFORKLeft;
     [SerializeField] public GameObject spawnerPositionBLUMLeft;
     [SerializeField] public GameObject spawnerPositionBLUMRight;
-    
+    [SerializeField] public GameObject spawnerPositionSPATLeft;
+    [SerializeField] public GameObject spawnerPositionSPATRight;
+    [SerializeField] public GameObject spawnerPositionFISHRight;
+    [SerializeField] public GameObject spawnerPositionFISHLeft;
+    [SerializeField] public GameObject spawnerPositionPAINTRight;
+    [SerializeField] public GameObject spawnerPositionPAINTLeft;
+    [SerializeField] public GameObject spawnerPositionSCREWLeft;
+    [SerializeField] public GameObject spawnerPositionSCREWRight;
+    [SerializeField] public GameObject spawnerPositionSHOVLeft;
+    [SerializeField] public GameObject spawnerPositionSHOVRight;
+    [SerializeField] public GameObject spawnerPositionUNKRight;
+    [SerializeField] public GameObject spawnerPositionUNKLeft;
+    [SerializeField] public GameObject spawnerPositionWENRight;
+    [SerializeField] public GameObject spawnerPositionWENLeft;
+    [SerializeField] public GameObject spawnerPositionZITLeft;
+    [SerializeField] public GameObject spawnerPositionZITRight;
+    [SerializeField] public GameObject spawnerPositionPALLLeft;
+    [SerializeField] public GameObject spawnerPositionPALLRight;
 
     // List of tools that should be presented with left or right orientation respectively
-    private string[] _leftTools = new string[] {"1", "2", "9", "10", "13", "14", "17", "18", "21", "22", "25", "26", "33", "34", "37", "38", "41", "42"};
-    private string[] _differentLeftTools = new string[] {"5","6","29","30","45","46"};
-    private string[] _rightTools = new string[] {"3", "4", "11", "12","15", "16", "19", "20", "23", "24", "27", "28", "35", "36", "39", "40", "43", "44"};
-    private string[] _differentRightTools = new string[] {"7","8","31","32","47","48"};
+    private string[] _leftTools = new string[] {"1", "2","5","6","29","30","45","46","9", "10", "13", "14", "17", "18", "21", "22", "25", "26", "33", "34", "37", "38", "41", "42"};
+    //private string[] _differentLeftTools = new string[] {"1", "2","5","6","29","30","45","46"};
+    private string[] _rightTools = new string[] {"3", "4", "7","8","31","32","47","48","11", "12","15", "16", "19", "20", "23", "24", "27", "28", "35", "36", "39", "40", "43", "44"};
+    //private string[] _differentRightTools = new string[] {"3", "4", "7","8","31","32","47","48"};
 
     // List of tools that should be presented in combination with lift or use cue respectively
     private string[] _liftCue = new string[] {"1", "3", "5", "7", "9", "11", "13", "15", "17", "19", "21", "23", "25", "27", "29", "31", "33", "35", "37", "39", "41", "43", "45", "47"};
@@ -63,9 +77,11 @@ public class ToolManager2 : MonoBehaviour
     // randomised order of tools (48 different) is stored in a list of arrays, each array for representing one participant
     private List<string[]> _toolOrder = new List<string[]>();
     
-    private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    //private string _filePath = "D:\\Nina_ET_VR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
     // csv file that contains the order of tool presentation and is read into the _toolOrder list
     //private string _filePath = "D:\\Studium\\Bachelorarbeit\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    private const string FilePath = "D:\\NinaETVR\\ET_VR_Tools\\PermutationMatrix\\ExperimentLoopMatrixNewStats_WithLegend.csv";
+    //private const string FilePath = "D:\\NinaETVR\\ET_VR_Tools\\PermutationMatrix\\Spatula.csv";
     
     private bool _endOfBlock = false; // set to true after 144 trials
     private bool _endOfTrial = false; // set to true in method where new trial is started
@@ -133,7 +149,6 @@ public class ToolManager2 : MonoBehaviour
         }
     } */
 
-    // Still needs to be tested
     private IEnumerator RecordControllerTriggerAndPositionData()
     {
         while (!_endOfTrial)
@@ -206,13 +221,16 @@ public class ToolManager2 : MonoBehaviour
    
     void Start()
     {
+        
         _trial = 0;
         
-        _toolOrder = ReadCsvFile(_filePath);
+        _toolOrder = ReadCsvFile(FilePath);
 
-        _totalNrofTrials = 4;//_toolOrder[participantNr].Length;
-        _nrOfTrialsPerBlock = _totalNrofTrials / 2;
+        _totalNrofTrials = _toolOrder[participantNr-1].Length;
         
+        _nrOfTrialsPerBlock = (_toolOrder[participantNr-1].Length)/6; //((_toolOrder[participantNr-1].Length)/2); /// 2;
+        
+        Debug.LogWarning("total number of trials =" + _totalNrofTrials);
         //if (c != null) _cameraTransform = c.transform;
         if (hand != null) _handTransform = hand.transform;
         
@@ -220,7 +238,7 @@ public class ToolManager2 : MonoBehaviour
         b.ID = _block;
         _database.experiment.blocks.Add(b);
         _database.experiment.participantNr = participantNr;
-        _database.experiment.ID = participantID;
+        //_database.experiment.ID = participantID;
         _database.experiment.age = age;
         _database.experiment.gender = gender;
         
@@ -234,11 +252,11 @@ public class ToolManager2 : MonoBehaviour
             {
                 tool.cue = "use";
             }
-            if (Array.Exists(_leftTools, element => element == tool.id) || Array.Exists(_differentLeftTools, element => element == tool.id))
+            if (Array.Exists(_leftTools, element => element == tool.id))// || Array.Exists(_differentLeftTools, element => element == tool.id))
             {
                 tool.orientation = "left";
             }
-            else if (Array.Exists(_rightTools, element => element == tool.id) || Array.Exists(_differentRightTools, element => element == tool.id))
+            else if (Array.Exists(_rightTools, element => element == tool.id))// || Array.Exists(_differentRightTools, element => element == tool.id))
             {
                 tool.orientation = "right";
             }
@@ -340,6 +358,7 @@ public class ToolManager2 : MonoBehaviour
             {
                 _blocked = true;
                 Debug.Log("End of Block");
+                ShowMessage(Color.red, "End of block", 40);
                 _otherTrialManager.ResetTriggerValue();
                 _endOfBlock = false;
                 if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
@@ -353,18 +372,25 @@ public class ToolManager2 : MonoBehaviour
                 Debug.Log("The block is over");
                 cueCanvas.gameObject.SetActive(true);
                 DeactivateLastTool();
-                
-                _database.Save(_block);
-
+                //Todo: fix back to normal 
+                //StartCoroutine(_database.Save(_block));
+                _database.SaveFarbod(_block);
                 _block++;
-                _nrOfTrialsPerBlock = _totalNrofTrials;
-                if (_block == 2)
+                _nrOfTrialsPerBlock += 24;
+                if (_block <= 6)
                 {
-                    ShowMessage(Color.red, "End of block", 40);
+                    _database = Database.Instance;
                     Block b = new Block();
                     b.ID = _block;
                     _database.experiment.blocks.Add(b);
+                    _database.experiment.participantNr = participantNr;
+                    //_database.experiment.ID = participantID;
+                    _database.experiment.age = age;
+                    _database.experiment.gender = gender;
+                    //ShowMessage(Color.red, "End of block", 40);
                     Debug.Log(_database.experiment.blocks.Last().ID);
+                    _blocked = false;
+                    //StartCoroutine(ShowMessageCoroutine());
                     // Call calibration function for eye tracker here again DONE
                     //SRanipal_Eye_v2.LaunchEyeCalibration();
                 }
@@ -379,7 +405,7 @@ public class ToolManager2 : MonoBehaviour
                 Debug.Log("next trial");
                 if (_trial == 36 || _trial == 108)
                 {
-                    eyeTrackingManager.validator.gameObject.SetActive(true);
+                    /*eyeTrackingManager.validator.gameObject.SetActive(true);
 
                     if (eyeTrackingManager.validator != null)
                     {
@@ -388,17 +414,25 @@ public class ToolManager2 : MonoBehaviour
                     else
                     {
                         Debug.LogError("ETGValidation field is not setup.");
-                    }
+                    }*/
+                    Debug.Log("Time to validate");
                 }
 
                 cueCanvas.gameObject.SetActive(true);
-
-                if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
+                if (_database.experiment.blocks.LastOrDefault() == default)
                 {
-                    _database.experiment.blocks.Last().trials.Last().end = _database.getCurrentTimestamp();
-                    _endOfTrial = true;
+                    Debug.Log("hier ist das problem");
+                }
 
-                    StopCoroutine(RecordControllerTriggerAndPositionData());
+                if (_database.experiment.blocks.LastOrDefault() != default)
+                {
+                    if (_database.experiment.blocks.Last().trials.LastOrDefault() != default)
+                    {
+                        _database.experiment.blocks.Last().trials.Last().end = _database.getCurrentTimestamp();
+                        _endOfTrial = true;
+
+                        StopCoroutine(RecordControllerTriggerAndPositionData());
+                    }
                 }
 
                 Trial t = new Trial();
@@ -433,7 +467,7 @@ public class ToolManager2 : MonoBehaviour
                     }
 
 
-                    if (Array.Exists(_leftTools, element => element == internalTool.id))
+                    /*if (Array.Exists(_leftTools, element => element == internalTool.id))
                     {
                         StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "left"));
                     }
@@ -442,42 +476,132 @@ public class ToolManager2 : MonoBehaviour
                         StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "right"));
                     }
                     else
+                    {*/
+                    switch (internalTool.id)
                     {
-                        switch (internalTool.id)
-                        {
-                            case "5":
-                            case "6":
-                                StartCoroutine(
-                                    ToolPresenter.INSTANCE.PresentTool(internalTool, "blumenschneider left"));
-                                break;
-                            case "7":
-                            case "8":
-                                StartCoroutine(
-                                    ToolPresenter.INSTANCE.PresentTool(internalTool, "blumenschneider right"));
-                                break;
-                            case "29":
-                            case "30":
-                                StartCoroutine(
-                                    ToolPresenter.INSTANCE.PresentTool(internalTool, "speichenschlüssel left"));
-                                break;
-                            case "31":
-                            case "32":
-                                StartCoroutine(
-                                    ToolPresenter.INSTANCE.PresentTool(internalTool, "speichenschlüssel right"));
-                                break;
-                            case "45":
-                            case "46":
-                                StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "fork left"));
-                                break;
-                            case "47":
-                            case "48":
-                                StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "fork right"));
-                                break;
-                            default:
-                                Debug.LogError("tool ID not contained in either list of tools");
-                                break;
-                        }
+                        case "1":
+                        case "2":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "spatula left"));
+                            break;
+                        case "3":
+                        case "4":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "spatula right"));
+                            break;
+                        case "5":
+                        case "6":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "blumenschneider left"));
+                            break;
+                        case "7":
+                        case "8":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "blumenschneider right"));
+                            break;
+                        case "9":
+                        case "10":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "fishscaler left"));
+                            break;
+                        case "11":
+                        case "12":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "fishscaler right"));
+                            break;
+                        case "13":
+                        case "14":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "paintbrush left"));
+                            break;
+                        case "15":
+                        case "16":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "paintbrush right"));
+                            break;
+                        case "17":
+                        case "18":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "paletteknife left"));
+                            break;
+                        case "19":
+                        case "20":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "paletteknife right"));
+                            break;
+                        case "21":
+                        case "22":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "screwdriver left"));
+                            break;
+                        case "23":
+                        case "24":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "screwdriver right"));
+                            break;
+                        case "25":
+                        case "26":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "shovel left"));
+                            break;
+                        case "27":
+                        case "28":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "shovel right"));
+                            break;
+                        case "29":
+                        case "30":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "speichenschlüssel left"));
+                            break;
+                        case "31":
+                        case "32":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "speichenschlüssel right"));
+                            break;
+                        case "33":
+                        case "34":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "unkrautstecher left"));
+                            break;
+                        case "35":
+                        case "36":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "unkrautstecher right"));
+                            break;
+                        case "37":
+                        case "38":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "wench left"));
+                            break;
+                        case "39":
+                        case "40":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "wench right"));
+                            break;
+                        case "41":
+                        case "42":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "zitronenschaber left"));
+                            break;
+                        case "43":
+                        case "44":
+                            StartCoroutine(
+                                ToolPresenter.INSTANCE.PresentTool(internalTool, "zitronenschaber right"));
+                            break;
+                        case "45":
+                        case "46":
+                            StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "fork left"));
+                            break;
+                        case "47":
+                        case "48":
+                            StartCoroutine(ToolPresenter.INSTANCE.PresentTool(internalTool, "fork right"));
+                            break;
+                        default:
+                            Debug.LogError("tool ID not contained in either list of tools");
+                            break;
                     }
+                   // }
 
                     _trial++;
                     _blocked = false;
@@ -528,10 +652,7 @@ public class ToolManager2 : MonoBehaviour
         //return TrialManager.colliderInstance.GetTriggerValue();
         bool trialEnd = _otherTrialManager.GetTriggerValue();
         _otherTrialManager.ResetTriggerValue();
-        Debug.Log("trialEnd: " + trialEnd);
         return trialEnd;
-        //throw new NotImplementedException();
-        //if vr controller held into collider for 5 secs or if it is placed in a snapzone or smth similar
     }
 
     public void DeactivateLastTool()

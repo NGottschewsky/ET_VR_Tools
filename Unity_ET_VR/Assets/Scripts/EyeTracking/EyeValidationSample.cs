@@ -26,7 +26,7 @@ public class EyeValidationSample
     public void Save(int validationNr)
     {
         string json = JsonUtility.ToJson(this, true);
-        using (StreamWriter sw = File.CreateText("Assets/jsonFiles/subject" +
+        using (StreamWriter sw = File.CreateText("D:/NinaETVR/JSon/validationData/subject" +
                                                  validationData.participantNr.ToString("00") + "_nr" +
                                                  validationNr.ToString() + ".json"))
         {

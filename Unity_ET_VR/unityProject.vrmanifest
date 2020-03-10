@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.et_vr_tools_2ndattempt.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "D:\\Nina_ET_VR\\ET_VR_Tools\\Unity_ET_VR\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "D:\\NinaETVR\\ET_VR_Tools\\Unity_ET_VR\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "ET_VR_Tools_2ndAttempt [Testing]"

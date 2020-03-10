@@ -24,15 +24,33 @@ public class Database : MonoBehaviour
     }
 
     // saving
-    public void Save(int block)
+    public IEnumerator Save(int block)
     {
+        yield return new WaitForSeconds(3.0f);
         string json = JsonUtility.ToJson(this, true);
-        using (StreamWriter sw = File.CreateText("Assets/jsonFiles/subject" + experiment.ID.ToString("00") + "_block" +
+        using (StreamWriter sw = File.CreateText("D:/NinaETVR/JSon/subject" + experiment.participantNr.ToString("00") + "_block" +
                                                  block.ToString() + ".json"))
         {
             sw.WriteLine(json);
+            
         }
 
+        AssetDatabase.Refresh();
+
+        experiment.blocks.Clear();
+    }
+    public async void SaveFarbod(int block)
+    {
+        
+        string json = JsonUtility.ToJson(this, true);
+        string path = "D:/NinaETVR/JSon" + experiment.participantNr.ToString("00") + "_block" +
+                      block.ToString() + ".json";
+        //System.IO.File.WriteAllText(path, json);
+        using (StreamWriter writer = File.CreateText(path))
+        {
+            await writer.WriteAsync(json);
+            writer.Close();
+        }
         AssetDatabase.Refresh();
 
         experiment.blocks.Clear();
@@ -61,7 +79,7 @@ public class Database : MonoBehaviour
 public class Exp_ParticipantInfo
 {
     public int participantNr;
-    public int ID;
+    //public int ID;
     public int age;
     public string gender;
     public List<Block> blocks;
@@ -138,9 +156,9 @@ public class FrameData
     public bool isLeftBlinkingL;
     public bool isRightBlinkingL;
 
-    public Vector3 rightEyeDirectionForward;
-    public Vector3 leftEyeDirectionForward;
-    public Vector3 middlePointDirectionForward;
+    //public Vector3 rightEyeDirectionForward;
+    //public Vector3 leftEyeDirectionForward;
+    //public Vector3 middlePointDirectionForward;
     public Vector3 hmdDirectionForward;
     public Vector3 hmdDirectionRight;
     public Vector3 hmdRotation;

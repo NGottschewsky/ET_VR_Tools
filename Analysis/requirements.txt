@@ -54,7 +54,7 @@ python-dateutil==2.8.1
 pytz==2019.2
 pywin32==227
 pywinpty==0.5.7
-PyYAML==5.3
+PyYAML==5.4
 pyzmq==19.0.0
 qtconsole==4.5.5
 scikit-learn==0.22

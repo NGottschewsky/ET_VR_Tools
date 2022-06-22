@@ -35,7 +35,7 @@ nbconvert==5.6.1
 nbformat==5.0.4
 nbresuse==0.3.3
 notebook==6.0.3
-numpy==1.17.2
+numpy==1.22.0
 packaging==19.2
 pandas==0.25.1
 pandocfilters==1.4.2
